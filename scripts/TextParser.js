@@ -1,38 +1,73 @@
 class TextParser {
   static box(e, t, i) {
-    var a = t.split(" "),
-      r = [],
-      s = a[0];
-    if ("$" === s[0] && "$" === s[1]) var o = s.slice(7);
-    else {
-      s = "$$w40r:" + s;
-      o = s.slice(7);
+    var r = [];
+
+    function clean(n) {
+      "^" === n.slice(-1) && (n = n.slice(0, -1));
+      "|" === n.slice(-1) && (n = n.slice(0, -1));
+      return n;
     }
-    for (
-      var n = o, l = [s], h = e.measureText("| ").width, d = 0, u = 1;
-      u < a.length;
-      u++
-    ) {
-      s = a[u];
-      if ("$" === s[0] && "$" === s[1]) o = s.slice(7);
-      else {
-        s = "$$w40r:" + s;
-        o = s.slice(7);
+
+    function addWord(prefix, word) {
+      var w = word;
+      if (e.measureText(clean(w)).width > i) {
+        var endPipe = !1;
+        "|" === w.slice(-1) && ((endPipe = !0), (w = w.slice(0, -1)));
+        for (var ch of Array.from(w)) processed.push(prefix + ch + "^");
+        endPipe && (processed[processed.length - 1] += "|");
+      } else processed.push(prefix + w);
+    }
+
+    var processed = [],
+      m = 0;
+    for (; m < t.length; ) {
+      if (" " === t[m]) {
+        m += 1;
+        continue;
       }
-      var c = o.slice(-1);
-      "|" === c && (d += 1);
-      var I = e.measureText(n + " " + o + " ").width - d * h;
-      I < i
-        ? ((n = n + " " + o), l.push(s))
-        : (r.push(l), (n = o), (l = [s]), (d = 0));
+      var prefix = "$$w40r:";
+      if ("$" === t[m] && "$" === t[m + 1]) {
+        prefix = t.slice(m, m + 7);
+        m += 7;
+      }
+      for (
+        var start = m;
+        m < t.length &&
+        " " !== t[m] &&
+        !("$" === t[m] && "$" === t[m + 1]);
+      )
+        m += 1;
+      addWord(prefix, t.slice(start, m));
+      " " === t[m] && m++;
     }
-    return r.push(l), r;
+    if (0 === processed.length) return r;
+
+    function wordWidth(w) {
+      var txt = clean(w.slice(7)),
+        end = w.slice(7).slice(-1);
+      "^" === end && (end = w.slice(7).slice(-2, -1));
+      var width = e.measureText(txt).width;
+      "|" !== end && "^" !== end && (width += e.measureText(" ").width);
+      return width;
+    }
+
+    for (var s = processed[0], l = [s], width = wordWidth(s), u = 1; u < processed.length; u++) {
+      s = processed[u];
+      var wW = wordWidth(s);
+      width + wW > i && (r.push(l), (l = []), (width = 0));
+      l.push(s);
+      width += wW;
+      if ("|" === s.slice(7).slice(-1)) (r.push(l), (l = []), (width = 0));
+    }
+    l.length && r.push(l);
+    return r;
   }
   static process(e) {
     for (var t = [], i = [], a = 0; a < e.length; a++) {
       for (var r = 0, s = [], o = 0; o < e[a].length; o++) {
         var n = e[a][o],
           l = n.slice(-1);
+        "^" === l && ((n = n.slice(0, -1)), (l = n.slice(-1)));
         "|" === l && (n = n.slice(0, -1));
         var h = parseInt(n[3]),
           d = 4 * parseInt(n[4]),
@@ -66,7 +101,9 @@ class TextParser {
               S = parseInt(E[3]),
               f = (4 / S) * (E.length - 6);
             (T = s[u][g].slice(7)), (R = T.slice(-1));
-            "|" === R ? (T = T.slice(0, -1)) : (T += " ");
+            var N = !1;
+            "^" === R && ((N = !0), (T = T.slice(0, -1)), (R = T.slice(-1)));
+            "|" === R ? (T = T.slice(0, -1)) : N || (T += " ");
             var p = Math.max(0, Math.min(1, (r - I) / f));
             c = Math.floor(p * T.length);
             (e.fillStyle = "antiquewhite"),
@@ -84,8 +121,10 @@ class TextParser {
           }
           var T = s[u][g].slice(7),
             R = T.slice(-1),
-            c = 0;
-          "|" === R ? (T = T.slice(0, -1)) : (T += " "),
+            c = 0,
+            N = !1;
+          "^" === R && ((N = !0), (T = T.slice(0, -1)), (R = T.slice(-1)));
+          "|" === R ? (T = T.slice(0, -1)) : N || (T += " "),
             "r" === s[u][g][2]
               ? (e.fillStyle = "#ff4551")
               : "b" === s[u][g][2]
@@ -119,8 +158,10 @@ class TextParser {
                 ? (e.fillStyle = "limegreen")
                 : (e.fillStyle = "antiquewhite");
         var T = s[u][g].slice(7),
-          R = T.slice(-1);
-        "|" === R ? (T = T.slice(0, -1)) : (T += " "),
+          R = T.slice(-1),
+          N = !1;
+        "^" === R && ((N = !0), (T = T.slice(0, -1)), (R = T.slice(-1)));
+        "|" === R ? (T = T.slice(0, -1)) : N || (T += " "),
           e.fillText(T, m, d),
           (m += e.measureText(T).width);
       }
