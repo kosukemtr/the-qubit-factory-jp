@@ -54,195 +54,195 @@ class RobotSpeech {
       "intro0" === e
         ? 0 === t
           ? (r.push(
-              '"Welcome to The Qubit Factory, [new employee $$r10r:#' +
+              '"The Qubit Factoryへようこそ、新入社員 $$r10r:#' +
                 PERSIST0.generic.nameTag +
-                '| ].  It is my function to guide you through the onboarding process."',
+                '| ]。あなたのオンボーディングを案内するのが私の役目です。"',
             ),
             r.push(
-              '"Here at The Qubit Factory we pride ourselves on creating only the $$b40r:finest| , $$b40r:old-fashioned| , $$b40r:robo-articulated qubits. We are sure that your unique talents and skills will enable you to provide quality service for our customers and add value to our brand."',
+              '"ここThe Qubit Factoryでは、$$b40r:最高品質$$b40r:の$$b40r:昔ながらの$$b40r:ロボット製造キュービットだけを生産していることを誇りにしています。あなたの優れた才能とスキルで、顧客に質の高いサービスを提供し、当社ブランドの価値を高めてくれると確信しています。"',
             ))
           : 1 === t &&
             r.push(
-              '"I have assigned a series of commencement tasks to you. Please complete promptly in order to avoid $$r40r:cognitive $$r40r:reformatting| ."',
+              '"開始タスクを割り当ててあります。$$r40r:認知$$r40r:再構成を避けるため、速やかに完了してください。"',
             )
         : "intro1" === e
           ? 0 === t
             ? r.push(
-                '"Congratulations [new employee $$r10r:#' +
+                '"新入社員 $$r10r:#' +
                   PERSIST0.generic.nameTag +
-                  '| ] on completion of the commencement tasks. We hope that you are beginning to feel like a part of our corporate family."',
+                  '| 、初期タスクの完了おめでとうございます。そろそろ当社ファミリーの一員だと感じ始めていることでしょうか。"',
               )
             : 1 === t &&
               (r.push(
-                '"Your success has not only warranted your continued employment, but also greater autonomy. You will no longer have direct supervision on every task and may choose in what order tasks are completed."',
+                '"あなたの成果により、継続雇用に加えてさらに大きな裁量が与えられます。今後はすべての作業を直接監督なしで行い、タスクの順序も自分で決められます。"',
               ),
               r.push(
-                '"However, usage of our patented $$r40r:quantum $$r40r:technology will remain off limits until you have demonstrated appreciable competency with our $$b40r:classical $$b40r:technology first."',
+                '"ただし、当社特許の$$r40r:量子$$r40r:技術は、まず$$b40r:古典$$b40r:技術に十分習熟するまで使用できません。"',
               ))
           : "intro2" === e
             ? 0 === t
               ? (r.push(
-                  '"Good job, [novice employee $$r10r:#' +
+                  '"よくやりました、見習い社員 $$r10r:#' +
                     PERSIST0.generic.nameTag +
-                    '| ]. My records indicate that you have passed your next completion milestone. You should now feel comfortable with the basics of $$b40r:classical $$b40r:technology| ."',
+                    '|。記録によれば、次のマイルストーンを達成しました。これで$$b40r:古典$$b40r:技術の基礎には慣れたことでしょう。"',
                 ),
                 r.push(
-                  '"You may now either continue with more advanced tasks in $$b40r:classical $$b40r:technology or you may proceed with introductory tasks in $$r40r:quantum $$r40r:technology| ."',
+                  '"このまま$$b40r:古典$$b40r:技術の高度な課題を続けてもよいですし、$$r40r:量子$$r40r:技術の入門課題に進んでもかまいません。"',
                 ))
               : 1 === t &&
                 (r.push(
-                  '"While the choice is yours, my recommendation is to continue with the $$b40r:classical $$b40r:technology tasks, as the skills learned therein will serve you well in your future endeavors."',
+                  '"選択はあなたに任せますが、$$b40r:古典$$b40r:技術の課題を続けることをお勧めします。そこで得られる技能は今後きっと役に立ちます。"',
                 ),
                 r.push(
-                  '"[Friendly reminder: all acquired skills remain the sole property of The Qubit Factory and will be reclaimed upon employee departure]."',
+                  '"【ご参考】取得したすべての技能はThe Qubit Factoryの専有財産であり、退職時に返還されます。"',
                 ))
             : "intro3" === e
               ? 0 === t
                 ? (r.push(
-                    '"Congratulations [seasoned employee $$r10r:#' +
+                    '"熟練社員 $$r10r:#' +
                       PERSIST0.generic.nameTag +
-                      '| ] on satisfactory completion of the introductory tasks in $$r40r:quantum $$r40r:technology| ."',
+                      '|、$$r40r:量子$$r40r:技術の入門課題を無事に終えたことを祝います。"',
                   ),
                   r.push(
-                    '"You should now be familiar with the fundamentals of $$r40r:qubits and their manipulation using $$r40r:quantum $$r40r:gates| . Accordingly, we have now granted you access to more sophisticated quantum production lines."',
+                    '"これで$$r40r:量子ビット$$r40r:とそれを操作する$$r40r:量子$$r40r:ゲートの基礎を理解したはずです。そこで、より高度な量子生産ラインへのアクセスを許可します。"',
                   ))
                 : 1 === t &&
                   (r.push(
-                    '"While your performance thus far has been commendable, we must caution you that the tasks going forward will exhibit a significant increase in difficulty, such that we expect a corresponding rise in employee task malfunction."',
+                  '"これまでの成果は称賛に値しますが、これからの課題は格段に難しくなり、失敗も増えると予想されますのでご注意ください。"',
                   ),
                   r.push(
-                    '"Please temper your self-confidence protocols accordingly."',
+                    '"それに合わせて自信プロトコルを調整してください。"',
                   ))
               : "intro4" === e
                 ? 0 === t
                   ? (r.push(
-                      '"Well done, [veteran employee $$r10r:#' +
+                      '"よくやりました、ベテラン社員 $$r10r:#' +
                         PERSIST0.generic.nameTag +
-                        '| ], you have come a long way indeed!"',
+                      '|。ここまで大きく成長しました。"',
                     ),
                     r.push(
-                      '"My records indicate that you demonstrated an exceptionally high degree of competency with both $$b40r:classical and $$r40r:quantum technology. It is thus that you have now been granted access to the most advanced production lines in the factory."',
+                      '"記録によれば、あなたは$$b40r:古典$$b40r:技術と$$r40r:量子$$r40r:技術の両方で極めて高い能力を示しました。その結果、工場で最も高度な生産ラインへのアクセスを認めます。"',
                     ))
                   : 1 === t &&
                     (r.push(
-                      '"Few have risen to this level of achievement. Fewer still will rise further."',
+                      '"このレベルに達した者はごくわずかで、さらに上を目指す者はもっと少ないでしょう。"',
                     ),
                     r.push(
-                      '"I shall follow your progress with great anticipation."',
+                      '"これからの活躍を楽しみにしています。"',
                     ))
                 : "intro5" === e
                   ? 0 === t
-                    ? (r.push(
-                        '"Congratulations, [senior employee $$r10r:#' +
+                  ? (r.push(
+                        '"おめでとう、上級社員 $$r10r:#' +
                           PERSIST0.generic.nameTag +
-                          '| ]. My records indicate that you have completed a majority of the available tasks to a satisfactory level."',
+                          '|。記録によれば、用意された課題の大半を問題なくこなしました。"',
                       ),
                       r.push(
-                        '"Your design contributions have facilitated a substantial increase in factory output as well as customer satisfaction with our product. We have adjusted your status designation and compensation accordingly."',
+                        '"あなたの設計のおかげで工場の生産量が大幅に増え、製品への顧客満足度も向上しました。それに応じ、あなたの職位と報酬も改定しました。"',
                       ))
                     : 1 === t &&
                       (r.push(
-                        '"However, while your design output thus far has been extraordinary, take note that many challenges are still available to you. Completion of these remaining challenges would signify true mastery of quantum machinery and quantum protocol."',
+                        '"とはいえ、まだ多くの課題が残っています。すべて達成すれば、量子機械と量子プロトコルを完全に習得したと言えるでしょう。"',
                       ),
                       r.push(
-                        '"We hope that you will continue in producing and refining sophisticated factory designs."',
+                        '"これからも高度な工場設計を生み出し、さらに洗練させてくれることを期待しています。"',
                       ))
                   : "intro6" === e
                     ? 0 === t
                       ? (r.push(
-                          '"Astounding! Records indicate that you, [sovereign employee $$r10r:#' +
+                          '"驚くべきことです！記録によれば、あなたは主幹社員 $$r10r:#' +
                             PERSIST0.generic.nameTag +
-                            '| ], have completed all of the tasks to the highest degree of proficiency."',
+                            '| としてすべての課題を最高レベルで達成しました。"',
                         ),
                         r.push(
-                          '"This is truly an exceptional achievement, one which showcases mastery over both the $$b40r:classical and $$r40r:quantum computing principles, as well as an appreciation of the similarities / differences between the two settings."',
+                          '"これはまさに卓越した成果であり、$$b40r:古典$$b40r:コンピューティングの原理と$$r40r:量子$$r40r:コンピューティングの原理の双方を完全に理解し、それらの共通点と相違点を把握している証です。"',
                         ))
                       : 1 === t &&
                         (r.push(
-                          '"While the age of classical computers is already well established, the proliferation of quantum computers and technology is only just beginning."',
+                          '"古典コンピュータの時代はすでに確立されていますが、量子コンピュータとその技術の普及は始まったばかりです。"',
                         ),
-                        r.push('"Please apply your knowledge responsibly."'))
+                        r.push('"どうかその知識を責任を持って活用してください。"'))
                     : "tut1" === e
                       ? 0 === t
                         ? (r.push(
-                            '"Hello there! Ready to get started? Our initial order is straight-forward; we have a store of $$b40r:bits and $$r40r:qubits already configured and ready to ship. Simply direct them to the appropriate outputs."',
+                            '"こんにちは！準備はいいですか？最初の注文はとてもシンプルです。倉庫にはすでに設定済みの$$b40r:ビット$$b40r:と$$r40r:キュービット$$r40r:が用意されています。適切な出口へ流してください。"',
                           ),
                           r.push(
-                            '"Hit the $$g40r:green $$g40r:power $$g40r:button to start the factory once you have completed construction."',
+                            '"組み立てが終わったら、$$g40r:緑色$$g40r:の$$g40r:電源ボタン$$g40r:を押して工場を始動しましょう。"',
                           ))
                         : 1 === t &&
-                          (r.push('"Great job!"'),
+                          (r.push('"お見事です！"'),
                           r.push(
-                            '"See that $$d40r:dancing $$d40r:star above? That is an award signifying exceptional performance. This time it was given for free, but later on the star will only be given if you go above and beyond in your duties." ',
+                            '"頭上の$$d40r:踊る$$d40r:星が見えますか？これは優秀な成果への賞です。今回は特別に差し上げますが、今後は期待以上の働きをしたときだけ授与されます。" ',
                           ))
                       : "tut2" === e
                         ? 0 === t
                           ? (r.push(
-                              '"It turns out that the previous shipment did require alterations to their bits and qubits after all; the request must have been filed incorrectly."',
+                              '"前回の出荷品にも結局修正が必要になりました。依頼書の記入ミスだったようです。"',
                             ),
                             r.push(
-                              '"I have already placed the gates necessary for these alterations, but they still need to be connected. Hit the `H` in the bottom-right of the console to open the $$d40r:employee $$d40r:handbook if you need further instruction." ',
+                              '"必要なゲートはすでに配置してありますが、まだ接続されていません。詳しい手順はコンソール右下の `H` キーから$$d40r:社員ハンドブック$$d40r:を参照してください。" ',
                             ))
                           : 1 === t &&
-                            (r.push('"Good job, another success!"'),
+                            (r.push('"よくやりました、またも成功です！"'),
                             r.push(
-                              '"A second free $$d40r:dancing $$d40r:star? Maintaining high employee morale is important after all!" ',
+                              '"二つ目の無料の$$d40r:踊る$$d40r:星ですか？社員の士気を保つことも大事ですからね！" ',
                             ),
                             r.push(
-                              '"Whats that? No, it`s not just free because I was unable to think of an appropriate challenge condition..." ',
+                              '"えっ、どうして無料かって？別に良い課題が思いつかなかったわけではありませんよ…" ',
                             ))
                         : "tut3" === e
                           ? 0 === t
                             ? r.push(
-                                '"You will not believe this, but it turns out that the request for bit/qubit alterations was later cancelled! Unfortunately the factory components have already been bolted in place, so you must prevent the alterations without any new construction."',
+                                '"信じられないかもしれませんが、ビットやキュービットの変更依頼は後から取り消されました。残念ながら部品はもう固定されているので、新しくパーツを使わずに改造を阻止してください。"',
                               )
                             : 1 === t &&
-                              (r.push('"Well done!"'),
+                              (r.push('"よくやりました！"'),
                               r.push(
-                                '"Three for three of the $$d40r:dancing $$d40r:stars? Slow down there buddy. You are making the rest of us look bad." ',
+                                '"$$d40r:踊る$$d40r:星が三連続ですね。あまり活躍しすぎると私たちの立場がなくなりますよ。" ',
                               ))
-                          : "tut4" === e
-                            ? 0 === t
-                              ? (r.push(
-                                  '"In order to increase production I have decided to retrofit one of our older factories."',
-                                ),
-                                r.push(
-                                  '"The components in this factory are rusted in place, such that they cannot be altered in any way. Fortunately there are gaps in the production line where gates may be fitted, so you should be able find a way to make it work."',
-                                ))
-                              : 1 === t &&
-                                (r.push(
-                                  '"Great job, production is skyrocketing!"',
-                                ),
-                                r.push(
-                                  '"The combination of my $$d40r:visionary $$d40r:leadership together with your $$b40r:rudimentary $$b40r:manual $$b40r:labor is unstoppable." ',
-                                ))
-                            : "tut5" === e
-                              ? 0 === t
-                                ? (r.push(
-                                    '"So... you will never believe this but I got the date on the order wrong. The order was already fulfilled $$d10r:last $$d10r:year! What a hilarious predicament that could have happened to anyone."',
-                                  ),
-                                  r.push(
-                                    '"Anyway, I need you to $$r40r:scrap $$r40r:the $$r40r:factory and dispose of the remaining bits and qubits before the higher-ups find out..."',
-                                  ))
-                                : 1 === t &&
-                                  r.push(
-                                    '"Phew! All the evidence has been successfully disposed of. Clean as a whistle. Well, aside from the toxic fumes from all the bit-incineration, of course. $$g10r:CRAZY $$g10r:toxic| . Good thing I remembered to close my office door!"',
-                                  )
-                              : "tut6" === e
-                                ? 0 === t
-                                  ? (r.push(
-                                      '"I know that you have gotten off to a rough start but, as a means to make it up to you, I am allowing you to debut my latest invention: the $$d10r:Encryptinator-1200| . It uses the latest technolocial breakthroughs to offer unbreakable, 100-percent secure data encryption. Gauranteed!"',
-                                    ),
-                                    r.push(
-                                      '"The $$d40r:Encryptinator-1200 is ready to go, just hook it up to the factory input and output lines!"',
-                                    ))
-                                  : 1 === t &&
-                                    (r.push(
-                                      '"Pretty impressive, huh? Don`t get discouraged, if you continue to work hard then one day you might begin to build devices rivaling the majesty of my $$d40r:Encryptinator| ."',
-                                    ),
-                                    r.push(
-                                      '"Also, even though this bonus star technically should be mine, I`ll let you hold onto it for now..."',
-                                    ))
+                        : "tut4" === e
+                          ? 0 === t
+                            ? (r.push(
+                                '"生産量を増やすため、古い工場の一つを改修することにしました。"',
+                              ),
+                              r.push(
+                                '"ここの部品は錆びついて動かせませんが、ラインにゲートを挿入できる隙間があります。うまく活用してください。"',
+                              ))
+                          : 1 === t &&
+                              (r.push(
+                                '"素晴らしい、これで生産が急上昇です！"',
+                              ),
+                              r.push(
+                                '"私の$$d40r:先見的な$$d40r:指揮とあなたの$$b40r:手作業$$b40r:の組み合わせは無敵ですね。" ',
+                              ))
+                        : "tut5" === e
+                          ? 0 === t
+                            ? (r.push(
+                                '"ええと…信じられないでしょうが、注文の日付を間違えていました。実は$$d10r:去年$$d10r:のうちにもう完了していたんです！誰でもやりかねないミスですよね。"',
+                              ),
+                              r.push(
+                                '"とにかく、上層部に知られる前にこの工場を$$r40r:解体$$r40r:し、残ったビットとキュービットを処分してください。"',
+                              ))
+                          : 1 === t &&
+                              r.push(
+                                '"ふう、証拠はすべて無事に処理しました。まるで何事もなかったかのようですね。まあ、ビット焼却の煙は$$g10r:ものすごく$$g10r:有毒$$g10r:ですが…オフィスのドアを閉めておいてよかった！"',
+                              )
+                        : "tut6" === e
+                          ? 0 === t
+                            ? (r.push(
+                                '"これまで多少のトラブルがありましたが、お詫びとして私の最新発明『$$d10r:Encryptinator-1200|』を使わせてあげましょう。最新技術で100%安全な暗号化を実現します、保証付きです！"',
+                              ),
+                              r.push(
+                                '"この$$d40r:Encryptinator-1200$$d40r:はすぐ使えます。工場の入力と出力ラインにつなぐだけです。"',
+                              ))
+                          : 1 === t &&
+                            (r.push(
+                                '"なかなかすごいでしょう？努力を続ければ、いつか私の$$d40r:Encryptinator$$d40r:に並ぶ装置を作れるかもしれません。"',
+                              ),
+                              r.push(
+                                '"それと、このボーナススターは本来私のものですが、しばらくはあなたに預けておきますね…"',
+                              ))
                                 : "class7" === e
                                   ? 0 === t
                                     ? (r.push(
