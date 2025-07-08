@@ -1,24 +1,36 @@
 class TextParser {
   static box(e, t, i) {
     var a = t.split(" "),
-      r = [],
-      s = a[0];
-    if ("$" === s[0] && "$" === s[1]) var o = s.slice(7);
-    else {
-      s = "$$w40r:" + s;
-      o = s.slice(7);
+      r = [];
+
+    // Preprocess words to ensure style prefix and handle long words without spaces
+    var processed = [];
+    for (var m = 0; m < a.length; m++) {
+      var w = a[m];
+      if (!("$" === w[0] && "$" === w[1])) w = "$$w40r:" + w;
+      var p = w.slice(7);
+      if (e.measureText(p).width > i) {
+        // Split long word by characters
+        var prefix = w.slice(0, 7),
+          endPipe = !1;
+        p.slice(-1) === "|" && ((endPipe = !0), (p = p.slice(0, -1)));
+        var chars = Array.from(p);
+        for (var c = 0; c < chars.length; c++)
+          processed.push(prefix + chars[c]);
+        endPipe && (processed[processed.length - 1] += "|");
+      } else processed.push(w);
     }
+    if (0 === processed.length) return r;
+
+    var s = processed[0],
+      o = s.slice(7);
     for (
       var n = o, l = [s], h = e.measureText("| ").width, d = 0, u = 1;
-      u < a.length;
+      u < processed.length;
       u++
     ) {
-      s = a[u];
-      if ("$" === s[0] && "$" === s[1]) o = s.slice(7);
-      else {
-        s = "$$w40r:" + s;
-        o = s.slice(7);
-      }
+      s = processed[u];
+      o = s.slice(7);
       var c = o.slice(-1);
       "|" === c && (d += 1);
       var I = e.measureText(n + " " + o + " ").width - d * h;
