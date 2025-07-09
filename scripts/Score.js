@@ -87,15 +87,15 @@ class Score {
         var h = [];
         if (
           (h.push(
-            "Requirement: " +
+            "要件: " +
               SCENARIO.successRep +
-              " of " +
+              " / " +
               SCENARIO.repetitions,
           ),
           h.push(
-            "Progress: " +
+            "進捗: " +
               SCENARIO.correctReps +
-              " of " +
+              " / " +
               (SCENARIO.currentRep - 1),
           ),
           4 === SCENARIO.victoryCond)
@@ -107,13 +107,13 @@ class Score {
       } else if (0 === SCENARIO.victoryCond) {
         h = [];
         h.push(
-          "Requirement: " + SCENARIO.numCorrect + " of " + SCENARIO.maxTrials,
+          "要件: " + SCENARIO.numCorrect + " / " + SCENARIO.maxTrials,
         ),
-          h.push("Progress: " + s + " of " + (s + o)),
+          h.push("進捗: " + s + " / " + (s + o)),
           h.push(SCENARIO.starText);
       } else if (1 === SCENARIO.victoryCond) {
         h = [];
-        h.push("Requirement: incinerate all bits and qubits"),
+        h.push("要件: すべてのビットとキュービットを焼却する"),
           h.push(SCENARIO.starText);
       } else if (2 === SCENARIO.victoryCond) {
         h = [];
@@ -133,23 +133,23 @@ class Score {
           else S = 0;
         }
         "chsh" === SCENARIO.name
-          ? (h.push("Outputs: " + s + " of " + SCENARIO.maxTrials),
-            h.push("Current win rate:" + I + "%"),
+          ? (h.push("出力: " + s + " / " + SCENARIO.maxTrials),
+            h.push("現在の勝率:" + I + "%"),
             h.push(SCENARIO.starText))
-          : (h.push("Outputs: " + s + " of " + SCENARIO.maxTrials),
-            h.push("Status: C=" + I + "%, D=" + S + "%"),
+          : (h.push("出力: " + s + " / " + SCENARIO.maxTrials),
+            h.push("状態: C=" + I + "%, D=" + S + "%"),
             h.push(SCENARIO.starText));
       } else if (3 === SCENARIO.victoryCond) {
         h = [];
-        h.push("Requirement: " + SCENARIO.numCorrect),
-          h.push("Progress: " + s),
+        h.push("要件: " + SCENARIO.numCorrect),
+          h.push("進捗: " + s),
           h.push(SCENARIO.starText);
       } else if (4 === SCENARIO.victoryCond) {
         h = [];
         h.push(
-          "Requirement: " + SCENARIO.numCorrect + " of " + SCENARIO.maxTrials,
+          "要件: " + SCENARIO.numCorrect + " / " + SCENARIO.maxTrials,
         ),
-          h.push("Progress: " + s + " of " + (s + o));
+          h.push("進捗: " + s + " / " + (s + o));
         (d = (FIELD.cols - 2) * (FIELD.rows - 2)),
           (u = 100 - Math.round((100 * FIELD.cleanTiles) / d));
         h.push(SCENARIO.starText + u + "%)");
@@ -179,7 +179,7 @@ class Score {
         (r.shadowOffsetY = 2),
         (r.shadowColor = "black"),
         r.fillText(
-          "Level status",
+          "レベル状況",
           a / 2 - FIELD.tileWidth / 2,
           FIELD.tileWidth / 6,
         ),
