@@ -644,15 +644,15 @@ class Loop {
           ),
           (T.font = (0.7 * FIELD.tileWidth) / 6 + "px Verdana"),
           T.fillText(
-            "Quantum Competitive",
+            "量子競技プログラミング",
             0.8 * FIELD.tileWidth,
-            (0.7 * FIELD.tileHeight) / 2,
+            (0.9 * FIELD.tileHeight) / 2,
           ),
-          T.fillText(
-            "Programming",
-            0.8 * FIELD.tileWidth,
-            (1 * FIELD.tileHeight) / 2,
-          ),
+          // T.fillText(
+          //   "Programming",
+          //   0.8 * FIELD.tileWidth,
+          //   (1 * FIELD.tileHeight) / 2,
+          // ),
           T.restore();
       }
       DEBUG.show &&
