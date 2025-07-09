@@ -66,7 +66,7 @@ class Achievements {
       (r.fillStyle = "black"),
       (r.textAlign = "left"),
       (r.textBaseline = "middle"),
-      r.fillText("Awards:", 16.9 * a, 1.3 * a),
+      r.fillText("アワード:", 16.9 * a, 1.3 * a),
       r.beginPath(),
       (r.lineWidth = 1.5),
       (r.lineStyle = "#888"),
