@@ -137,9 +137,9 @@ class Overlay {
       (e.shadowOffsetY = 2),
       (e.shadowColor = "black"),
       "levelSelect" === ROBOT.oldMode
-        ? (e.fillText("Administron", b + M / 2, O + v / 4),
+        ? (e.fillText("アドミニストロン", b + M / 2, O + v / 4),
           e.fillText("40000", b + M / 2, O + (3 * v) / 4))
-        : (e.fillText("Auto-Manager", b + M / 2, O + v / 4),
+        : (e.fillText("オートマネージャー", b + M / 2, O + v / 4),
           e.fillText("5000", b + M / 2, O + (3 * v) / 4)),
       e.restore();
   }
@@ -339,7 +339,7 @@ class Overlay {
       (e.shadowOffsetX = 2),
       (e.shadowOffsetY = 2),
       (e.shadowColor = "black"),
-      e.fillText("Level Select:", t / 2 + 2 * s, i / 4),
+      e.fillText("レベル選択:", t / 2 + 2 * s, i / 4),
       e.restore();
   }
   static createUnderTitle(e) {
@@ -603,7 +603,7 @@ class Overlay {
         (e.shadowOffsetY = 1),
         (e.fillStyle = "black"),
         e.fillText(
-          "Touch-screen controls are currently unsupported :(",
+          "タッチスクリーン操作には現在対応していません :(",
           a / 2 + 0.3 * FIELD.tileWidth,
           2 * FIELD.tileWidth,
         ),
@@ -620,7 +620,7 @@ class Overlay {
         (e.shadowOffsetY = 2),
         (e.shadowColor = "black"),
         e.fillText(
-          "Best on #1:",
+          "推奨ディスプレイ #1:",
           0.25 * FIELD.tileWidth,
           (14.1 * FIELD.tileHeight) / 2,
         ),
@@ -649,7 +649,7 @@ class Overlay {
         (e.textBaseline = "top"),
         (e.font = (1 * FIELD.tileWidth) / 6 + "px Courier New"),
         e.fillText(
-          "Music by Eric Matyas",
+          "音楽: Eric Matyas",
           0.65 * FIELD.tileWidth,
           (0.28 * FIELD.tileHeight) / 2,
         ),
@@ -911,9 +911,9 @@ class Overlay {
         (e.textAlign = "center"),
         (e.font = FIELD.tileWidth / 3 + "px Verdana"),
         (e.fillStyle = "black"),
-        e.fillText("left + drag", 3.2 * i, 2.5 * i),
-        e.fillText("left + drag", 3.2 * i, 4.5 * i),
-        e.fillText("right + drag", 3.2 * i, 6.5 * i),
+          e.fillText("左ドラッグ", 3.2 * i, 2.5 * i),
+          e.fillText("左ドラッグ", 3.2 * i, 4.5 * i),
+          e.fillText("右ドラッグ", 3.2 * i, 6.5 * i),
         e.restore();
     else if (8 === TUTORIAL.current)
       e.save(),
@@ -928,8 +928,8 @@ class Overlay {
         (e.textAlign = "center"),
         (e.font = FIELD.tileWidth / 3 + "px Verdana"),
         (e.fillStyle = "black"),
-        e.fillText("+ve", 3.5 * i, 8.8 * i),
-        e.fillText("-ve", 5.5 * i, 8.8 * i),
+          e.fillText("正", 3.5 * i, 8.8 * i),
+          e.fillText("負", 5.5 * i, 8.8 * i),
         e.restore();
     else if (6 === TUTORIAL.current)
       e.save(),
@@ -937,10 +937,10 @@ class Overlay {
         (e.textAlign = "center"),
         (e.font = FIELD.tileWidth / 3 + "px Verdana"),
         (e.fillStyle = "black"),
-        e.fillText("control", 4 * i, 2.5 * i),
-        e.fillText("target", 4 * i, 3.5 * i),
-        e.fillText("1-primed", 3.5 * i, 4.6 * i),
-        e.fillText("0-primed", 5.5 * i, 4.6 * i),
+          e.fillText("制御", 4 * i, 2.5 * i),
+          e.fillText("ターゲット", 4 * i, 3.5 * i),
+          e.fillText("1プライム", 3.5 * i, 4.6 * i),
+          e.fillText("0プライム", 5.5 * i, 4.6 * i),
         e.restore();
     else if (0 === TUTORIAL.current) {
       var g = FIELD.tileWidth / 12,
@@ -993,9 +993,9 @@ class Overlay {
         (e.textAlign = "center"),
         (e.font = FIELD.tileWidth / 3 + "px Verdana"),
         (e.fillStyle = "black"),
-        e.fillText("desired", 4.5 * i, 9.3 * i),
-        e.fillText("outputs", 4.5 * i, 9.8 * i),
-        e.fillText("output stream", 4 * i, 12.2 * i),
+          e.fillText("目標", 4.5 * i, 9.3 * i),
+          e.fillText("出力", 4.5 * i, 9.8 * i),
+          e.fillText("出力ストリーム", 4 * i, 12.2 * i),
         e.restore();
     }
     if (
@@ -1980,16 +1980,16 @@ class Overlay {
         FIELD.topMargin + OVERLAY.margin + 0.5 * a * FIELD.rows,
       ),
       y.rotate(-Math.PI / 6),
-      y.strokeText("CONFIDENTIAL", 0, 0),
+      y.strokeText("機密", 0, 0),
       (y.font = 1 * i + "px Courier New"),
-      y.strokeText("DO NOT DISSEMINATE", 0, -2.2 * a);
+      y.strokeText("外部共有禁止", 0, -2.2 * a);
     var N = Math.random();
     N < 1 / 3
-      ? y.strokeText("PENALTY OF DE-LECTROCUTION", 0, 2.2 * a)
+        ? y.strokeText("違反時は感電処罰", 0, 2.2 * a)
       : N < 2 / 3
-        ? ((y.font = Math.round(0.9 * i) + "px Courier New"),
-          y.strokeText("PENALTY OF DOWNGRADE->WINDOWS-ME", 0, 2.2 * a))
-        : y.strokeText("PENALTY OF RE-FRAGMENTATION", 0, 2.2 * a),
+          ? ((y.font = Math.round(0.9 * i) + "px Courier New"),
+            y.strokeText("違反時はWindows MEへのダウングレード", 0, 2.2 * a))
+          : y.strokeText("違反時は再フラグメンテーション", 0, 2.2 * a),
       y.beginPath(),
       y.stroke(
         Helper.roundRect(
