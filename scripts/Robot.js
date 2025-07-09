@@ -361,10 +361,10 @@ class Robot {
       (e.shadowOffsetY = 2),
       (e.shadowColor = "black"),
       (e.font = (1.2 / 3) * FIELD.tileWidth + "px Courier New"),
-      e.fillText("(space)", ROBOT.width / 2, 1.1 * FIELD.tileWidth);
-    var n = "Next";
+      e.fillText("（スペース）", ROBOT.width / 2, 1.1 * FIELD.tileWidth);
+    var n = "次へ";
     if (
-      ("finished" === ROBOT.oldMode && ROBOT.isDone && (n = "Return"),
+      ("finished" === ROBOT.oldMode && ROBOT.isDone && (n = "戻る"),
       (e.font =
         (1.1 + 0.1 * RTIMER.pulse) * (1.2 / 3) * FIELD.tileWidth +
         "px Courier New"),
@@ -373,11 +373,11 @@ class Robot {
     ) {
       (e.font = (1.2 / 3) * FIELD.tileWidth + "px Courier New"),
         e.fillText(
-          "(external link)",
+          "（外部リンク）",
           ROBOT.width - 4.5 * FIELD.tileWidth,
           1.1 * FIELD.tileWidth,
         );
-      n = "Historical Archive";
+      n = "歴史アーカイブ";
       (e.font = (1.2 / 3) * FIELD.tileWidth + "px Courier New"),
         e.fillText(
           n,
