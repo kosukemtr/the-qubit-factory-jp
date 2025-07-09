@@ -195,7 +195,7 @@ class Placement {
       (STATE.validPlacementAdj = !0),
       SCENARIO.editable[a] < 1 || 2 === SCENARIO.editable[a])
     )
-      return (STATE.tooltip = "Invalid placement"), !1;
+      return (STATE.tooltip = "配置できません"), !1;
     if ("qWire" === e) {
       var r = IBOARD.getGate(t, i, IBOARD.getState(t, i));
       return r
@@ -211,11 +211,11 @@ class Placement {
             "trash",
             "qCreate",
           ].indexOf(r.type) >= 0
-          ? ((STATE.tooltip = "Valid placement"),
-            (STATE.validPlacementLoc = !0),
-            !0)
-          : ((STATE.tooltip = "Invalid placement"), !1)
-        : ((STATE.tooltip = "Valid placement"),
+            ? ((STATE.tooltip = "配置可能です"),
+              (STATE.validPlacementLoc = !0),
+              !0)
+            : ((STATE.tooltip = "配置できません"), !1)
+        : ((STATE.tooltip = "配置可能です"),
           (STATE.validPlacementLoc = !0),
           !0);
     }
@@ -234,11 +234,11 @@ class Placement {
             "measure",
             "trash",
           ].indexOf(r.type) >= 0
-          ? ((STATE.tooltip = "Valid placement"),
-            (STATE.validPlacementLoc = !0),
-            !0)
-          : ((STATE.tooltip = "Invalid placement"), !1)
-        : ((STATE.tooltip = "Valid placement"),
+            ? ((STATE.tooltip = "配置可能です"),
+              (STATE.validPlacementLoc = !0),
+              !0)
+            : ((STATE.tooltip = "配置できません"), !1)
+        : ((STATE.tooltip = "配置可能です"),
           (STATE.validPlacementLoc = !0),
           !0);
     }
@@ -333,24 +333,24 @@ class Placement {
             if (MENU.selProperties.orient % 2 == 0)
               return (
                 (STATE.extraOrient = 1),
-                (STATE.tooltip = "Valid placement"),
+                (STATE.tooltip = "配置可能です"),
                 (STATE.validPlacementLoc = !0),
                 !0
               );
           } else if (S.dir % 2 != 0 && MENU.selProperties.orient % 2 != 0)
             return (
               (STATE.extraOrient = 1),
-              (STATE.tooltip = "Valid placement"),
+              (STATE.tooltip = "配置可能です"),
               (STATE.validPlacementLoc = !0),
               !0
             );
         return (
-          (STATE.tooltip = "Valid placement"),
+          (STATE.tooltip = "配置可能です"),
           (STATE.validPlacementLoc = !0),
           !0
         );
       }
-      return (STATE.tooltip = "Incompatible control/target"), !1;
+      return (STATE.tooltip = "制御とターゲットが互換性ありません"), !1;
     }
     if ("qControl" === S.type) {
       if (["qFlip", "rotate"].indexOf(e) >= 0) {
@@ -358,24 +358,24 @@ class Placement {
           if (MENU.selProperties.orient % 2 == 0)
             return (
               (STATE.extraOrient = 1),
-              (STATE.tooltip = "Valid placement"),
+              (STATE.tooltip = "配置可能です"),
               (STATE.validPlacementLoc = !0),
               !0
             );
         } else if (S.dir % 2 != 0 && MENU.selProperties.orient % 2 != 0)
           return (
             (STATE.extraOrient = 1),
-            (STATE.tooltip = "Valid placement"),
+            (STATE.tooltip = "配置可能です"),
             (STATE.validPlacementLoc = !0),
             !0
           );
         return (
-          (STATE.tooltip = "Valid placement"),
+          (STATE.tooltip = "配置可能です"),
           (STATE.validPlacementLoc = !0),
           !0
         );
       }
-      return (STATE.tooltip = "Incompatible control/target"), !1;
+      return (STATE.tooltip = "制御とターゲットが互換性ありません"), !1;
     }
     if (["switch", "sync", "qControl"].indexOf(e) >= 0) {
       STATE.validPlacementLoc = !0;
@@ -393,54 +393,54 @@ class Placement {
       if (SCENARIO.editable[p] < 1)
         return (
           (STATE.tooltip =
-            "sync" === e ? "Invalid placement" : "Invalid target placement"),
+            "sync" === e ? "配置できません" : "無効なターゲット配置です"),
           (STATE.validPlacementAdj = !1),
           !1
         );
       if ("switch" === e) {
         if (T.dir >= 0 && T.dir !== (f + 1) % 4)
           return (
-            (STATE.tooltip = "Tile is already controlled"),
+            (STATE.tooltip = "このタイルは既に制御されています"),
             (STATE.validPlacementAdj = !1),
             !1
           );
         var R = IBOARD.getGate(s, o, 0);
         return R
           ? ["cCombine", "qCombine"].indexOf(R.type) >= 0
-            ? ((STATE.tooltip = "Valid placement"), !0)
+            ? ((STATE.tooltip = "配置可能です"), !0)
             : ["upgrade", "cInvert", "measure", "qFlip", "rotate"].indexOf(
                   R.type,
                 ) >= 0 && f % 2 == R.orient % 2
-              ? ((STATE.tooltip = "Valid placement"), !0)
-              : ((STATE.tooltip = "Incompatible control/target"),
+              ? ((STATE.tooltip = "配置可能です"), !0)
+              : ((STATE.tooltip = "制御とターゲットが互換性ありません"),
                 (STATE.validPlacementAdj = !1),
                 !1)
-          : ((STATE.tooltip = "Valid placement"), !0);
+          : ((STATE.tooltip = "配置可能です"), !0);
       }
       if ("qControl" === e) {
         if (T.dir >= 0 && T.dir !== (f + 1) % 4)
           return (
-            (STATE.tooltip = "Tile is already controlled"),
+            (STATE.tooltip = "このタイルは既に制御されています"),
             (STATE.validPlacementAdj = !1),
             !1
           );
         R = IBOARD.getGate(s, o, 0);
         return R
           ? ["qFlip", "rotate"].indexOf(R.type) >= 0 && f % 2 == R.orient % 2
-            ? ((STATE.tooltip = "Valid placement"), !0)
-            : ((STATE.tooltip = "Incompatible control/target"),
+            ? ((STATE.tooltip = "配置可能です"), !0)
+            : ((STATE.tooltip = "制御とターゲットが互換性ありません"),
               (STATE.validPlacementAdj = !1),
               !1)
-          : ((STATE.tooltip = "Valid placement"), !0);
+          : ((STATE.tooltip = "配置可能です"), !0);
       }
       return "sync" === e && T.dir >= 0 && T.dir !== (f + 1) % 4
-        ? ((STATE.tooltip = "Incompatible control/target"),
+        ? ((STATE.tooltip = "制御とターゲットが互換性ありません"),
           (STATE.validPlacementAdj = !1),
           !1)
-        : ((STATE.tooltip = "Valid placement"), !0);
+        : ((STATE.tooltip = "配置可能です"), !0);
     }
     return (
-      (STATE.validPlacementLoc = !0), (STATE.tooltip = "Valid placement"), !0
+      (STATE.validPlacementLoc = !0), (STATE.tooltip = "配置可能です"), !0
     );
   }
 }
