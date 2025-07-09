@@ -9,13 +9,44 @@ class TextParser {
     }
 
     function addWord(prefix, word) {
-      var w = word;
-      if (e.measureText(clean(w)).width > i) {
-        var endPipe = !1;
-        "|" === w.slice(-1) && ((endPipe = !0), (w = w.slice(0, -1)));
-        for (var ch of Array.from(w)) processed.push(prefix + ch + "^");
-        endPipe && (processed[processed.length - 1] += "|");
-      } else processed.push(prefix + w);
+      let w = word;
+
+      // detect and temporarily strip trailing pipe (段落区切り)
+      let endPipe = false;
+      if (w.slice(-1) === "|") {
+        endPipe = true;
+        w = w.slice(0, -1);
+      }
+
+      // if it already fits, push as–is
+      if (e.measureText(clean(w)).width <= i) {
+        processed.push(prefix + w);          // スペースの有無は後段で '^' を付与する
+      } else {
+        /* ------------- 分割ロジック -------------
+           1. 「句読点・カンマ・ピリオド」(全角/半角) でまず分割
+           2. そのセグメントがまだ長ければ 3 文字ずつに細分化
+        ----------------------------------------- */
+        const segs = w.split(/([、。.,，．]+)/).filter(Boolean);
+
+        for (let seg of segs) {
+          // 句読点だけの seg もそのまま扱う
+          if (e.measureText(clean(seg)).width > i) {
+            // 3 文字チャンクで細分化
+            for (let p = 0; p < seg.length; p += 3) {
+              const chunk = seg.slice(p, p + 3);
+              processed.push(prefix + chunk + "^");   // '^' で行末スペース禁止
+            }
+          } else {
+            processed.push(prefix + seg + "^");
+          }
+        }
+      }
+
+      // もとの単語が '|' で終わっていたら、最後に付け直す
+      if (endPipe) {
+        processed[processed.length - 1] =
+          processed[processed.length - 1].slice(0, -1) + "|";
+      }
     }
 
     var processed = [],
@@ -54,7 +85,7 @@ class TextParser {
     for (var s = processed[0], l = [s], width = wordWidth(s), u = 1; u < processed.length; u++) {
       s = processed[u];
       var wW = wordWidth(s);
-      width + wW > i && (r.push(l), (l = []), (width = 0));
+      Math.round(width + wW) > i && (r.push(l), (l = []), (width = 0));
       l.push(s);
       width += wW;
       if ("|" === s.slice(7).slice(-1)) (r.push(l), (l = []), (width = 0));
