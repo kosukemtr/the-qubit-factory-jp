@@ -413,7 +413,18 @@
         INTERRUPTS.keep[1] = JSON.parse(JSON.stringify(INTERRUPTS.data[1]));
         INTERRUPTS.keep[2] = JSON.parse(JSON.stringify(INTERRUPTS.data[2]));
     </script> -->
-    <script src="scripts/pre.js"></script>
+    <!-- split pre.js into individual functions -->
+    <script src="scripts/pre_parts/hexToRGB.js"></script>
+    <script src="scripts/pre_parts/flashColor.js"></script>
+    <script src="scripts/pre_parts/RGBToHex.js"></script>
+    <script src="scripts/pre_parts/colourNameToHex.js"></script>
+    <script src="scripts/pre_parts/makeOverlayPattern.js"></script>
+    <script src="scripts/pre_parts/LevelConsts.js"></script>
+    <script src="scripts/pre_parts/LevelGates.js"></script>
+    <script src="scripts/pre_parts/LevelRefresh.js"></script>
+    <script src="scripts/pre_parts/LevelSelect.js"></script>
+    <script src="scripts/pre_parts/LevelTitle.js"></script>
+    <script src="scripts/pre_parts/TutsOpen.js"></script>
     <script src="scripts/Achievements.js"></script>
     <script src="scripts/Analysis.js"></script>
     <script src="scripts/Bit.js"></script>
