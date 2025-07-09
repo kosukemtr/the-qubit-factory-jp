@@ -147,11 +147,11 @@ class ConfirmationBox {
       (a.shadowOffsetY = 2),
       (a.shadowColor = "black"),
       0 === t
-        ? (a.fillText("Clear current board:", 3 * r, 0.25 * r),
-          a.fillText("are you sure?", 3 * r, 0.75 * r))
+        ? (a.fillText("現在のボードをクリアします:", 3 * r, 0.25 * r),
+          a.fillText("よろしいですか?", 3 * r, 0.75 * r))
         : 1 === t &&
-          (a.fillText("Clear saved data:", 3 * r, 0.25 * r),
-          a.fillText("are you sure?", 3 * r, 0.75 * r));
+          (a.fillText("保存データを削除します:", 3 * r, 0.25 * r),
+          a.fillText("よろしいですか?", 3 * r, 0.75 * r));
     (n = [1.5 * r, 1.5 * r, 2.5 * r, 2.5 * r]),
       (l = [1.5 * r, 2.1 * r, 2.1 * r, 1.5 * r]),
       (h = [r / 4, r / 4, r / 4, r / 4]),
@@ -167,8 +167,8 @@ class ConfirmationBox {
       (a.strokeStyle = "white"),
       a.stroke(d),
       (a.fillStyle = "antiquewhite"),
-      a.fillText("YES", 2 * r, 1.6 * r),
-      a.fillText("NO", 4 * r, 1.6 * r),
+      a.fillText("はい", 2 * r, 1.6 * r),
+      a.fillText("いいえ", 4 * r, 1.6 * r),
       a.restore(),
       -1
     );
