@@ -147,171 +147,171 @@ class PopWindow {
     var e = "-------------------------------------\n";
     "quant1" === SCENARIO.name
       ? ((e +=
-          "Finally! The day has arrived that I get to work with actual qubits and quantum gates; I can hardly wait! \n \n"),
+          "ついに！ 実際のキュービットと量子ゲートを扱える日がやって来ました。待ちきれません！ \n \n"),
         (e +=
-          "My initial experimentations have already revealed some key insights: \n "),
+          "最初の実験でいくつかの重要な知見が得られました:\n "),
         (e +=
-          "• the action of a rotation gate is undone by an equal rotation in the opposite direction. \n "),
+          "• 回転ゲートの作用は同じ角度を逆向きに回すと打ち消せます。 \n "),
         (e +=
-          "• the action of a flip gate is undone by an identical flip gate. \n \n"),
+          "• 反転ゲートの作用は同じ反転ゲートでもう一度実行すると打ち消せます。 \n \n"),
         (e +=
-          "It should follow that the action of a *sequence* of rotation/flip gates can be undone by undoing each gate individually. However, it appears that the order in which gates are applied is important to getting the correct result...\n "))
+          "つまり、回転や反転ゲートの*列*も各ゲートを個別に戻せば元に戻るはずです。ただし正しい結果を得るには適用順序が重要なようです…\n "))
       : "quant3" === SCENARIO.name
         ? ((e +=
-            "My initial experiments with quantum flip and rotate gates proved relatively uneventful. The gates behaved much as I thought they would. I was beginning to think the differences between bits and qubits might be relatively superficial: that they are simply the differences that one might expect when switching from a discrete to a continuous medium. However, my introduction to qubit measurements has thoroughly disabused me of these notions.  \n \n"),
+            "量子反転ゲートや回転ゲートを用いた初期の実験では、ゲートは概ね予想通りに動作しました。ビットとキュービットの違いは表面的なものに過ぎないと思いかけていましたが、測定に触れた途端その考えは完全に覆されました。 \n \n"),
           (e +=
-            "The problem that I am currently tasked with, which involves sorting between ▲-state and ▶-state qubits, boggles my mind. Imagine a large bag containing a number of apples and oranges, and that our goal is to pull pieces of fruit from the bag one at a time and to separate them into their two types. Sounds simple, right? What if I told you that the act of removing each fruit from the bag could transmute it into something else entirely; that an apple could become an orange (or something *between* an apple and an orange) depending on the details of how it was taken from the bag as well an element of chance. It sounds absurd, but this seems to be the reality that qubits inhabit! \n \n"),
+            "現在の課題は▲状態と▶状態のキュービットを振り分けることですが、これはまるで袋から果物を取り出すたびにリンゴがオレンジに変わるかもしれない状況に似ており、頭が混乱します。キュービットの世界ではそんなことが現実に起きるのです。\n \n"),
           (e +=
-            "More concretely, I have found that the act of observing a qubit, i.e. by passing it through a measurement device, will change its state to align or anti-align with the device. A qubit initially in the ▲-state could transform into a ▶-state under measurement (assuming the measurement device was horizontally aligned). In this situation it would be impossible to distinguish, based on the measurement outcome alone, whether the initial state was ▲ or ▶. Indeed, regardless of the setting of the measurement device, input states ▲ and ▶ both have a chance of producing the same measurement result and output state. However, there must exist a measurement setting that minimizes this chance, hence maximizes the likelihood of successfully distinguishing between the different input states... \n"))
+            "さらに、キュービットを測定装置に通すだけで装置に合わせて状態が変わってしまいます。初め▲状態だったものが、装置が水平なら測定で▶状態になることもあります。この場合、結果だけから初期状態を判断することはできません。測定角度によらず▲と▶の入力が同じ結果になる可能性があるものの、その確率を最小化して両者を見分けられる設定がきっと存在するはずです… \n"))
         : "quant6B" === SCENARIO.name
           ? ((e +=
-              "The qubits dance and change before my eyes, seeming to switch direction in fleeting moments. The truth of this illusion is disturbing to me: I know that they somehow exist simultaneously in both directions and yet are not fully in either. \n \n"),
+              "キュービットが目の前で舞うように変化し、瞬く間に向きを変えているように見えます。この幻の正体を思うと恐ろしく、彼らは同時に両方向へ存在しつつどちらにも完全には属していないと知ります。 \n \n"),
             (e +=
-              "Another realization disturbs me further: the qubits have always been this way. The only thing that has changed is my perception of them; the same reality viewed through a different lens. One thing is clear to me: to succeed further I must become fluent in the ability to view and understand qubits from different perspectives. \n"))
+              "さらに言えば、キュービットは初めからずっとこうだったのです。変わったのは私の認識だけ。同じ現実を別の視点で見ていただけでした。これから先へ進むには、多角的にキュービットを眺め理解する術を身につけなければなりません。 \n"))
           : "quant7" === SCENARIO.name
             ? ((e +=
-                "In my short experience with qubits and quantum gates I have observed many significant differences between them and their classical counterparts. However, it is with my current introduction to entanglement that I see a truly radically departure from anything comparable within the classical setting. \n \n"),
+                "キュービットと量子ゲートを扱い始めて間もないものの、古典的な仕組みとは異なる点が多いと感じています。特にエンタングルメントに触れた今、古典では考えられないほどの飛躍を目の当たりにしました。 \n \n"),
               (e +=
-                "The concept of entanglement is fascinating! A pair of qubits, when set in an entangled state, behave as a single entity with each qubit able to exert some nebulous influence over the other. This quality can remain even when the qubits are taken a great distance apart, and even though they do not communicate nor transmit information in any way that can be fathomed. If one-half of an entangled pair is measured then the state of the partner will instantaniously adjust in state to compensate for the measurement result, even though the partner should not have any way of knowing what the measurement result was (or even that a measurement took place). \n \n"),
+                "エンタングルメントは実に魅力的です。絡み合った二つのキュービットは一つの存在のように振る舞い、互いに不思議な影響を及ぼし合います。この性質は離れた場所にあっても保たれ、情報のやり取りがなくても片方を測定するともう片方が即座に結果に合わせて状態を調整します。 \n \n"),
               (e +=
-                "Although much is still beyond my comprehension, I can't help but see the enormity of the implications given rise by entanglement. A group of classical bits is no more than the sum of its parts; describing each individual bit of a group accounts for a full description of the group itself. In contrast, a group of entangled qubits can behave collectively as an single object, vastly more complex than the sum of its individual qubits would suggest. \n"))
+                "まだ理解しきれてはいませんが、エンタングルメントがもたらす可能性の大きさを感じずにはいられません。古典ビットの集まりは単なる足し算に過ぎませんが、エンタングルしたキュービットの集団は、個々の和をはるかに超えた複雑さをもつ単一の存在として振る舞うのです。 \n"))
             : "adderC" === SCENARIO.name
               ? ((e +=
-                  "Previously, many of the quantum tasks that I have been assigned have been solvable via a straight-forward adaption of a corresponding classical task. One such task was reproducing the `XOR` gate using quantum components, which could be accomplished by switching from classical controlled-inversion gates to appropriate quantum controlled-flip gates. \n \n"),
+                  "これまで与えられてきた量子課題の多くは、古典的な課題を量子部品に置き換えるだけで解決できました。たとえば `XOR` ゲートの再現は、古典の制御反転ゲートを対応する量子制御フリップゲートに置き換えるだけで済みました。 \n \n"),
                 (e +=
-                  "However, I am finding that some quantum tasks are instead *much* more challenging than their classical counterparts, as exemplified by my present task of producing the quantum `AND` gate. The difficulty here lies with the lack of a quantum equivalent to the classical re-zero gate. As such, I must produce a completely new design using only the quantum flip and rotate gates that I have available to me. \n \n"),
+                  "しかし量子 `AND` ゲートのように、古典版より格段に難しい課題もあります。原因は古典の `re-zero` ゲートに相当する量子ゲートが存在しないことです。そのため手持ちの量子フリップゲートと回転ゲートだけで全く新しい設計を考えねばなりません。 \n \n"),
                 (e +=
-                  "[update] I have made a breakthrough in the design of a quantum `AND` gate based on the following sequence of 90° rotations: \n"),
+                  "【更新】次の90°回転の組み合わせで量子 `AND` ゲート設計の糸口をつかみました:\n"),
                 (e +=
-                  "• perform +90° rotation on `α` if `A` is in state ▼. \n "),
+                  "• `A` が▼のとき `α` に +90° 回転を行う \n "),
                 (e +=
-                  "• perform +90° rotation on `α` if `B` is in state ▼. \n "),
+                  "• `B` が▼のとき `α` に +90° 回転を行う \n "),
                 (e +=
-                  "• perform -90° rotation on `α` if (`A` XOR `B`) is in state ▼. \n \n"),
+                  "• (`A` XOR `B`) が▼のとき `α` に -90° 回転を行う \n \n"),
                 (e +=
-                  "This sequence of operations does not solve the task completely, as I must still revert qubits from `A` and `B` to their original states before they are output, although I believe that a few additional gates could resolve this final issue. \n "))
+                  "ただしこの操作列だけでは課題は解決せず、`A` と `B` を出力前に元の状態へ戻す必要があります。いくつかゲートを追加すれば最終的に解決できるでしょう。 \n "))
               : "entChallengeA" === SCENARIO.name
                 ? ((e +=
-                    "From my previous tests I have seen that if two qubits are entangled together then their measurement results will be correlated; once one qubit is measured then the other will collapse into a fixed state (contingent on the measurement outcome). \n\n"),
+                    "以前の実験から、二つのキュービットがエンタングルしている場合、測定結果が相関することが分かりました。一方を測定するともう一方は結果に応じて固定状態へ崩壊します。\n\n"),
                   (e +=
-                    "In this regard, I believe that I have found an example of a maximally entangled (hence maximally correlated) state. This state is prepared as following: \n "),
+                    "そこで、最大にエンタングルした状態と思われる例を見つけました。準備手順は次の通りです:\n "),
                   (e +=
-                    "• First I prepare two qubits, one in state ▶ and the other in state ▲. \n"),
+                    "• 一方を▶状態、もう一方を▲状態に設定する。\n"),
                   (e +=
-                    "• Then I enact a controlled flip between the two qubits, with the (vertically aligned) control acting on the ▶ qubit and the (horizontally aligned) flip acting on the ▲ qubit. \n\n "))
+                    "• ▶側に垂直方向の制御を、▲側に水平方向のフリップをかける制御フリップを行う。\n\n "))
                 : "quantChallengeB" === SCENARIO.name
                   ? ((e +=
-                      "In the realm of quantum gates nothing is irrevocable; every action that can be done can also be undone. Thus, I am confident in my ability to solve the latest challenge presented to me. I have been tasked with figuring out how to undo the action of a pair of sealed devices, each containing a two-qubit gate whose make and design have been long forgotten. \n \n"),
+                      "量子ゲートの世界では元に戻せない操作はありません。どんな操作も逆操作で打ち消せます。だからこそ今回の課題も解決できると確信しています。任務は、密封された装置2つに組み込まれた二量子ビットゲートの作用を解除する方法を見つけることです。設計も製造も忘れ去られています。 \n \n"),
                     (e +=
-                      "My first call of action was to run the factory and examine the entangled output states produced by each device, which each are described by their *four* state amplitudes. By experimenting with changing the basis of each qubit in the output, I was able to find a special choice of basis in which only *two* of the amplitudes were non-zero. I believe that this is the key! \n\n"),
+                      "まずは工場を動かし、それぞれの装置が出力するもつれ状態を調べました。各装置は4つの振幅で表されますが、出力側の各量子ビットの基底を変えてみたところ、わずか2つの振幅だけが非ゼロになる特別な基底を見つけました。これが鍵だと思います！\n\n"),
                     (e +=
-                      "By implementing a controlled flip or rotation between the qubit pairs, with the control set to align with the special basis identified in the previous step, it should be possible to disentangle each pair. Once they are disentangled, restoring the single qubits to their original states should be relatively simple... \n"))
+                      "前の手順で特定した基底に合わせて制御を設定した制御フリップまたは回転をペアの量子ビットに施せば、もつれをほどけるはずです。もつれが解ければ、各量子ビットを元の状態に戻すのは比較的簡単でしょう… \n"))
                   : "quantChallengeA" === SCENARIO.name
                     ? ((e +=
-                        "They say that the definition is insanity is doing the same thing over and over again, but expecting different results. Yet many of the quantum tasks that I am required to solve precisely rely on doing the same thing over and over until the desired outcome is achieved. \n \n"),
+                        "\u300C狂気とは同じことを繰り返して違う結果を望むこと\u300Dだと言われますが、私に課される量子課題の多くはまさに望む結果が出るまで同じ作業を繰り返すことを要求しています。\n \n"),
                       (e +=
-                        "How can I continue in an environment where insanity not only encouraged, but is necessary to succeed? \n"))
+                        "狂気が奨励され、むしろ不可欠とされる環境で、私はどうやってやっていけばいいのでしょうか？\n"))
                     : "quantChallengeF" === SCENARIO.name
                       ? ((e +=
-                          "Although my experience with quantum components remains limited, it is clear to me that the ability of qubits to entangle with one another is a key advantage over computation with regular bits. Entanglement is something uniquely quantum; it has no classical analogue. Entanglement, when shared between two or more parties, can potentially be utilized to achieve results that are impossible with classical components. \n \n"),
+                          "量子部品の経験はまだ浅いものの、キュービット同士がエンタングルできることは通常のビット計算に対する大きな利点だと実感しています。エンタングルメントは量子特有で、古典には類似するものがありません。複数の主体で共有すれば、古典部品では不可能な結果を生み出すことも可能です。\n \n"),
                         (e +=
-                          "But therein lies the rub. Entanglement can only be created through *local* interaction between qubits; they must initially be together in the same place. So it often remains a necessary step to distribute the entangled qubits to different parties who could be geographically separated by large distances. \n \n"),
+                          "しかし問題は、エンタングルメントはキュービット同士が*局所的に*接触しないと作れないことです。したがって離れた相手に分配するには、一旦同じ場所で生成してから運ばなければなりません。\n \n"),
                         (e +=
-                          "The goal of my current assignment is to help remedy the challenge of distributing entangled qubits by instituting a `meet in the middle` type approach. I have already discovered several steps which bring me closer to this goal: \n "),
+                          "現在の任務は、この分配の難しさを『中間地点で会う』方式で解決することです。すでに次の手順で目標に近づけると分かりました:\n "),
                         (e +=
-                          "• First, I create pairs of entangled qubits, using controlled-flip gates as usual, on both the top and the bottom segments of the factory. \n"),
+                          "• まず工場の上段と下段で制御フリップを使い、エンタングルしたキュービット対を作る。\n"),
                         (e +=
-                          "• Then I send one-half of each qubit pair from the top and the bottom to the center segment, before entangling these together to create a four-qubit entangled state (i.e. between the top qubit, the two central qubits, and the bottom qubit). \n "),
+                          "• それぞれの対から片方を中央に送り、そこで互いをエンタングルして4量子ビットのもつれ状態を作る（上段のキュービット、中央2つ、下段のキュービット）。\n "),
                         (e +=
-                          "• By then measuring the two central qubits with appropriate measurement settings, a maximally entangled state between the top and bottom qubits is realized. \n\n"),
+                          "• その後、中央の2つのキュービットを適切に測定すれば、上段と下段のキュービットが最大にエンタングルした状態になる。\n\n"),
                         (e +=
-                          "However, a problem still remains. The character of the entangled states that are created via this process are not uniform; they depend on the measurement results from the final step. There must be a way the fix these states such that they are always consistant with the desired output... \n \n"))
-                      : "simpleDistill" === SCENARIO.name
-                        ? ((e +=
-                            "Despite its esoteric nature there are many ways in which entanglement behaves as if it were some kind of chemical compound. Entanglement can be created, destroyed, shifted from one location to another, and even transferred between vessels. My current assignment extends this analogy with a task that is intimately familiar to chemists everywhere: I must `distill` some entanglement, which is initially `diluted` amongst three qubits, into a more `concentrated` form held within two qubits. \n \n"),
+                          "ただし問題は残っています。この方法でできるエンタングル状態は最後の測定結果によって形が揃わないのです。常に望んだ形に整える方法がきっとあるはずですが… \n \n"))
+                        : "simpleDistill" === SCENARIO.name
+                          ? ((e +=
+                              "難解な性質を持ちながらも、エンタングルメントはまるで化学物質のように扱うことができます。作ったり壊したり、場所を移したり、容器を替えて移送することさえ可能です。今回の任務では、三つのキュービットに\u300C希釈\u300Dされたエンタングルメントを二つのキュービットに\u300C濃縮\u300Dする、つまり蒸留を行います。\n \n"),
                           (e +=
-                            "I believe that the process should be fairly straight-forward. By measuring one of the three qubits the state is reduced to an entangled state on two remaining qubits. The two-qubit states that can be generated from this process can be explored in the state analyzer (or directly by running the factory with a given measurement setting). So it only remains for me to explore different measurement options until I find one such that the remaining two qubits could be maximally entangled. \n \n"),
+                              "手順は比較的単純なはずです。三つのうち一つを測定すると状態は残り二つのエンタングル状態に縮退します。このとき得られる二量子ビット状態はステートアナライザーで調べたり、工場を特定の測定設定で動かして確認できます。あとは残った二つが最大にもつれる測定方法を探すだけです。\n \n"),
                           (e +=
-                            "[update] I have made significant progress: by measuring the bottom qubit with a *vertically* aligned measurement I find that there is a 25% chance that the remaining two qubits will successfully form a maximally entangled state (although not in the specific form requested). Thus, several additional steps need to be taken in order to fully complete the problem: (1) separate out the successful creations of maximally entangled states from the failures and (2) manipulate final states using single qubit gates until they are in the requested form. \n"))
+                              "【更新】大きな進展がありました。下側のキュービットを*垂直方向*に測定すると25%の確率で残る二つが最大エンタングルになります（ただし要求された形ではありません）。従って問題を完全に解くには、(1) 成功したケースを失敗と分けること、(2) 単一キュービットゲートで最終状態を求められる形に整えること、の追加ステップが必要です。\n"))
                         : "chsh" === SCENARIO.name
                           ? ((e +=
-                              "Two coworkers, codenames `Alice` and `Bob`, face what should be an impossible task. They are required to cooperate in order to win a game, and yet each lacks some information, only possessed by the other, that is necessary to assure success. If that were the end of the story then they would simply be forced to guess, and the outcome of the game would be soley determined by luck. However, this is not the end of the story as they share between them pairs of entangled qubits, whose enigmatic nature can twist the vagaries of fortune to their benefit. \n \n"),
+                              "コードネーム`Alice`と`Bob`の2人の同僚は、本来なら不可能なはずの課題に挑むことになりました。ゲームに勝つには協力が必要ですが、互いに成功に欠かせない情報を片方しか持っていません。普通なら勘に頼るしかなく、結果は運次第でしょう。しかし2人はエンタングルしたキュービットのペアを共有しており、その不思議な性質が彼らに幸運をもたらすかもしれないのです。\n \n"),
                             (e +=
-                              "I have most of it figured out already. From my previous experiments with entanglement I know that if Alice and Bob were each perform the same measurement on their half of the entangled qubit pair then they would *always* get the same result, regardless of how the measurement angle was set. Similarly, it follows that if they were to perform oppositely aligned measurements then they would always get opposite results. By extension it stands to reason that if the difference in angle between Alice and Bobs measurement angle gate alignments is small (<90°) then they are more likely produce agreeing measurement results, while if the angle is large (>90°) then they are more likely produce disagreeing measurement results. It follows that, by choosing their measurement angles appropriately, Alice and Bob can influence how likely they are to produce matching/differing measurement results and thus increase their chances of winning the game. \n \n"),
+                              "この点についてはほとんど理解できています。以前の実験から、アリスとボブが同じ角度で測定すれば測定角度に関わらず\uFF0A必ず\uFF0A同じ結果になることを知っています。逆に真逆の角度で測定すれば常に反対の結果になります。つまり角度差が小さいと一致しやすく、大きいと一致しにくいのです。測定角度をうまく選べば、ゲームに勝つための一致/不一致の確率を操作できます。\n \n"),
                             (e +=
-                              "If my reasoning is correct, then Alice and Bob should try to maximize the difference in their measurement angles when both receive `1` bits from the center, but minimize the difference in their measurement angles in all other cases. However, I am yet to find a configuration of the measurement devices that satisfies this criteria...\n "))
-                          : "quantumAdv3" === SCENARIO.name
-                            ? ((e +=
-                                "I have been tasked to examine some pairs of qubits to see whether or not they are entangled. My initial reaction was to propose the following: that we should measure both qubits from each pair and then check whether the measurement outcomes are co-dependent, since this is a defining feature of entanglement. However, I was subsequently informed of a serious handicap that would prohibit me from executing this proposal; I am to have access to only *one-half* of each qubit pair. How can I possibly check for entanglement under these circumstances?!? \n \n"),
-                              (e +=
-                                "[update] I have made a breakthrough in my understanding! While experimenting in the state analyzer I observed the following: if a qubit is part of a maximally entangled pair then it will always return a 50/50 random measurement outcome, regardless of the measurement angle setting. Conversely, I already know that if a qubit is *not* entangled then there will always be some measurement setting that will return a deterministic (i.e. 100/0) measurement outcome. Perhaps it could be possible to implement a design that distinguishes between entangled/non-entangled qubits based on this understanding? \n"))
-                            : "teleport" === SCENARIO.name
+                              "もしこの推論が正しいなら、2人は中央から`1`が送られてきたときに測定角度の差を最大にし、それ以外では差を最小にすべきです。しかしその条件を満たす測定設定はまだ見つかっていません…\n "))
+                            : "quantumAdv3" === SCENARIO.name
                               ? ((e +=
-                                  "I have tentatively been assigned to `Project Teleport`, the goal of which is to transport the state of a source qubit such that an exact copy can be reconstructed at a destination. At first, I objected to the name. Imagine that a sculptor were to send the instructions for one of their sculptures to a far off place, and then these instructions were used to create a copy of the sculpture in that place. Would we say that the sculpture was teleported? No, that would be preposterous! However, the more that I think about it, the more that I begin to change my mind about the suitability of the name `Teleport` for the current project. What if the recreated object was perfect and utterly indistinguishable from the original in every conceivable facet? Who could say that this was not then the original? \n \n"),
+                                  "キュービットのペアがエンタングルしているか調べる任務を受けました。最初は2つとも測定して結果の相関を確かめればよいと思ったのですが、後になって各ペアの\u300C片方しか\u300D扱えないと聞かされました。こんな状況でどうやってエンタングルを判定すればいいのでしょうか?!? \n \n"),
                                 (e +=
-                                  "Initially I am allotted with a quantity of preset `resource` qubit pairs that are entangled between the source/destination. From my previous work with entangled qubit pairs I know that if I were to measure the source qubit then, regardless of the measurement result, the destination qubit will `collapse` into the same state as the (post-measurement) source qubit. The theory behind the teleportation protocol is to somehow piggy-back a data qubit, initially located at the source, onto the pre-existing entanglement of the resource qubits such that the destination qubit is `collapsed` into the same state as this data qubit. If possible, this protocol would enable the `state` of a data qubit to be transferred from source to destination *without* having to send any actual qubits. \n \n"),
-                                (e +=
-                                  "My preliminary attempt at implementing the teleportation protocol consist of the following steps: \n"),
-                                (e +=
-                                  "• I begin by entangling the data and resource qubit at the source using a controlled-flip. This creates an entangled state on three qubits (i.e. between the two qubits at the source and the qubit at the destination). \n"),
-                                (e +=
-                                  "• I then measure each of the two source qubits with differently configured measurement settings. This subsequently collapses the destination qubit into an unentangled state. \n\n"),
-                                (e +=
-                                  "By setting the measurement device of the latter step appropriately I find that if both measurements yield the `0` state then the destination qubit exactly matches the initial state of the data qubit, consistent with our goal. However, it either of the measurements yield the `1` state then I find that the destination qubit is somehow a mirrored reflection of the data qubit. Thus, it still remains for me to somehow `correct` the destination qubit for the cases that this mirroring occurs. \n "))
-                              : "dense" === SCENARIO.name
+                                  "【更新】理解が大きく進みました！ ステートアナライザーで実験したところ、最大エンタングル状態のキュービットは測定角度に関係なく必ず50/50のランダムな結果になることが分かりました。逆にエンタングルしていないなら、どこかの角度で必ず100/0の決定的な結果が得られます。この性質を利用すれば、エンタングルかどうかを判別する設計ができるかもしれません。\n"))
+                              : "teleport" === SCENARIO.name
                                 ? ((e +=
-                                    "My previous attempts to store multiple bits of classical data within a single qubit did not prove viable. But I have a new idea: given that an entangled state of multiple qubits behaves much as a singular object, could it be possible to store multiple bits of data within an *entangled* qubit state? \n\n"),
+                                    "仮ではありますが『Project Teleport』に配属されました。目的は送信元キュービットの状態を転送し、受信側で完全なコピーを再現することです。最初はこの名称に疑問を持ちました。彫刻家が遠方に作り方を送って同じ彫刻を作ったとしても、それをテレポートとは呼ばないでしょう。しかし考えてみると、再現物が元と完璧に同じなら、それはもう元と区別がつきません。\n \n"),
                                   (e +=
-                                    "The test problem is as follows. We begin with a pair of entangled qubits, one at the source and one at the destination, and our goal is to transmit two bits of information from the source to the destination while only actually sending a single qubit. I believe that I have already made significant headway towards this goal: \n "),
+                                    "まず送信元と受信先の間には、あらかじめエンタングルした『リソース』キュービット対が用意されています。以前の経験から、送信元キュービットを測定すると結果に関わらず受信側のキュービットが同じ状態に崩壊することを知っています。この既存のエンタングルメントを利用して、データキュービットの状態を送り、実際にキュービットを移動させずに転送するのがこのプロトコルです。\n \n"),
                                   (e +=
-                                    "• I begin by enacting a *vertical* flip of the source qubit if the first source bit is in the `1` state.  \n"),
+                                    "試作プロトコルは次の通りです:\n"),
                                   (e +=
-                                    "• Then I enact a *horizontal* flip of the source qubit if the second source bit is in the `1` state.  \n"),
+                                    "• まず送信元でデータキュービットとリソースキュービットを制御フリップでエンタングルし、送信元2個と受信側1個からなる3キュービットのもつれを作る。\n"),
                                   (e +=
-                                    "• The source qubit is then sent to the destination. \n\n"),
+                                    "• 次に送信元の2つのキュービットを別々の測定設定で測定し、その結果として受信側のキュービットはもつれのない状態に崩壊する。\n\n"),
                                   (e +=
-                                    "At this point I have one of four different two-qubit entangled states at the destination (depending on what the bit values were at the source). By properly manipulating and measuring the entangled state I believe that it should be possible to determine with certainty what both of the source bits were... \n"))
-                                : "distill" === SCENARIO.name
+                                    "後段の測定装置を適切に設定すると、両方が`0`なら受信側キュービットはデータキュービットの初期状態と完全に一致します。しかしどちらかが`1`だと受信側はデータキュービットの鏡像のようになるため、その場合は何らかの修正が必要です。\n "))
+                                : "dense" === SCENARIO.name
                                   ? ((e +=
-                                      "Recently I have been encountering a vexing problem: my proposals, although flawless at conceptual level, are sullied by the imperfections inherent to reality. In particular, protocols that rely on utilization of entangled qubit pairs are failing due to them possessing weaker than expected entanglement. \n \n"),
+                                      "以前、1つのキュービットに複数ビットの古典データを詰め込もうとして失敗しましたが、新しい発想が浮かびました。複数のキュービットがエンタングルしていれば、一つの物体のように振る舞います。ならばそのエンタングル状態の中に複数ビットを保存できるのではないかというのです。\n\n"),
                                     (e +=
-                                      "However, I believe that this problem can be corrected via the process of *distillation*: \n"),
+                                      "テスト課題は次の通りです。送信元と受信先に一対のエンタングルしたキュービットがあり、実際に送るキュービットは1個だけで2ビットの情報を伝えることを目指します。次の手順でこの目標に大きく近づけたと思います:\n "),
                                     (e +=
-                                      "• I begin by taking two pairs of weakly entangled qubits and entangle them together to create a four-qubit entangled state.  \n"),
+                                      "• 1ビット目が`1`なら、送信元キュービットに*垂直方向*のフリップを行う。\n"),
                                     (e +=
-                                      "• Then, with the proper choice of measurements (and sufficient luck), I believe that it should be possible to produce a perfectly entangled qubit pair from the four-qubit entangled state... \n"))
-                                  : "quantErrorA" === SCENARIO.name
+                                      "• 2ビット目が`1`なら、送信元キュービットに*水平方向*のフリップを行う。\n"),
+                                    (e +=
+                                      "• その後、送信元キュービットを目的地へ送る。\n\n"),
+                                    (e +=
+                                      "この時点で受信側には4通りの二量子ビットのエンタングル状態のいずれかが存在します。これらを適切に操作・測定すれば、送信元の2ビットが何だったかを確実に判定できるはずです… \n"))
+                                  : "distill" === SCENARIO.name
                                     ? ((e +=
-                                        "In composing the laws of quantum it seems that the architects of our reality have given with one hand and taken with the other in equal measure. For, despite whatever advantages qubits may possess over regular bits, they are also shackled by inherent disadvantages. \n \n"),
+                                        "最近、私の提案は概念上は完璧でも現実の不完全さに邪魔されるという悩ましい問題に直面しています。特にもつれたキュービット対を利用するプロトコルが、期待より弱いエンタングルメントのためにうまくいきません。\n \n"),
                                       (e +=
-                                        "A particularly vexing disadvantage of qubits comes with respect to the duplication of data. When dealing with classical data, i.e. strings of bits, the activity of duplicating data is so trivial and commonplace that it does not warrant a second thought. However, in contrast, the limitations of quantum measurements imply that it is simply not possible to duplicate an arbitrary string of qubits. Which brings me neatly to my current predicament. \n \n"),
+                                        "しかしこの問題は *蒸留* という手法で解決できると考えています:\n"),
                                       (e +=
-                                        "Previously, when tasked with correcting for transmission errors occurring in bit strings, the duplication of data was key to my strategy. By generating and then later comparing multiple copies of the same data I was able to detect and correct for most errors that occurred. Presently, when faced with the task of correcting transmission errors in qubit strings, the inability to duplicate qubits implies that an entirely different strategy will be necessary. How can one prevent data loss from occurring when no more than a single copy of the data can exist?!? \n \n"),
+                                        "• まず弱くエンタングルしたキュービットのペアを2組用意し、それらをさらにエンタングルして4キュービットのもつれ状態を作る。\n"),
                                       (e +=
-                                        "[update] After much trial and error I believe that I am close to a conceptual breakthrough. Even though the duplication of qubits is impossible, it may still be possible to `spread-out` the information from a single qubit over a group of multiple qubits. This way, even if some of the individual qubits experience errors, so long as the majority of qubits within the group remain intact it should still be possible to recover the data held by the original qubit. My preliminary design consists of the following steps: \n"),
+                                        "• そして適切な測定を選び、十分な運があれば、その4キュービットから完全にもつれたキュービット対を取り出せるはずです… \n"))
+                                    : "quantErrorA" === SCENARIO.name
+                                      ? ((e +=
+                                          "量子の法則は一方で与え、もう一方で奪うかのようです。キュービットには通常のビットにはない利点がありますが、それと同じくらい根本的な欠点にも縛られています。\n \n"),
+                                        (e +=
+                                          "中でも厄介なのがデータの複製ができないことです。ビット列なら複製など当たり前ですが、量子測定の制約により任意のキュービット列をコピーすることは不可能です。これが私の現在の悩みの種です。\n \n"),
+                                        (e +=
+                                          "以前ビット列の伝送エラーを訂正するときはデータを複製して比較する方法が鍵でした。しかしキュービットではそれができないため全く別の戦略が必要です。データが一つしか存在できない状況で損失をどう防げばよいのでしょうか?!? \n \n"),
+                                        (e +=
+                                          "【更新】試行錯誤の末、概念的な突破口が見えてきました。キュービットを複製できなくても、1つのキュービットの情報を複数のキュービットに\u300C拡散\u300Dさせればよいのです。こうしておけば一部が壊れても大半が残っていれば元の情報を回復できます。現時点の設計は次の通りです:\n"),
+                                        (e +=
+                                          "• [送信前] ▲状態のヘルパーキュービットを用意し、送信するデータキュービットとエンタングルさせて大きなグループのエンタングル状態にエンコードする。\n"),
+                                        (e +=
+                                          "• [送信後] 第1段階の逆操作でエンタングル状態をデコードする。エラーがなければ全てのキュービット（データ+ヘルパー）は元の状態に戻る。\n"),
+                                        (e +=
+                                          "• [送信後] デコード後に各ヘルパーキュービットを測定し、元の状態か確認する。もし違っていれば何らかのエラーが起きた証拠となる。\n \n"),
+                                        (e +=
+                                          "以上の手順で高確率にエラーの発生を検出できますが、実際にエラーが起きた際にどう修正するかはまだ課題です。ヘルパーキュービットの測定結果のパターンから、各エラーをどう訂正するか判断できるかもしれません。\n \n"))
+                                      : "quantChallengeG" === SCENARIO.name &&
+                                        ((e +=
+                                          "量子デバイスの理解を超える謎に遭遇しました。制御フリップゲートを試していたところ、偶然にも制御キュービットだけが新しい状態に変わり、ターゲットキュービットはそのままという設定を見つけたのです。最初はゲートの故障かと思いましたが、調べてみると正常に動作しています。どうしてこんなことが起こるのでしょうか？\n\n"),
                                       (e +=
-                                        "• [Pre-transmission] Create some `helper` qubits in a known state ▲, and then entangle these helper qubits together with the data qubit that is to be transmitted. This process effectively `encodes` the logical data within an entangled state on the larger group qubits. \n"),
+                                        "この奇妙な現象を生む設定は次の通りです:\n"),
                                       (e +=
-                                        "• [Post-transmission] Decode the entangled state by apply the reverse of the operations used to encode the data qubit in the first step. If no errors occurred during the transmission then all of the qubits (i.e. data + helpers) should be returned to their original states. \n"),
+                                        "• ターゲット側のフリップゲートを入力ターゲットキュービットと反対向きにする。\n"),
                                       (e +=
-                                        "• [Post-transmission] After the decoding step, each of the helper qubits should then be measured to determine whether or not they are in their original states. If any of the measurements indicate that a helper qubit is *not* in its original state then this in indicative that some kind of error occurred. \n \n"),
+                                        "• 制御側は入力制御キュービットと同じ向きでなければどの方向でもよい。\n\n"),
                                       (e +=
-                                        "Utilizing the steps outlined above I am able, with high probability, to detect when an error occurs during transmission. However, in the cases that an error does occur, it still remains for me to implement a solution to correct the error. Perhaps the pattern of measurement results from the helper qubits, properly interpreted, may indicate how each error could be corrected? \n \n"))
-                                    : "quantChallengeG" === SCENARIO.name &&
-                                      ((e +=
-                                        "I have stumbled across a mystery; one which defies my comprehension of quantum devices. I was experimenting with a quantum controlled-flip gate, which takes as input a control and a target qubit. In my understanding, the function of the control qubit is to configure the gate which acts on the target qubit. However, by pure chance, I happened to find a configuration of inputs such that the control qubit is transformed to a new state, but the target qubit is left in its original state. At first I thought that this must be due to a faulty control gate but, upon examination, I found that the gate is indeed working correctly. How can this be possible? \n\n"),
+                                        "【更新】熟考の末ようやく仕組みが見えてきました。フリップゲートがキュービットと反対向きだと状態の*符号*だけが変わります。通常なら大きな影響はありませんが、制御フリップでは状態振幅の*一部だけ*の符号が反転し得るため重要なのです。\n\n"),
                                       (e +=
-                                        "A configuration for a controlled-flip gate that produces this strange result is as follows: \n"),
+                                        "例えば制御キュービットが初め(▶ + ◀)の重ね合わせ、つまり▲状態にあるとします。ゲートを作動させると後半だけ符号が変わり(▶ - ◀)となり、これは▼状態に相当します。\n\n"),
                                       (e +=
-                                        "• Set the target flip gate to be anti-aligned with input target qubit.\n"),
-                                      (e +=
-                                        "• Set the control part of the gate in any direction, so long as it is not aligned to the input control qubit.\n\n"),
-                                      (e +=
-                                        "[update] After a great deal of thought I believe that I have started to make sense of the situation. When a flip gate is anti-aligned with a qubit it only changes the *sign* of the qubit state. Usually this would not have any significant consequence. However, it the context of a controlled-flip, the sign of only *some* of the state amplitudes may be flipped (which is significant!). \n\n"),
-                                      (e +=
-                                        "For instance, assume that the control qubit is initially set in the superposition (▶ + ◀), which we recall is equivalent to the ▲-state. Then, during activation of thecontrol gate, it is possible for the sign on only the second part of the superposition to change, such that the state of the control qubit becomes (▶ - ◀), which is now equivalent to the ▼-state. \n\n"),
-                                      (e +=
-                                        "The fact that a control qubit can be modified by a quantum control gate marks a significant departure from the classical counterparts, given that a control bit is always left invariant by the action of a classical control gate. I wonder if this difference can be exploited for any practical purpose? \n\n")),
+                                        "量子制御ゲートによって制御キュービットが変化し得るという事実は、古典制御ゲートでは制御ビットが常に不変であることを考えると大きな違いです。この違いを何か実用に生かせないでしょうか？\n\n")),
       (e += "-------------------------------------"),
       (POPWINDOW.windowHeader.style.fontSize =
         Math.round(0.33 * FIELD.tileWidth) + "px"),
