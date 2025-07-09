@@ -649,7 +649,7 @@ class Overlay {
         (e.textBaseline = "top"),
         (e.font = (1 * FIELD.tileWidth) / 6 + "px Courier New"),
         e.fillText(
-          "音楽: Eric Matyas",
+          "Music: Eric Matyas",
           0.65 * FIELD.tileWidth,
           (0.28 * FIELD.tileHeight) / 2,
         ),
