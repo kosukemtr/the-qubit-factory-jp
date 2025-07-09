@@ -375,8 +375,8 @@ class SelectLevel {
       else if ("selectAward" === STATE.under.type) {
         d = JSON.parse(JSON.stringify(DESCRIPTIONS["award" + STATE.under.k0]));
         FIELD.isActiveAward[STATE.under.k0]
-          ? (d[0] = "賞")
-          : ((d[0] = "賞 (ロック中)"),
+          ? (d[0] = "業績")
+          : ((d[0] = "業績 (ロック中)"),
             (6 !== STATE.under.k0 && 7 !== STATE.under.k0) ||
               FIELD.isActiveAward[STATE.under.k0] ||
               (d[1] = "  ??? "));
