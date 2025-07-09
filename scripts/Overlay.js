@@ -620,7 +620,7 @@ class Overlay {
         (e.shadowOffsetY = 2),
         (e.shadowColor = "black"),
         e.fillText(
-          "推奨ディスプレイ #1:",
+          "推奨 #1:",
           0.25 * FIELD.tileWidth,
           (14.1 * FIELD.tileHeight) / 2,
         ),
