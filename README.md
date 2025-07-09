@@ -14,3 +14,24 @@ _The Qubit Factory_ is set within a fictional reality about robots doing robotty
 
 ## License:
 _The Qubit Factory_ is licensed under Apache 2.0.
+
+## TODO:
+Translation work is needed in the following scripts/ files:
+
+- Achievements.js
+- Analysis.js
+- ConfirmationBox.js
+- ControlButton.js
+- Finished.js
+- Menu.js
+- Overlay.js
+- Placement.js
+- Robot.js
+- RobotSpeech.js
+- Score.js
+- SelectLevel.js
+- Tooltip.js
+
+These files encompass menu labels, tutorial text, level descriptions, dialogue, tooltips, and other on-screen messages. Translating the strings within them will localize the core user experience for Japanese players.
+
+Formatting guideline: Formatting strings should be written like: "ここThe Qubit Factoryでは、 $$b40r:最高品質 $$b40r:の $$b40r:昔ながらの $$b40r:ロボット製造キュービットだけ を生産していることを誇りにしています。あなたの優れた才能とスキルで、顧客に質の高いサービスを提供し、当社ブランドの価値を高めてくれると確信しています。" where the space indicates the termination of the formatted strings. 
