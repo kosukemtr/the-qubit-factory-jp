@@ -841,96 +841,72 @@ class Helper {
       o = [],
       n = [],
       l = [],
-      h = [],
-      d = "",
+      h = [];
+
+    var d = "",
       u = "",
       c = "",
       I = "",
       E = "",
       S = "",
-      f = a[0],
-      p = "w";
-    if ("$" === f[0] && "$" === f[1]) {
-      (p = f[2]), (f = f.slice(4));
-      var T = " ".repeat(f.length);
-    } else T = " ".repeat(f.length);
-    var R = T,
-      m = T,
-      g = T,
-      A = T,
-      C = T,
-      L = T;
-    "w" === p
-      ? (R = f)
-      : "r" === p
-        ? (m = f)
-        : "g" === p
-          ? (g = f)
-          : "b" === p
-            ? (A = f)
-            : "d" === p
-              ? (C = f)
-              : "p" === p && (L = f),
-      (d += R),
-      (u += m),
-      (c += g),
-      (I += A),
-      (E += C),
-      (S += L);
-    for (var D = 1; D < a.length; D++) {
-      (f = a[D]), (p = "w");
-      if ("$" === f[0] && "$" === f[1]) {
-        (p = f[2]), (f = f.slice(4));
-        T = " ".repeat(f.length);
-      } else T = " ".repeat(f.length);
-      (R = T), (m = T), (g = T), (A = T), (C = T), (L = T);
-      "w" === p
-        ? (R = f)
-        : "r" === p
-          ? (m = f)
-          : "g" === p
-            ? (g = f)
-            : "b" === p
-              ? (A = f)
-              : "d" === p
-                ? (C = f)
-                : "p" === p && (L = f);
-      var b = e.measureText(d + " " + f).width;
-      b < i
-        ? ((d = d + " " + R),
-          (u = u + " " + m),
-          (c = c + " " + g),
-          (I = I + " " + A),
-          (E = E + " " + C),
-          (S = S + " " + L))
-        : (r.push(d),
-          s.push(u),
-          o.push(c),
-          n.push(I),
-          l.push(E),
-          h.push(S),
-          (d = R),
-          (u = m),
-          (c = g),
-          (I = A),
-          (E = C),
-          (S = L));
+      m = "";
+
+    var p = [];
+    for (var f = 0; f < a.length; f++) {
+      var g = a[f],
+        w = "w";
+      if ("$" === g[0] && "$" === g[1]) {
+        (w = g[2]), (g = g.slice(4));
+      }
+      for (var x of Array.from(g)) p.push({ ch: x, color: w });
+      if (f < a.length - 1) p.push({ ch: " ", color: "w" });
     }
-    return (
-      r.push(d),
-      s.push(u),
-      o.push(c),
-      n.push(I),
-      l.push(E),
-      h.push(S),
-      [r, s, o, n, l, h]
-    );
+
+    for (var y = 0; y < p.length; y++) {
+      var C = p[y];
+      var L = e.measureText(m + C.ch).width;
+      if (L < i) {
+        m += C.ch;
+        d += "w" === C.color ? C.ch : " ";
+        u += "r" === C.color ? C.ch : " ";
+        c += "g" === C.color ? C.ch : " ";
+        I += "b" === C.color ? C.ch : " ";
+        E += "d" === C.color ? C.ch : " ";
+        S += "p" === C.color ? C.ch : " ";
+      } else {
+        r.push(d);
+        s.push(u);
+        o.push(c);
+        n.push(I);
+        l.push(E);
+        h.push(S);
+        m = C.ch;
+        d = "w" === C.color ? C.ch : " ";
+        u = "r" === C.color ? C.ch : " ";
+        c = "g" === C.color ? C.ch : " ";
+        I = "b" === C.color ? C.ch : " ";
+        E = "d" === C.color ? C.ch : " ";
+        S = "p" === C.color ? C.ch : " ";
+      }
+    }
+
+    r.push(d);
+    s.push(u);
+    o.push(c);
+    n.push(I);
+    l.push(E);
+    h.push(S);
+
+    return [r, s, o, n, l, h];
   }
   static parseText(e, t, i) {
-    for (var a = t.split(" "), r = [], s = a[0], o = 1; o < a.length; o++) {
+    var r = [];
+    if (!t) return r;
+    var s = Array.from(t)[0];
+    for (var o = 1, a = Array.from(t); o < a.length; o++) {
       var n = a[o],
-        l = e.measureText(s + " " + n).width;
-      l < i ? (s = s + " " + n) : (r.push(s), (s = n));
+        l = e.measureText(s + n).width;
+      l < i ? (s += n) : (r.push(s), (s = n));
     }
     return r.push(s), r;
   }
