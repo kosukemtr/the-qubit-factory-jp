@@ -276,9 +276,9 @@ class SelectLevel {
         "ジュニア量子エンジニア",
         "シニア量子エンジニア",
         "HD量子技師",
-        "ザ・フラミア",
-        "ザ・プーラン",
-        "ザ・プレスキル",
+        "The Flammia",
+        "The Poulin",
+        "The Preskill",
       ],
       s = Math.ceil(
         (100 * (FIELD.totComplete + FIELD.totStar)) / (2 * LEVELS.numStandard),
