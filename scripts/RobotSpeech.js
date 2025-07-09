@@ -246,341 +246,341 @@ class RobotSpeech {
                                 : "class7" === e
                                   ? 0 === t
                                     ? (r.push(
-                                        '"Hello again! You find me in the midst of another $$d10r:minor $$d10r:dilemma; I accidentally left a production line running for too long such that the order for one customer got mixed into the order for another."',
+                                        '"またお会いしましたね。$$d10r:ちょっとした $$d10r:問題 の最中で、生産ラインを止め忘れたせいである顧客の注文が別の顧客の注文と混ざってしまいました。"',
                                       ),
                                       r.push(
-                                        '"So I need you to find a way to separate off a precise number of bits from start of the bit-stream. Perhaps the $$b40r:`creation` gate could be jury-rigged into a counter?"',
+                                        '"そこで、ビットストリームの先頭から正確な数だけビットを切り離す方法を考えてください。$$b40r:`creation` ゲートを即席でカウンターに改造できるかもしれません。"',
                                       ))
                                     : 1 === t
-                                      ? (r.push('"Nicely done."'),
+                                      ? (r.push('"お見事です。"'),
                                         r.push(
-                                          '"Although I can see a substantial number of waste bits still left on the factory floor. Let`s hope that the higher-ups do not see the mess that you made..."',
+                                          '"ですが、工場の床にはかなりの無駄ビットが残っています。上層部に見つからないことを祈りましょう…"',
                                         ))
                                       : 2 === t &&
-                                        (r.push('"Great work!"'),
+                                        (r.push('"素晴らしい仕事です！"'),
                                         r.push(
-                                          '"And I see that you avoided leaving unnecessary waste bits that would otherwise draw attention to the situation. Your attention to detail has earned you a $$d40r:gold $$d40r:star| ."',
+                                          '"しかも、余計な廃棄ビットを残さずに済ませて状況を目立たせずにくれました。細部への気配りを称え、あなたに $$d40r:金 $$d40r:星| を授与します。"',
                                         ))
                                   : "classPuzzle1" === e ||
                                     ("classPuzzle2" === e
                                       ? 0 === t
                                         ? (r.push(
-                                            '"As part of a product diversification strategy The Qubit Factory is to begin offering $$b40r:remote $$b40r:bit $$b40r:processing. Customers send us their bits, we do stuff to them, then send them back. All for a tidy profit, or course!"',
+                                            '"製品多様化戦略の一環として、The Qubit Factory では $$b40r:遠隔 $$b40r:ビット $$b40r:処理 を開始します。顧客からビットを受け取り加工して返送し、しっかり利益を得る計画です。"',
                                           ),
                                           r.push(
-                                            '"The first process that we are going to offer is $$d40r:binary $$d40r:addition, and I need you to implement the XOR and AND logic gates which form the key components necessary for this process."',
+                                            '"最初に提供するのは $$d40r:2進 $$d40r:加算 です。この処理に必要となる主要構成要素、XOR ゲートと AND ゲートを実装してください。"',
                                           ))
                                         : 1 === t &&
-                                          (r.push('"Great work!"'),
+                                          (r.push('"素晴らしい仕事です！"'),
                                           r.push(
-                                            '"I have sent you a link to the ancient $$d10r:sacred $$d10r:texts relevant to this factory in case you wish to futher expand your education. This text is also now accessible from the $$d40r:`A` button next to the level title."',
+                                            '"さらなる学習のため、工場に関する古代の $$d10r:聖なる $$d10r:文書 へのリンクを送付しました。この文書はレベルタイトル横の $$d40r:`A` ボタンからも閲覧できます。"',
                                           ))
                                       : "classPuzzle7" === e
                                         ? 0 === t
                                           ? (r.push(
-                                              '"I have just been informed that the last shipment of bit wires that we received are $$d40r:faulty; they cannot be crossed over one another without danger of $$d40r:short-circuit."',
+                                              '"先日のビットワイヤーの出荷品は $$d40r:欠陥品 で、互いに交差させると $$d40r:ショート の危険があると報告を受けました。"',
                                             ),
                                             r.push(
-                                              '"Maintaining a safe working environment is of paramount importance to all of us here at The Qubit Factory, so I need you to find a way for our factories to remain operational without explicit use of line-crossings."',
+                                              '"安全な作業環境の維持は The Qubit Factory にとって最重要です。ラインを交差させずに工場を稼働させる方法を考えてください。"',
                                             ))
                                           : 1 === t &&
                                             r.push(
-                                              '"Phew, you managed to keep things operating smoothly and safely until the replacement shipment of bit wires arrived. It`s a good thing too; factory accidents involving wayward bits are terrible for PR, believe you me!"',
+                                              '"ふう、代替のビットワイヤーが届くまで安全に操業を維持してくれました。ビット絡みの事故は広報的に最悪なので助かりました！"',
                                             )
                                         : "vaziraniClassic" === e
                                           ? 0 === t
                                             ? (r.push(
-                                                '"We have just received out first shipment of $$d40r:`multi-control` devices from a new supplier. Each device has 3 channels that can enact a controlled inversion of a target bit. Or at least they should, but many appear to be defective."',
+                                                '"新しい業者から届いた $$d40r:`multi-control` デバイスの初回出荷分を受け取りました。各デバイスには 3 つのチャンネルがあり、ターゲットビットを条件付きで反転できるはずですが、多くが不良品のようです。"',
                                               ),
                                               r.push(
-                                                '"I need you to design a test for defective channels in these multi-control devices. Use the bottom-right `R` button to change the starting device if needed."',
+                                                '"これらのマルチコントロールデバイスの欠陥チャンネルを検査するテストを設計してください。必要なら右下の `R` ボタンで開始デバイスを変更できます。"',
                                               ))
                                             : 1 === t &&
                                               (r.push(
-                                                '"Good work on identifying the defective devices."',
+                                                '"欠陥デバイスをきちんと見つけてくれましたね。"',
                                               ),
                                               r.push(
-                                                '"Who would have guessed that supplies from $$b20r:`Bobs $$b20r:Bargain $$b20r:Bit $$b20r:Devices` would be so unreliable? Not me when I ordered them, that`s for sure!"',
+                                                '"それにしても $$b20r:`Bobs $$b20r:Bargain $$b20r:Bit $$b20r:Devices` の製品がこんなに信用ならないとは。注文したときは想像もしませんでしたよ！"',
                                               ))
                                           : "classPuzzle3" === e
                                             ? 0 === t
                                               ? (r.push(
-                                                  '"So due to a clerical mistake I may have ordered a extra shipment of $$b40r:`inversion` gates rather than the $$b40r:`re-zero` gates that we needed."',
+                                                  '"事務処理のミスで、必要だった $$b40r:`re-zero` ゲートではなく、$$b40r:`inversion` ゲートを余分に発注してしまったようです。"',
                                                 ),
                                                 r.push(
-                                                  '"But life goes on, as they say. So I need you to jury-rig some $$d40r:AND-gates without using any $$b40r:`re-zero` gates. We are also running short on $$g40r:`delay` gates so if you could also avoid using them too, that`d be great."',
+                                                  '"とはいえ作業は続きます。$$b40r:`re-zero` ゲートを使わずに $$d40r:AND ゲートを即席で作ってください。$$g40r:`delay` ゲートも不足しているので、可能なら使わずにお願いします。"',
                                                 ))
                                               : 1 === t &&
                                                 r.push(
-                                                  '"Phew! Crisis averted. The logical computations are continuing uninterrupted!"',
+                                                  '"ふぅ、危機は回避されました。論理演算は問題なく進行しています！"',
                                                 )
                                             : "classPuzzle3B" === e
                                               ? 0 === t
                                                 ? (r.push(
-                                                    '"Due to an excessive consumption of $$b40r:`inversion` $$w44r:gates, the origin of which remains a $$w44r:mystery, our factory is now facing a $$d40r:critical $$d40r:shortage. However, the good news is that our shipment of $$b40r:`re-zero` gates just arrived."',
+                                                    '"原因不明の大量消費により $$b40r:`inversion` $$w44r:ゲートが枯渇寸前です。ですが幸運なことに $$b40r:`re-zero` ゲートの入荷がありました。"',
                                                   ),
                                                   r.push(
-                                                    '"So I need you to figure out a way to implement $$d40r:XOR-gates without using any of our few remaining $$b40r:`inversion` gates. We are also running short on $$b40r:`creation` gates so if you could also avoid using them too, that`d be great."',
+                                                    '"そこで、残りわずかな $$b40r:`inversion` ゲートを使わずに $$d40r:XOR ゲートを実装する方法を考えてください。さらに $$b40r:`creation` ゲートも不足しているので、可能なら使用は控えてください。"',
                                                   ))
                                                 : 1 === t &&
                                                   (r.push(
-                                                    '"Phew, thanks to you we have weathered the great $$b20r:`inversion` $$w20r:gate $$w20r:shortage."',
+                                                  '"おかげで史上まれに見る $$b20r:`inversion` $$w20r:ゲート不足を切り抜けられました。"',
                                                   ),
                                                   r.push(
-                                                    '"Let us all remember to practice responsible use of company resources after this incident."',
+                                                  '"今回の件を教訓に、資材は計画的に使うよう心掛けましょう。"',
                                                   ))
                                               : "classPuzzle6" === e
                                                 ? 0 === t
                                                   ? (r.push(
-                                                      '"We have received word that some of our bits are $$b20r:flipping during long-distance transit. 0`s are becoming 1`s and 1`s are becoming 0`s; it is quite the $$d40r:kerfuffle, truth be told."',
+                                                      '"遠距離輸送中にビットが $$b20r:反転 してしまうという報告がありました。0 が 1 に、1 が 0 になるなど、大変な $$d40r:混乱 を招いています。"',
                                                     ),
                                                     r.push(
-                                                      '"I need you to find a solution that will allow transmitted bits to be recovered more reliably."',
+                                                      '"送信したビットをより確実に復元できる方法を考えてください。"',
                                                     ))
                                                   : 1 === t
                                                     ? (r.push(
-                                                        '"Not bad; the error-rate is certainly better than it was before you started."',
+                                                        '"悪くありません。エラー率は作業前より確実に下がっています。"',
                                                       ),
                                                       r.push(
-                                                        '"The losses are still significant however. Is there any way that your method could be improved? That would be swell!"',
+                                                        '"とはいえ損失はまだ大きいですね。さらに改良する手立てはありませんか？"',
                                                       ))
                                                     : 2 === t &&
                                                       (r.push(
-                                                        '"Amazing work!"',
+                                                        '"素晴らしい出来栄えです！"',
                                                       ),
                                                       r.push(
-                                                        '"Your ingenious solution will save the factory a veritable $$d20r:fortune in customer refunds and replacement bits!"',
+                                                        '"あなたの巧妙な解決策のおかげで、顧客への返金や交換ビットの費用を $$d20r:莫大 に節約できます！"',
                                                       ),
                                                       r.push(
-                                                        '"Please enjoy the gold star as a token of my appreciation for all your hard work."',
+                                                        '"感謝の印として、この金の星を受け取ってください。"',
                                                       ))
                                                 : "quant1" === e
                                                   ? 0 === t
                                                     ? (r.push(
-                                                        '"Hello again! Fancy meeting you here on one of our $$r40r:quantum $$r40r:production $$r40r:lines| . In this first task I need you to figure out how to undo the changes made to our qubits made by some pre-existing machinery."',
+                                                        '"またお会いしましたね。ここは当社の $$r40r:量子 $$r40r:生産 $$r40r:ライン| の一つです。最初の仕事は、既存の機械で変更されたキュービットを元に戻す方法を考えることです。"',
                                                       ),
                                                       r.push(
-                                                        '"What`s this? It appears that your predecessor left their journal notes accessible via the $$d40r:`J` button. Even though this employee ultimately proved to be a disappointment their old notes could still prove useful."',
+                                                        '"何と、前任者が残した日誌が $$d40r:`J` ボタンから閲覧できるようです。彼は最終的に失望させる結果となりましたが、メモは役に立つかもしれません。"',
                                                       ))
                                                     : 1 === t &&
                                                       (r.push(
-                                                        '"Great work, as usual."',
+                                                        '"相変わらず素晴らしい働きです。"',
                                                       ),
                                                       r.push(
-                                                        '"Make sure to check the $$d20r:employee $$d20r:handbook if there are any aspects of $$r20r:qubits or $$r20r:unitary $$r20r:gates that you need further clarification on."',
+                                                        '"$$d20r:社員 $$d20r:ハンドブック には $$r20r:キュービット や $$r20r:ユニタリ $$r20r:ゲート に関する詳細が載っています。必要なら確認してください。"',
                                                       ))
                                                   : "quant2" === e
                                                     ? 0 === t
                                                       ? (r.push(
-                                                          '"One of our contractors was recently diagnosed with [R-G-B] processing inversion; unfortunately they have installed the $$r20r:quantum $$r20r:conduit in place of the $$b20r:classical $$b20r:conduit and vice-versa."',
+                                                          '"ある外部業者が [R-G-B] 処理反転と診断され、誤って $$b20r:古典 $$b20r:回線の代わりに $$r20r:量子 $$r20r:回線を設置してしまいました。"',
                                                         ),
                                                         r.push(
-                                                          '"I need you to find a work-around. Is it possible we could just inter-convert between $$r20r:qubits / $$b20r:bit as needed?"',
+                                                          '"この問題を回避する方法を考えてください。必要に応じて $$r20r:キュービット と $$b20r:ビット を相互変換するだけで済むでしょうか？"',
                                                         ))
                                                       : 1 === t &&
-                                                        (r.push('"Good job!"'),
+                                                        (r.push('"よくやりました！"'),
                                                         r.push(
-                                                          '"Although I must admit that I don`t understand the hype surrounding $$r40r:qubits given that it appears we can switch back-and-forth between $$b40r:bits at will. There has to be more to it?"',
+                                                          '"しかし正直に言うと、$$b40r:ビット に自由に戻せるなら $$r40r:キュービット が騒がれる理由がよく分かりません。まだ何か秘密があるのでしょうか？"',
                                                         ))
                                                     : "quant3A" === e
                                                       ? 0 === t
                                                         ? (r.push(
-                                                            '$$d20r:"Unacceptable! I have just been informed that the result of a $$d40r:qubit $$d40r:measurement is sometimes left to chance; two outcomes are possible. This is not the $$b40r:clock-work $$b40r:certainty of computation that I signed up for."',
+                                                            '$$d20r:"なんてことだ！ $$d40r:キュービット $$d40r:測定 の結果が確率的で、二通りの結果になる場合があると知らされました。こんなのは $$b40r:時計仕掛け $$b40r:計算 の確実性とは程遠い！"',
                                                           ),
                                                           r.push(
-                                                            '"However, the $$d40r:probability of each outcome is known and can be viewed in the $$d40r:state $$d40r:analyzer, thus the cummulative outcome over a large number of trials can be predicted. See the handbook if you have any questions."',
+                                                            '"とはいえ各結果の $$d40r:確率 は分かっており、$$d40r:状態 $$d40r:解析器 で確認できます。多数の試行を重ねれば累積結果は予測可能です。詳しくはハンドブックを参照してください。"',
                                                           ))
                                                         : 1 === t &&
                                                           (r.push(
-                                                            '"Well done! Although I still find the concept of $$d40r:uncertainty appalling, at least there is a $$d40r:tolerance on the success threshold in the appropriate factories. However, you should be aware that sometimes even a correct solution may fail due to $$r40r:bad $$r40r:luck| ."',
+                                                            '"お見事です！ $$d40r:不確定性 という概念にはいまだに慣れませんが、適切な工場では成功判定に $$d40r:許容幅 があるのは救いです。ただし、正しい解法でも $$r40r:不運| により失敗することがある点には注意してください。"',
                                                           ),
                                                           r.push(
-                                                            '"Make sure to consult the relevant entries of the employee handbook if you want to learn more about the full functionality of the $$d40r:state $$d40r:analyzer."',
+                                                            '"$$d40r:状態 $$d40r:解析器 の機能を詳しく知りたい場合は、社員ハンドブックの該当項目を参照してください。"',
                                                           ))
                                                       : "quant3" === e
                                                         ? 0 === t
                                                           ? (r.push(
-                                                              '"Hello hello! We have what looks to be a simple task today; I just need you to convert the initial qubits into bits in order to transfer over a $$b40r:classical $$b40r:line before reverting back to qubits."',
+                                                              '"やあやあ！今日は簡単そうな仕事です。最初のキュービットを $$b40r:古典 $$b40r:ライン で転送するため一旦ビットに変換し、その後再びキュービットへ戻してください。"',
                                                             ),
                                                             r.push(
-                                                              '"Whats that? These qubits are now encoded in ▲ or ▶ states? Well, I don`t see how that could possibly cause any problems..."',
+                                                              '"え？これらのキュービットは今や ▲ や ▶ 状態で符号化されている？まあ、特に問題にはならないでしょう…"',
                                                             ))
                                                           : 1 === t &&
                                                             (r.push(
-                                                              '"Oh, I see now. Only qubits that are oppositely-aligned can be $$d40r:perfectly distinguished with measurements, even though qubits in states ▲ and ▶ states could still be distinguished with reasonably $$d40r:high $$d40r:probability| ."',
+                                                              '"なるほど。測定で $$d40r:完全 に区別できるのは正反対に向いたキュービットだけで、▲ や ▶ 状態は高い $$d40r:確率| で区別できるに過ぎないのですね。"',
                                                             ),
                                                             r.push(
-                                                              '"The implications are troubling; it follows that we cannot exactly determine the state of $$r40r:unknown $$r40r:qubits unless they are all aligned/anti-aligned on a common axis. Oh well, problems for another day..."',
+                                                              '"つまり $$r40r:未知 $$r40r:キュービット の状態を正確に知るには、すべてが同じ軸で揃っている必要がある…困った問題ですが、今日はここまでにしましょう。"',
                                                             ))
                                                         : "quant4" === e
                                                           ? 0 === t
                                                             ? (r.push(
-                                                                '"In order to improve our factory`s public image we have been mandated to introduce a $$g40r:waste-qubit $$g40r:recycling $$g40r:program. The recycler should take in arbitrary qubits and output clean `▲` qubits states, ready for reuse."',
+                                                                '"工場のイメージアップのため、$$g40r:廃キュービット $$g40r:リサイクル $$g40r:プログラム を導入することになりました。リサイクラーは任意のキュービットを受け取り、再利用可能な `▲` 状態にして出力する必要があります。"',
                                                               ),
                                                               r.push(
-                                                                '"However, unlike the case with $$b40r:classical $$b40r:gates, there is no single gate that can force an arbitrary qubit into a fixed state. Notice, however, that $$b40r:classical $$b40r:controls can also work with $$r40r:quantum $$r40r:gates| ..."',
+                                                                '"ただし $$b40r:古典 $$b40r:ゲート と違って、任意のキュービットを確定状態に強制する単一ゲートは存在しません。ただし $$b40r:古典 $$b40r:制御 は $$r40r:量子 $$r40r:ゲート| でも使える点に注目してください…"',
                                                               ))
                                                             : 1 === t &&
                                                               (r.push(
-                                                                '"Wow, isn`t environmentalism great? No more $$g40r:qubit $$g40r:incineration $$g40r:vapors for us!"',
+                                                                '"素晴らしいですね、環境への配慮のおかげで $$g40r:キュービット $$g40r:焼却 $$g40r:ガス とはおさらばです！"',
                                                               ),
                                                               r.push(
-                                                                '"Well... unless it begins to adversely affect our bottom line, of course. Let`s keep our stockpile of $$r40r:incinerators around for now just in case..."',
+                                                                '"まあ…収益に影響し始めたら話は別ですが。念のため $$r40r:焼却炉 はまだ残しておきましょう…"',
                                                               ))
                                                           : "quant5" === e
                                                             ? 0 === t
                                                               ? (r.push(
-                                                                  '"Today`s task requires the use of a new component. The quantum version of the $$r40r:control gate allows you to alter the effect of a $$d40r:target gate depending on the relative alignment between the control gate and an input qubit| ."',
+                                                                  '"今日の作業では新しい部品を使います。$$r40r:量子版 $$r40r:コントロールゲート は、制御ゲートと入力キュービットの相対向きに応じて $$d40r:ターゲットゲート の作用を変化させられます。"',
                                                                 ),
                                                                 r.push(
-                                                                  '"For this task you should ensure that the control gate remains aligned or anti-aligned with any input qubits otherwise you may create $$d40r:entangled $$d40r:states| , which you lack the proper training to handle."',
+                                                                  '"この課題では、制御ゲートが常に入力キュービットと同方向または逆方向に保たれるよう注意してください。そうしないと $$d40r:エンタングル $$d40r:状態| が生じ、あなたの訓練では扱いきれません。"',
                                                                 ))
                                                               : 1 === t &&
                                                                 r.push(
-                                                                  '"Well done! As you can see the qubit $$r40r:control gate seems to behave very similarly to the bit $$b40r:control gate. However, as you will soon find out, it can actually do much, much more..."',
+                                                                  '"よくできました！ご覧のとおり、キュービット用の $$r40r:コントロールゲート はビット用の $$b40r:コントロールゲート と非常によく似ています。しかし、実はもっとずっと多彩な使い方ができるのです…"',
                                                                 )
                                                             : "quant6" === e
                                                               ? 0 === t
                                                                 ? (r.push(
-                                                                    '"Welcome back. Today we finish the previous qubit processing task, where the rotation state of one qubit must be added to another. However, the bad news is that we have run out of $$r40r:`rotation` gates so you must instead make do with $$r40r:`flip` gates. I`m sure that you`ll figure something out."',
+                                                                    '"お帰りなさい。今日は前回のキュービット処理の続きです。一つのキュービットの回転状態を別のキュービットに加える必要がありますが、あいにく $$r40r:`rotation` ゲートを切らしてしまったので、代わりに $$r40r:`flip` ゲートで何とかしてください。きっと何とかなるでしょう。"',
                                                                   ),
                                                                   r.push(
-                                                                    '"Once more, you should refrain from creating $$d40r:entangled $$d40r:states given that you still lack the proper training."',
+                                                                    '"念のため、まだ訓練不足ですので $$d40r:エンタングル $$d40r:状態 を作らないようにしてください。"',
                                                                   ))
                                                                 : 1 === t &&
                                                                   r.push(
-                                                                    '"Congratulations, now that you are familiar with the basics of the quantum version of the $$r40r:control gate we can begin to consider more $$d40r:sophisticated applications."',
+                                                                    '"おめでとうございます。量子版 $$r40r:コントロールゲート の基本に慣れたところで、より $$d40r:高度 な応用を検討していきましょう。"',
                                                                   )
                                                               : "quant6B" === e
                                                                 ? 0 === t
                                                                   ? (r.push(
-                                                                      '"Wow, check it out! The input qubits in this factory `blink` back and forth between two different states, indicating that they are in a $$d40r:superposition. Don`t be fooled, however. These are still the same as other qubits that we have been dealing with in earlier factories; the only difference is we are now viewing them in a different $$d40r:basis| ."',
+                                                                      '"おっと、見てください！この工場の入力キュービットは2つの状態の間で“点滅”しています。これは $$d40r:重ね合わせ 状態にあることを示しています。とはいえ、以前扱ってきたキュービットと本質的には同じで、ただ異なる $$d40r:基底| で見ているだけです。"',
                                                                     ),
                                                                     r.push(
-                                                                      '"See the employee handbook for more details."',
+                                                                      '"詳しくは社員ハンドブックを参照してください。"',
                                                                     ))
                                                                   : 1 === t &&
                                                                     (r.push(
-                                                                      '"I know what you are thinking. Given that changing the basis of a qubit ONLY changes its appearance, then why is this useful? That is a good question!"',
+                                                                      '"基底を変えても見た目が変わるだけなのに、何が役立つのだろうと思っているでしょう？いい質問です！"',
                                                                     ),
                                                                     r.push(
-                                                                      '"In many tasks you will find that $$d40r:changing $$d40r:the $$d40r:basis can be helpful to understand the action of $$r40r:measurements and $$r40r:control gates. Later, once we begin handling entangled states, the proper understanding of $$d40r:superpositions and $$d40r:basis $$d40r:changes will be indispensable."',
+                                                                      '"多くの課題では、$$d40r:基底 $$d40r:変換 を行うことで $$r40r:測定 や $$r40r:コントロールゲート の作用を理解しやすくなります。後々エンタングル状態を扱う際にも、$$d40r:重ね合わせ と $$d40r:基底 $$d40r:変換 の理解が不可欠となります。"',
                                                                     ))
                                                                 : "quant7" === e
                                                                   ? 0 === t
                                                                     ? (r.push(
-                                                                        '$$w23r:"Behold! The fabled $$d20r:entangled $$d20r:state. $$w23r:Glorious. $$w23r:Majestic. $$w23r:Sublime. By inputting a superposition state (▼/▲) to the control gate the target gate both (acts/does nothing) according to the superposition, and thus the entangled state is born."',
+                                                                        '$$w23r:"見よ、伝説の $$d20r:エンタングル $$d20r:状態だ。$$w23r:荘厳。$$w23r:雄大。$$w23r:崇高。制御ゲートに (▼/▲) の重ね合わせを入力すると、ターゲットゲートが (作用する/しない) の重ね合わせとなり、エンタングル状態が生まれるのだ。"',
                                                                       ),
                                                                       r.push(
-                                                                        '"Entangled states are $$r40r:tricky $$r42r:beasts; a measurement on one qubit can change the state of another, as you are about to find out..."',
+                                                                        '"エンタングル状態は $$r40r:厄介 $$r42r:な獣です。片方のキュービットを測定すると、もう一方の状態が変わることをこれから体験するでしょう…"',
                                                                       ))
                                                                     : 1 === t &&
                                                                       (r.push(
-                                                                        '"Wow, seeing is believing; a measurement on one qubit of an entangled pair does indeed affect the state of the other. That is some $$d24r:spooky $$d24r:action-at-a-distance!"',
+                                                                        '"驚きましたね。片方のキュービットを測定すると、もう一方の状態が確かに変化します。まさに $$d24r:不気味な $$d24r:遠隔作用 です！"',
                                                                       ),
                                                                       r.push(
-                                                                        '"I wonder how else entanglement may be exploited?"',
+                                                                        '"このエンタングルメント、他にどんな利用法があるのでしょう？"',
                                                                       ))
                                                                   : "measure" ===
                                                                       e
                                                                     ? 0 === t
                                                                       ? (r.push(
-                                                                          '"From previous factories we have seen than certain qubit states, such as ▲/▶ for example, cannot $$d40r:always be distinguished via measurement. This follows as no matter what measurement is done both qubit states have a non-zero chance of giving the $$d40r:same $$d40r:result."',
+        '"以前の工場で分かったのですが、▲ や ▶ のような特定のキュービット状態は、どのように測定しても $$d40r:必ずしも 区別できるわけではありません。どんな測定をしても両方の状態が $$d40r:同じ $$d40r:結果 を与える可能性が残るからです。"',
                                                                         ),
                                                                         r.push(
-                                                                          '"But what if we have two $$b40r:identical $$b40r:copies of each qubit state? Surely you could find a way to improve the accuracy in this case?"',
+        '"しかし、それぞれのキュービット状態を $$b40r:同一 の $$b40r:コピー として 2 つずつ持てばどうでしょう？この場合は精度をもっと上げられるはずです。"',
                                                                         ))
                                                                       : 1 ===
                                                                           t &&
                                                                         (r.push(
-                                                                          '"Ah! Just as I anticipated. While we can never perfectly distinguish between certain states, we can still improve our certainty by using more than one copy of the state."',
+        '"やはり思った通りです。特定の状態を完全に区別することはできなくても、複数のコピーを使えばより確信を高められます。"',
                                                                         ),
                                                                         r.push(
-                                                                          '"I shall dub this process $$d40r:TOM-o-graphy. Named after myself, of course."',
+        '"この手法を $$d40r:TOM-o-graphy と名付けましょう。もちろん私の名前にちなんでいます。"',
                                                                         ),
                                                                         r.push(
-                                                                          '"Wait? You didn`t know that my name was Tom?"',
+        '"え、私の名前がトムだと知らなかったのですか？"',
                                                                         ))
                                                                     : "entChallengeA" ===
                                                                         e
                                                                       ? 0 === t
                                                                         ? (r.push(
-                                                                            '"A disgrunted former employee locked their station using some kind of weird device. This device takes qubits as input and will only unlock if certain measurement results are obtained."',
+            '"腹を立てた元従業員が奇妙な装置で自分の作業場をロックしてしまいました。その装置はキュービットを入力し、特定の測定結果が得られないと解除できません。"',
                                                                           ),
                                                                           r.push(
-                                                                            '"I have tried all possible combinations of input qubits, but nothing seems to work! Perhaps you will have more luck?"',
+            '"可能な限りの入力キュービットを試しましたがうまくいきません。あなたなら成功するかもしれませんね？"',
                                                                           ))
                                                                         : 1 ===
                                                                             t &&
                                                                           (r.push(
-                                                                            '"Well done! The entangled state that you prepared is truly fascinating: if both qubits are measured on the same axis, regardless of what that axis is, the measurement results will always match."',
+            '"よくやりました！あなたが用意したエンタングル状態は実に興味深く、どの軸であろうと両方のキュービットを同じ軸で測定すれば結果が必ず一致します。"',
                                                                           ),
                                                                           r.push(
-                                                                            '"I`m sure that this entangled state, with it`s $$d40r:perfect $$d40r:correlation, will be useful in a whole host of other applications."',
+            '"このエンタングル状態は $$d40r:完璧な $$d40r:相関 を持つので、他の多くの応用でも役立つに違いありません。"',
                                                                           ))
                                                                       : "quantChallengeF" ===
                                                                           e
                                                                         ? 0 ===
                                                                           t
                                                                           ? (r.push(
-                                                                              '"As you are learning, utilization of $$d40r:entanglement is key to realizing some $$g40r:funky quantum effects, technically speaking. Thus it is high-priority that we develop more cost-effective infrastructure to distribute entangled qubits to our customers."',
+        '"ご存じのとおり、$$d40r:エンタングルメント を利用することが、いくつかの $$g40r:奇抜な 量子効果を実現する鍵となります。したがって顧客へエンタングルしたキュービットを届けるための、よりコスト効率の高いインフラを整えることが最優先です。"',
                                                                             ),
                                                                             r.push(
-                                                                              '"I need you to find a way to generate entanglement between $$b40r:two $$b40r:separated $$b40r:parties without having to send an entangled qubit across the entire distance."',
+        '"そこで、離れた $$b40r:2 $$b40r:者 の間でエンタングルメントを生成する方法を、エンタングルしたキュービットを距離いっぱい送らずに実現してください。"',
                                                                             ))
                                                                           : 1 ===
                                                                               t &&
                                                                             (r.push(
-                                                                              '"Great work! So, rather than directly exchanging qubits, both parties only need to send qubits to some intermediate `hub`, yet the result is that they still possess half of an entangled pair? Sounds good to me."',
+        '"素晴らしい！直接キュービットをやり取りする代わりに、双方が中間のハブへキュービットを送るだけで、最終的にエンタングルペアを半分ずつ手に入れられるのですね。良い案です。"',
                                                                             ),
                                                                             r.push(
-                                                                              '"I expect that this innovation will both reduce our shipping costs as well as simplify our logistic chain significantly."',
+        '"この革新によって輸送コストが削減され、物流も大幅に簡素化されると期待しています。"',
                                                                             ))
                                                                         : "simpleDistill" ===
                                                                             e
                                                                           ? 0 ===
                                                                             t
                                                                             ? (r.push(
-                                                                                '"Hello! Today our task is to repurpose an old factory to convert $$d40r:imperfectly $$d40r:entangled three-qubit states into $$d40r:perfectly $$d40r:entangled two-qubit states. This task can be achieved by measuring one of the three qubits in a precise way, or so I am told. Doesn`t sound too hard."',
+        '"こんにちは！今日は古い工場を改装し、$$d40r:不完全に $$d40r:エンタングル した三キュービット状態を $$d40r:完全に $$d40r:エンタングル した二キュービット状態へ変換します。三つのキュービットのうち一つを正確に測定すればよいそうです。簡単そうですね。"',
                                                                               ),
                                                                               r.push(
-                                                                                '"Note that we don`t need $$r40r:perfect $$r40r:efficiency; it is okay if the conversion does not succeed for every three-qubit state."',
+        '"$$r40r:完全な $$r40r:効率 は必要ありません。すべての三キュービット状態で変換が成功しなくても構いません。"',
                                                                               ))
                                                                             : 1 ===
                                                                                 t &&
                                                                               (r.push(
-                                                                                '"Good job!"',
+        '"よくやりました！"',
                                                                               ),
                                                                               r.push(
-                                                                                '"I understand now. Starting from some $$b40r:weaker $$b40r:entanglement spread over many qubits, we can $$d40r:`distill` $$b40r:stronger $$b40r:entanglement on a smaller set of qubits. I have a feeling that this idea will be useful in a variety of future tasks..."',
+        '"なるほど。多数のキュービットに広がった $$b40r:弱い $$b40r:エンタングルメント から始めて、少数のキュービットに $$d40r:`distill` して $$b40r:強い $$b40r:エンタングルメント を得られるのですね。この考えは今後いろいろな場面で役立ちそうです…"',
                                                                               ))
                                                                           : "preDenseB" ===
                                                                               e
                                                                             ? 0 ===
                                                                               t
                                                                               ? (r.push(
-                                                                                  '"I have a $$d20r:brilliant $$d20r:idea! So we know that, while $$b40r:bits have only two states, $$r40r:qubits can be in many different states. So it should be possible to encode $$b40r:multiple $$b40r:bits of data into a $$r40r:single $$r40r:qubit, right? Just think of the possibilities. I`m gonna be rich!"',
+  '"$$d20r:素晴らしい $$d20r:アイデア がひらめきました！$$b40r:ビット には状態が二つしかありませんが、$$r40r:キュービット はたくさんの状態を取れます。つまり一つの $$r40r:キュービット に $$b40r:複数 $$b40r:ビット の情報を詰め込めるはずです。これで大金持ちになれますよ！"',
                                                                                 ),
                                                                                 r.push(
-                                                                                  '"I`ll leave it to you to figure out the details of encoding and decoding."',
+  '"エンコードとデコードの詳細はあなたに任せます。"',
                                                                                 ))
                                                                               : 1 ===
                                                                                   t &&
                                                                                 (r.push(
-                                                                                  '"Oh, so that is disappointing. While it is technically possible to encode multiple bits into a single qubit, we can still only ever retrieve at most a single bit. And even then the retrieval is not reliable."',
+  '"なんと、がっかりです。理論上は複数ビットを一つのキュービットに詰め込めても、取り出せるのは結局一ビットが限界で、そのうえ確実でもないとは。"',
                                                                                 ),
                                                                                 r.push(
-                                                                                  '"Let`s revisit this idea again later..."',
+  '"このアイデアはまた後で考え直しましょう…"',
                                                                                 ))
                                                                             : "dense" ===
                                                                                 e
                                                                               ? 0 ===
                                                                                 t
                                                                                 ? (r.push(
-                                                                                    '"I thought that we could return back to the idea of encoding multiple bits of data into a single qubit."',
+    '"複数ビットを一つのキュービットにエンコードする話に戻りましょう。"',
                                                                                   ),
                                                                                   r.push(
-                                                                                    '"What if the source/destination begin by sharing some $$b40r:entangled $$b40r:qubit $$b40r:pairs? These could be shipped out ahead of time before we need to transfer any data. Perhaps the entanglement can be utilized in decoding procedure? Entanglement is pretty much just magic after all..."',
+    '"送信側と受信側があらかじめ $$b40r:エンタングル した $$b40r:キュービット $$b40r:ペア を共有しておけばどうでしょう？これらはデータ転送前に先に送っておけます。デコードの際にこのエンタングルメントを使えるかもしれません。エンタングルメントはまるで魔法ですから…"',
                                                                                   ))
                                                                                 : 1 ===
                                                                                     t &&
@@ -588,323 +588,323 @@ class RobotSpeech {
                                                                                   IBOARD
                                                                                     .tiles[233]
                                                                                     ? (r.push(
-                                                                                        '"What?!?!"',
+        '"なんですって?!"',
                                                                                       ),
                                                                                       r.push(
-                                                                                        '"You solved the task without making use of the entangled qubit pairs? How is this possible?"',
+        '"エンタングルしたキュービットペアを使わずに問題を解決したんですか？どうやったんです？"',
                                                                                       ),
                                                                                       r.push(
-                                                                                        '"Are you some kind of magician?"',
+        '"あなたは魔法使いか何かですか？"',
                                                                                       ))
                                                                                     : (r.push(
-                                                                                        '"Brilliant!"',
+        '"素晴らしい！"',
                                                                                       ),
                                                                                       r.push(
-                                                                                        '"I get it now. So, while entanglement alone cannot be used to transmit information, the presence of entanglement can be used to facilitate data transfer using qubits $$d40r:more $$d40r:efficiently than would otherwise be possible."',
+        '"なるほど。エンタングルメントだけでは情報を送れませんが、エンタングルメントがあることでキュービットによるデータ転送を通常より $$d40r:効率良く 行えるのですね。"',
                                                                                       )))
                                                                               : "teleport" ===
                                                                                   e
                                                                                 ? 0 ===
                                                                                   t
                                                                                   ? (r.push(
-                                                                                      '"The shipping of qubit orders is taking too long! In this day and age customers demand $$d40r:INSTANT gratification. I need you to find a way to fulfill qubit orders that uses only $$b40r:bit-communication channels for transmission."',
+      '"キュービットの配送に時間がかかりすぎています！今どきの顧客は $$d40r:即時 の満足を求めています。$$b40r:ビット通信 だけで注文を届ける方法を考えてください。"',
                                                                                     ),
                                                                                     r.push(
-                                                                                      '"To facilitate this we have pre-shipped $$r40r:entangled $$r40r:qubits ahead of time to all of our customers. Note that we do not know in advance what qubits our customers will order so your method should work to send arbitrary qubits."',
+      '"そのために、あらかじめ $$r40r:エンタングル した $$r40r:キュービット をすべての顧客へ発送してあります。どのキュービットを注文されるか分からないので、任意のキュービットを送れる方法にしてください。"',
                                                                                     ))
                                                                                   : 1 ===
                                                                                       t &&
                                                                                     (r.push(
-                                                                                      '"Great work! I understand now. By utilizing $$r40r:pre-existing $$r40r:entanglement in conjunction with transmission of classical data, the state of each qubit is effectively teleported from one place to another without having to transmit any actual qubits. Like a magic trick!"',
+      '"素晴らしい！$$r40r:事前の $$r40r:エンタングルメント と古典データの送信を組み合わせれば、実際にキュービットを送らずに状態を転送できるのですね。まるで手品です！"',
                                                                                     ),
                                                                                     r.push(
-                                                                                      '"Customers can now receive their $$r40r:qubit orders as quickly as we can send $$b40r:standard $$b40r:bits. Eat your heart out same-day-shipping!"',
+      '"これで顧客は $$b40r:通常 $$b40r:ビット と同じ速さで $$r40r:キュービット の注文を受け取れます。即日配送も顔負けですね！"',
                                                                                     ))
                                                                                 : "distill" ===
                                                                                     e
                                                                                   ? 0 ===
                                                                                     t
                                                                                     ? (r.push(
-                                                                                        '"Good news! By switching the supplier of entangling gates to $$g40r:`Quinns $$g40r:Quirky $$g40r:Qubit $$g40r:Devices` I have managed to reduce our expenses significantly."',
+        '"朗報です！エンタングルゲートの仕入先を $$g40r:`Quinns $$g40r:Quirky $$g40r:Qubit $$g40r:Devices` に切り替えたおかげで、経費を大幅に削減できました。"',
                                                                                       ),
                                                                                       r.push(
-                                                                                        '"However the entangled pairs that we pre-ship to customers are now, how should we say, $$d40r:less $$d40r:than $$d40r:perfect. I need you to find a way to compensate for this in the transmission protocol that you designed previously."',
+        '"しかし事前に発送しているエンタングルペアは、正直なところ $$d40r:完璧 とは言えません。以前作った送信プロトコルでこれを補う方法を考えてください。"',
                                                                                       ))
                                                                                     : 1 ===
                                                                                         t &&
                                                                                       (r.push(
-                                                                                        '"Aha! So we can just distill some $$r40r:strongly entangled qubits from many sets of the $$b40r:weakly entangled qubits, and then use the strongly entangled qubits in the transmission protocol?"',
+        '"なるほど！多数の $$b40r:弱い エンタングルメントから $$r40r:強い キュービットだけを蒸留して、それを通信プロトコルに使えばいいわけですね。"',
                                                                                       ),
                                                                                       r.push(
-                                                                                        '"Easy as pi!"',
+        '"こんなの楽勝ですよ！"',
                                                                                       ))
                                                                                   : "quantChallengeG" ===
                                                                                       e
                                                                                     ? 0 ===
                                                                                       t
                                                                                       ? (r.push(
-                                                                                          '"Today`s factory is already partially constructed. Unfortunately the control gates were inserted $$d40r:backwards along the main production line and we are now unable to redo these components."',
+          '"今日の工場はすでに一部が完成しています。残念ながらメインラインのコントロールゲートが $$d40r:逆向き に取り付けられており、今さら作り直せません。"',
                                                                                         ),
                                                                                         r.push(
-                                                                                          '"This is quite the conundrum; I need you to find a way to alter the qubits to our specifications using only the $$d40r:control $$d40r:side of the quantum control gate."',
+          '"厄介ですが、量子コントロールゲートの $$d40r:制御 $$d40r:側 だけを使ってキュービットを希望どおりに変える方法を考えてください。"',
                                                                                         ))
                                                                                       : 1 ===
                                                                                           t &&
                                                                                         (r.push(
-                                                                                          '"Jolly good job!"',
+          '"見事な働きです！"',
                                                                                         ),
                                                                                         r.push(
-                                                                                          '"Note that this demonstrates a clear distinction between the $$b40r:classical and $$r40r:quantum controls, as the $$b40r:classical control cannot alter the state of control bits in any way. Maybe we could find a way to exploit this difference for a practical purpose?"',
+          '"このことから、$$b40r:古典 制御と $$r40r:量子 制御の明確な違いが分かります。$$b40r:古典 制御では制御ビットの状態を変えられません。この差を実用的に利用できないでしょうか？"',
                                                                                         ))
                                                                                     : "vaziraniQuantum" ===
                                                                                         e
                                                                                       ? 0 ===
                                                                                         t
                                                                                         ? (r.push(
-                                                                                            '"We have just received out first shipment of the $$r40r:quantum version of $$d40r:`multi-control` devices. They function similarly to the classical $$d40r:`multi-control` devices that you tested previously. Remember those?"',
+            '"$$r40r:量子版 $$d40r:`multi-control` デバイスの初回出荷分が届きました。以前試した古典版 $$d40r:`multi-control` デバイスと似た働きをします。覚えていますか？"',
                                                                                           ),
                                                                                           r.push(
-                                                                                            '"Similar to last time, I need you to design a test for defective channels in these multi-control devices. However, time is money, so now you may only test each device with a $$d40r:single input."',
+            '"前回と同様に、これらのデバイスの欠陥チャンネルを検査するテストを設計してください。ただし時間は貴重なので、各デバイスを試せる入力は $$d40r:一つ だけです。"',
                                                                                           ))
                                                                                         : 1 ===
                                                                                             t &&
                                                                                           (r.push(
-                                                                                            '"Well done! The defective channels have all been identified."',
+            '"よくやりました。欠陥チャンネルはすべて特定できました。"',
                                                                                           ),
                                                                                           r.push(
-                                                                                            '"Did you notice how the $$r40r:quantum task could be completed more efficiently than was possible with the equivalent $$b40r:classical task? I wonder in what other processes that quantum devices will have an $$d40r:efficiency $$d40r:advantage over comparable classical devices?"',
+            '"同じ課題でも $$r40r:量子 デバイスの方が $$b40r:古典 デバイスより効率的にこなせることに気づきましたか？他にも量子デバイスが $$d40r:効率 $$d40r:面 で優位に立てる工程があるのでしょうか？"',
                                                                                           ))
                                                                                       : "quantErrorA" ===
                                                                                           e
                                                                                         ? 0 ===
                                                                                           t
                                                                                           ? (r.push(
-                                                                                              '"Ugh! Our qubits are being damaged during shipping and handling. Customers are complaining that they are not receiving correct orders... and I have to deal with them!"',
+              '"ううっ！輸送や取り扱いの最中にキュービットが損傷しています。注文が正しく届かないと顧客から苦情が来て、私が対応しなければなりません！"',
                                                                                             ),
                                                                                             r.push(
-                                                                                              '"I need you to find a way to correct qubit errors that occur during transit. As you know, unknown qubits cannot be duplicated, so you will have to find a different error correction strategy than was used for bits..."',
+              '"輸送中に生じるキュービットのエラーを修正する方法を考えてください。ご存じのとおり未知のキュービットは複製できないので、ビットとは異なる誤り訂正手法が必要です…"',
                                                                                             ))
                                                                                           : 1 ===
                                                                                               t
                                                                                             ? (r.push(
-                                                                                                '"Ahh, so you encoded a single qubit into an entangled state of several qubits before shipping? Very clever!"',
+                '"なるほど、発送前に一つのキュービットを複数のキュービットのエンタングル状態にエンコードしたのですね。実に巧妙です！"',
                                                                                               ),
                                                                                               r.push(
-                                                                                                '"I wonder if this idea can be pushed further...?"',
+                '"このアイデアはさらに発展させられるでしょうか…？"',
                                                                                               ))
                                                                                             : 2 ===
                                                                                                 t &&
-                                                                                              r.push(
-                                                                                                '$$d10r:"OUTSTANDING!!! I had not imagined that such incredible accuracy could be achieved..."',
-                                                                                              )
+              r.push(
+                '$$d10r:"素晴らしい!!! こんな驚くべき精度が得られるとは思ってもみませんでした…"',
+              )
                                                                                         : "quantErrorB" ===
                                                                                             e
                                                                                           ? 0 ===
                                                                                             t
                                                                                             ? (r.push(
-                                                                                                '"Due to further cut-backs all of our qubit transition lines now act to modify sent qubits in an $$d40r:unpredictable $$d40r:manner."',
+                '"さらなる経費削減で、すべてのキュービット転送ラインが送信されたキュービットを $$d40r:予測不能 な方法で変化させるようになってしまいました。"',
                                                                                               ),
                                                                                               r.push(
-                                                                                                '"However, we still require that the sent qubits should somehow be reverted to their original states. Perhaps, given some pre-existing entanglement between the source/destination, you can build an enhanced error correction protocol?"',
+                '"それでも送ったキュービットは元の状態に戻さなければなりません。送信側と受信側に既存のエンタングルメントがあれば、より優れた誤り訂正プロトコルを作れるでしょうか？"',
                                                                                               ))
                                                                                             : 1 ===
                                                                                                 t
                                                                                               ? (r.push(
-                                                                                                  '"A satisfactory result, although a substantial number of qubits were still shipped incorrectly."',
+                  '"まずまずの結果ですが、まだかなりの数のキュービットが間違って届けられました。"',
                                                                                                 ),
                                                                                                 r.push(
-                                                                                                  '"Boy oh boy, it sure would be great is $$d10r:someone were to find an improved method..."',
+                  '"やれやれ、$$d10r:誰か がもっと良い方法を見つけてくれると助かるのですが…"',
                                                                                                 ))
                                                                                               : 2 ===
                                                                                                   t &&
                                                                                                 (r.push(
-                                                                                                  '$$d10r:"Perfection! Who would have thought that this was doable given such lousy transmission channels?"',
+                  '$$d10r:"完璧だ！ こんなひどい伝送路でここまでできるとは思いませんでした。"',
                                                                                                 ),
                                                                                                 r.push(
-                                                                                                  '"Proper utilization of entanglement really does seem to allow the impossible to become reality."',
+                  '"エンタングルメントをうまく利用すれば、不可能と思われたことも実現できるものですね。"',
                                                                                                 ))
                                                                                           : "entChallengeB" ===
                                                                                               e
                                                                                             ? 0 ===
                                                                                               t
                                                                                               ? (r.push(
-                                                                                                  '"Today we get to work with the famed $$d40r:GHZ entangled states. What does GHZ stand for? Nobody knows! It`s meaning has been lost to $$d44r:history. Either that or I am too lazy to look it up. One or the other."',
+                  '"今日は有名な $$d40r:GHZ エンタングル状態を扱います。GHZ とは何の略かって？誰も知りません！その意味は $$d44r:歴史 の中で失われたか、私が調べるのが面倒なだけです。"',
                                                                                                 ),
                                                                                                 r.push(
-                                                                                                  '"Anyway we need to find a way to identify GHZ states from non-GHZ states. Perhaps a good start would be to build a quantum circuit that would transform a GHZ state into an unentangled state..."',
+                  '"とにかく、GHZ 状態とそうでない状態を識別する方法を見つけなければなりません。まずは GHZ 状態を非エンタングル状態へ変換する量子回路を作るのが良さそうです…"',
                                                                                                 ))
                                                                                               : 1 ===
                                                                                                   t &&
                                                                                                 (r.push(
-                                                                                                  '"Great job!"',
+                  '"素晴らしい仕事です！"',
                                                                                                 ),
                                                                                                 r.push(
-                                                                                                  '"Wow, who could have guessed that dealing with multi-qubit entangled states would be so complicated?"',
+                  '"いやはや、複数キュービットのエンタングル状態の扱いがこんなに複雑だとは誰も想像しなかったでしょう？"',
                                                                                                 ))
                                                                                             : "entChallengeC" ===
                                                                                                 e
                                                                                               ? 0 ===
                                                                                                 t
                                                                                                 ? (r.push(
-                                                                                                    '"A straight-forward job today; we just need to finish up the GHZ identification task from last time."',
+                    '"今日は単純な作業です。前回の GHZ 識別タスクを仕上げるだけです。"',
                                                                                                   ),
                                                                                                   r.push(
-                                                                                                    '"There is a small dilemma; we seem to be running short on quantum control gates so you will have to make do without..."',
+                    '"ただ、量子コントロールゲートが不足しているので、無しで何とかしてください…"',
                                                                                                   ))
                                                                                                 : 1 ===
                                                                                                     t &&
-                                                                                                  r.push(
-                                                                                                    '"Great work with the GHZ identification. See, that wasn`t so bad! You did fine without using any quantum control gates."',
-                                                                                                  )
+                  r.push(
+                    '"GHZ 識別を見事にやり遂げましたね。量子コントロールゲートを使わなくても大丈夫でしたね。"',
+                  )
                                                                                               : "extraA" ===
                                                                                                   e
                                                                                                 ? 0 ===
                                                                                                   t
                                                                                                   ? (r.push(
-                                                                                                      '"Why it seems that you have stumbled upon a deserted, top-secret qubit cloning facility."',
+                      '"どうやらあなたは誰もいない極秘のキュービット複製施設を見つけてしまったようです。"',
                                                                                                     ),
                                                                                                     r.push(
-                                                                                                      '"Rumor has it that the facility was abandoned when the cloned qubits became violent and deranged, devouring all in sight. Or perhaps it was simply abandoned as the cloning process failed to produce sufficiently accurate results? Either way you are welcome to try to do better..."',
+                      '"噂では、複製されたキュービットが凶暴化して周囲を食い荒らしたため放棄されたとか、あるいは複製精度が不十分で見捨てられたとか。ともあれ、あなたがもっと良い結果を出せるなら試してみてください…"',
                                                                                                     ))
                                                                                                   : 1 ===
                                                                                                       t
                                                                                                     ? (r.push(
-                                                                                                        '"Not bad. Most of the original qubits have been replicated perfectly."',
+                        '"悪くありません。元のキュービットの大半は完璧に複製されています。"',
                                                                                                       ),
                                                                                                       r.push(
-                                                                                                        '"Is it just my imagination, or do some of the others look a little bit twitchy to you?"',
+                        '"気のせいかもしれませんが、ほかのいくつかは少し挙動不審に見えませんか？"',
                                                                                                       ))
                                                                                                     : 2 ===
                                                                                                         t &&
                                                                                                       (r.push(
-                                                                                                        '"Great work! You have pushed the art of cloning to its limits."',
+                        '"素晴らしい！あなたは複製技術を限界まで高めました。"',
                                                                                                       ),
                                                                                                       r.push(
-                                                                                                        '"Alas, perfect cloning remains forever out of reach..."',
+                        '"しかし、完全な複製は永遠に実現できないのですね…"',
                                                                                                       ))
                                                                                                 : "extraB" ===
                                                                                                     e
                                                                                                   ? 0 ===
                                                                                                     t
                                                                                                     ? (r.push(
-                                                                                                        '"What is $$w10r:this?!? Is this $$d40r:entanglement for ants!?!"',
+                        '"これは $$w10r:何ですか?!? $$d40r:アリ 用のエンタングルメントですか?!?"',
                                                                                                       ),
                                                                                                       r.push(
-                                                                                                        '"The entanglement should be at least $$w10r:... three times bigger than this!"',
+                        '"エンタングルメントは少なくとも $$w10r:…3倍 は大きくないと！"',
                                                                                                       ))
                                                                                                     : 1 ===
                                                                                                         t &&
-                                                                                                      r.push(
-                                                                                                        '"Have you ever wondered if there was more to life, other than being $$w20r:really, $$w20r:really, ridiculously good at entangling qubits?"',
-                                                                                                      )
+                      r.push(
+                        '"$$w20r:とても、$$w20r:とても、ばかばかしいほどエンタングルメントが得意であること以外に、人生にもっと何かあると思ったことはありませんか？"',
+                      )
                                                                                                   : "extraC" ===
                                                                                                       e
                                                                                                     ? 0 ===
                                                                                                       t
                                                                                                       ? (r.push(
-                                                                                                          '"Did you hear the news? Binary addition is $$w10r:sooooo yesteryear. All of the hip, modern factories are now into $$d40r:binary $$d40r:multiplication; it`s like addition, but $$d10r:extreme!"',
+                          '"ニュースを聞きましたか？2進加算なんて $$w10r:もはや時代遅れ です。今どきの工場は $$d40r:2 進 $$d40r:乗算 に夢中で、加算の $$d10r:過激 版といったところです！"',
                                                                                                         ),
                                                                                                         r.push(
-                                                                                                          '"Just try not to take up too much factory real-estate; rent is not cheap these days!"',
+                          '"ただし工場スペースを取りすぎないように。最近は賃料も高いですから！"',
                                                                                                         ))
                                                                                                       : 1 ===
                                                                                                           t
                                                                                                         ? (r.push(
-                                                                                                            '"Well ... you got a working factory for bit multiplication, which is no small feat."',
+                            '"まあ…動作するビット乗算工場ができただけでも大したものです。"',
                                                                                                           ),
                                                                                                           r.push(
-                                                                                                            '"But it would be great if you could find a way to compactify the design."',
+                            '"でも、もっとコンパクトにできれば素晴らしいですね。"',
                                                                                                           ))
                                                                                                         : 2 ===
                                                                                                             t &&
                                                                                                           (r.push(
-                                                                                                            '"Wow! A fully-functional bit multiplication device; it is amazing what can be fit within the confines of a single factory. And with room to spare!"',
+                            '"おお！完全に機能するビット乗算装置とは、1つの工場内にこれほど詰め込めるとは驚きです。まだ余裕まであります！"',
                                                                                                           ),
                                                                                                           r.push(
-                                                                                                            '"Bit processing sure has come a long way."',
+                            '"ビット処理も随分と進歩したものです。"',
                                                                                                           ))
                                                                                                     : "adder" ===
                                                                                                         e
                                                                                                       ? 0 ===
                                                                                                         t
                                                                                                         ? (r.push(
-                                                                                                            '"In order for us to maintain our $$d40r:competitive $$d40r:advantage it is important that we keep our facilities at the cutting edge of modern tech."',
+                            '"$$d40r:競争上の $$d40r:優位 を保つには、施設を常に最新技術の最先端に維持することが重要です。"',
                                                                                                           ),
                                                                                                           r.push(
-                                                                                                            '"That`s right, we are upgrading to a 64-bit OS! It is my great honor to bestow upon you the task of prototyping the 64-bit addition unit. Miniaturization is important here; please keep your design as compact as possible."',
+                            '"そのとおり、64ビットOSにアップグレードします！64ビット加算ユニットの試作をあなたに任せるのは私にとって大変光栄です。小型化が重要なので、できるだけコンパクトに設計してください。"',
                                                                                                           ))
                                                                                                         : 1 ===
                                                                                                             t
                                                                                                           ? r.push(
-                                                                                                              '"Good job, your addition module has passed the requisite testing. However, although your design functions correctly, it still takes up significant factory floor real-estate. Are you able to compactify your design?"',
+                              '"よくやりました、あなたの加算モジュールはテストに合格しました。ただし正しく動作するものの、工場スペースをかなり占有しています。もっと小型化できませんか？"',
                                                                                                             )
                                                                                                           : 2 ===
                                                                                                               t &&
                                                                                                             (r.push(
-                                                                                                              '"Incredible! You managed to fit a 64-bit adder in less than 500sq feet of factory floor space!"',
+                              '"信じられません！500平方フィート未満のスペースに64ビット加算器を収めるとは！"',
                                                                                                             ),
                                                                                                             r.push(
-                                                                                                              '"What an amazing age that we live in..."',
+                              '"なんと素晴らしい時代でしょう…"',
                                                                                                             ))
                                                                                                       : "extraD" ===
                                                                                                           e
                                                                                                         ? 0 ===
                                                                                                           t
                                                                                                           ? (r.push(
-                                                                                                              '"Here it is, the holy-grail of bit-processing; can you build a factory capable of detecting occurrences of $$d40r:ANY specified pattern in a dataset?"',
+                              '"ついに登場です。ビット処理の聖杯とも言える、データセット中の $$d40r:任意 の指定パターンを検出できる工場を作れますか？"',
                                                                                                             ),
                                                                                                             r.push(
-                                                                                                              '"Imagine what we could do if such a revolutionary $$d40r:`search` feature could be constructed? The sky is the limit!"',
+                              '"こんな革命的な $$d40r:`search` 機能が実現したら何ができるでしょう？可能性は無限大です！"',
                                                                                                             ),
                                                                                                             r.push(
-                                                                                                              '"I don`t expect it to be easy though..."',
+                              '"もちろん簡単だとは思っていませんが…"',
                                                                                                             ))
                                                                                                           : 1 ===
                                                                                                               t &&
                                                                                                             (r.push(
-                                                                                                              '"Hot damn! I genuinely was not expecting anyone to construct a functioning factory. This is seriously impressive!"',
+                              '"なんてこった！本当に動く工場を作れる人がいるとは思いませんでした。実に素晴らしい！"',
                                                                                                             ),
                                                                                                             r.push(
-                                                                                                              '"Unless, of course, you found a much simpler solution than I thought possible? In which case maybe I am just dumb?"',
+                              '"もしあなたがもっと簡単な方法を見つけてしまったのなら、私がただの愚か者ということになりますね？"',
                                                                                                             ),
                                                                                                             r.push(
-                                                                                                              '"Either way, jolly good show!"',
+                              '"いずれにせよ、見事な出来栄えです！"',
                                                                                                             ))
                                                                                                         : "chsh" ===
                                                                                                             e
                                                                                                           ? 0 ===
                                                                                                             t
                                                                                                             ? (r.push(
-                                                                                                                '"Today we focus on a team-building exercise. Alice and Bob are separated on the left/right sides of a factory and cannot communicate. They each will receive a $$d40r:random bit and then must try to guess what bit the other has in order to win the exercise. How do they know what bit the other has? That`s the neat part, they don`t!"',
+                                '"今日はチームビルディングの演習です。アリスとボブは工場の左右に分かれており、通信はできません。2人はそれぞれ $$d40r:ランダムな ビットを受け取り、相手のビットを当てることで勝利となります。どうやって相手のビットを知るのかって？そこが面白いところで、実際には分からないのです！"',
                                                                                                               ),
                                                                                                               r.push(
-                                                                                                                '"However they do share some $$r40r:entangled $$r40r:qubit $$r40r:pairs; can this entanglement be used to improve the win rate?"',
+                                '"ただし、2人は $$r40r:エンタングル した $$r40r:キュービット $$r40r:ペア を共有しています。これを使えば勝率を上げられるでしょうか？"',
                                                                                                               ))
                                                                                                             : 1 ===
                                                                                                                 t &&
                                                                                                               (r.push(
-                                                                                                                '"Ah, I see! By utilizing shared entanglement, you were able to help Alice and Bob collaborate to win significantly more often than $$d40r:chance would otherwise allow?"',
+                                '"なるほど！共有しているエンタングルメントを利用することで、アリスとボブは $$d40r:偶然 よりもはるかに高い確率で勝つことができたのですね？"',
                                                                                                               ),
                                                                                                               r.push(
-                                                                                                                '"Notice, however, that the entanglement can not be used to transmit information directly, else the game could be won $$d40r:every time. Still, there is definitely some kind of spooky action-at-a-distance happening!"',
+                                '"ただしエンタングルメント自体で直接情報を送ることはできません。もしできたら毎回必ず勝ててしまいますから。それでも何やら不気味な遠隔作用が起きているのは確かです！"',
                                                                                                               ))
                                                                                                           : "binaryencode" ===
                                                                                                               e &&
                                                                                                             (0 ===
                                                                                                             t
                                                                                                               ? (r.push(
-                                                                                                                  '"Due to a logistical mistake our storage warehouses are overflowing with excess `1` bits. Storage is not cheap, and we are bursting at the seams!"',
+                                  '"物流の手違いで倉庫が `1` ビットだらけです。保管にもお金がかかり、もう溢れそうです！"',
                                                                                                                 ),
                                                                                                                 r.push(
-                                                                                                                  '"I need you to build a factory that translates a large quantity of `1` bits into a smaller string of bits via a $$b40r:binary $$b40r:encoding. In this system a single bit can represent different values depending on its location within a bit string."',
+                                  '"大量の `1` ビットを $$b40r:2 進 $$b40r:エンコーディング でより短いビット列へ変換する工場を作ってください。この方式では一つのビットが列内の位置に応じて異なる値を表せます。"',
                                                                                                                 ))
                                                                                                               : 1 ===
                                                                                                                   t &&
                                                                                                                 (r.push(
-                                                                                                                  '"Good work! Our storage problem has been solved thanks to your efforts."',
+                                  '"よくやりました！倉庫の問題はあなたのおかげで解決しました。"',
                                                                                                                 ),
                                                                                                                 r.push(
-                                                                                                                  '"The new system is so efficient that we could represent quantities larger than the number of particles in the $$d40r:known $$d40r:universe with a bit-string of only a few hundred bits. The encoding procedure might take quite some though... "',
+                                  '"新しい方式はとても効率的で、わずか数百ビットの列で $$d40r:既知の $$d40r:宇宙 の粒子数を超える量さえ表現できます。ただしエンコードにはかなり時間がかかるかもしれません…"',
                                                                                                                 )))),
       a ? r : i ? r.length > 0 : (RobotSpeech.analyze(r), r.length > 0)
     );
