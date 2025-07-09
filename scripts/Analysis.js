@@ -283,7 +283,7 @@ class Analysis {
         (d.font = FIELD.tileWidth / 3 + "px Courier New"),
         (d.fillStyle = "black"),
         d.fillText(
-          "Amplitudes",
+          "振幅",
           Math.round(c + u + m * FIELD.tileWidth),
           Math.round(I + FIELD.tileHeight + S),
         ),
@@ -375,8 +375,8 @@ class Analysis {
           (d.textAlign = "left"),
           (d.font = FIELD.tileWidth / 3 + "px Courier New"),
           (d.fillStyle = "black"),
-          d.fillText(
-            "Entanglement",
+            d.fillText(
+              "量子もつれ",
             Math.round(c + u + m * FIELD.tileWidth),
             Math.round(I + 1.5 * FIELD.tileHeight + (2.5 + R) * S),
           ),
@@ -438,8 +438,8 @@ class Analysis {
           (d.textAlign = "left"),
           (d.font = FIELD.tileWidth / 3 + "px Courier New"),
           (d.fillStyle = "black"),
-          d.fillText(
-            "Meas. Probs.",
+            d.fillText(
+              "測定確率",
             Math.round(c + u + m * FIELD.tileWidth),
             Math.round(F - 1 * S),
           ),
@@ -551,7 +551,7 @@ class Analysis {
         (d.font = FIELD.tileWidth / 3 + "px Courier New"),
         (d.fillStyle = "black"),
         d.fillText(
-          "Amplitudes",
+          "振幅",
           Math.round(c + u + FIELD.tileWidth),
           Math.round(FIELD.tileHeight + I + S),
         ),
@@ -630,7 +630,7 @@ class Analysis {
         (d.font = FIELD.tileWidth / 3 + "px Courier New"),
         (d.fillStyle = "black"),
         d.fillText(
-          "Entanglement",
+          "量子もつれ",
           Math.round(c + u + FIELD.tileWidth),
           Math.round(I + 1.5 * FIELD.tileHeight + 4.5 * S),
         ),
@@ -672,7 +672,7 @@ class Analysis {
         (d.font = FIELD.tileWidth / 3 + "px Courier New"),
         (d.fillStyle = "black"),
         d.fillText(
-          "Meas. Probs.",
+          "測定確率",
           Math.round(c + u + FIELD.tileWidth),
           Math.round(F - 1 * S),
         );
