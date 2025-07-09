@@ -223,15 +223,15 @@ class SelectLevel {
       f = 0.6,
       p = [
         " ",
-        "Tutorial",
-        "Classic I",
-        "Classic II",
-        "Classic III",
-        "Quantum I",
-        "Quantum II",
-        "Quantum III",
+        "チュートリアル",
+        "クラシック I",
+        "クラシック II",
+        "クラシック III",
+        "量子 I",
+        "量子 II",
+        "量子 III",
         " ",
-        "Hybrid",
+        "ハイブリッド",
       ];
     this.plaqueList = [];
     for (o = 0; o < p.length; o++) {
@@ -251,7 +251,7 @@ class SelectLevel {
       (t.textAlign = "center"),
       (t.font = (1.4 * FIELD.tileWidth) / 3 + "px Courier New"),
       (t.fillStyle = "antiquewhite"),
-      t.fillText("Progression", i / 2, 9 * FIELD.tileWidth),
+      t.fillText("進捗", i / 2, 9 * FIELD.tileWidth),
       t.restore();
     var a = 9.6 * FIELD.tileWidth;
     t.save(),
@@ -268,14 +268,14 @@ class SelectLevel {
       t.stroke(),
       t.restore();
     var r = [
-        "Floor Hand",
-        "Jr. Factory Assistant",
-        "Sr. Factory Assistant",
-        "Jr. Factory Engineer",
-        "Sr. Factory Engineer",
-        "Jr. Quantum Engineer",
-        "Sr. Quantum Engineer",
-        "HD Quantum Tech.",
+        "工場作業員",
+        "ジュニア工場アシスタント",
+        "シニア工場アシスタント",
+        "ジュニア工場エンジニア",
+        "シニア工場エンジニア",
+        "ジュニア量子エンジニア",
+        "シニア量子エンジニア",
+        "HD量子技師",
         "The Flammia",
         "The Poulin",
         "The Preskill",
@@ -291,11 +291,11 @@ class SelectLevel {
       FIELD.hiddenComplete > 0)
     ) {
       t.textAlign = "left";
-      var o = "Completed: " + FIELD.totComplete,
+      var o = "完了: " + FIELD.totComplete,
         n = t.measureText(o).width,
-        l = t.measureText(o + "   of " + LEVELS.numStandard).width;
+        l = t.measureText(o + " / " + LEVELS.numStandard).width;
       t.fillText(
-        o + "   of " + LEVELS.numStandard,
+        o + " / " + LEVELS.numStandard,
         i / 2 - l / 2,
         10.4 * FIELD.tileWidth,
       ),
@@ -309,17 +309,17 @@ class SelectLevel {
         (t.textAlign = "center");
     } else
       t.fillText(
-        "Completed: " + FIELD.totComplete + " of " + LEVELS.numStandard,
+        "完了: " + FIELD.totComplete + " / " + LEVELS.numStandard,
         i / 2,
         10.4 * FIELD.tileWidth,
       );
     if (FIELD.hiddenStar > 0) {
       t.textAlign = "left";
-      (o = "Starred: " + FIELD.totStar),
+      (o = "スター獲得: " + FIELD.totStar),
         (n = t.measureText(o).width),
-        (l = t.measureText(o + "   of " + LEVELS.numStandard).width);
+        (l = t.measureText(o + " / " + LEVELS.numStandard).width);
       t.fillText(
-        o + "   of " + LEVELS.numStandard,
+        o + " / " + LEVELS.numStandard,
         i / 2 - l / 2,
         11 * FIELD.tileWidth,
       ),
@@ -333,14 +333,14 @@ class SelectLevel {
         (t.textAlign = "center");
     } else
       t.fillText(
-        "Starred: " + FIELD.totStar + " of " + LEVELS.numStandard,
+        "スター獲得: " + FIELD.totStar + " / " + LEVELS.numStandard,
         i / 2,
         11 * FIELD.tileWidth,
       );
     if (
       ((t.font = (1.2 * FIELD.tileWidth) / 3 + "px Courier New"),
       t.fillText(
-        "Rank: " + r[Math.floor(s / 10)],
+        "ランク: " + r[Math.floor(s / 10)],
         i / 2,
         12.2 * FIELD.tileWidth,
       ),
@@ -371,12 +371,12 @@ class SelectLevel {
         var u = STATE.under.k0;
         d = DESCRIPTIONS[u.link];
       } else if ("selectButton" === STATE.under.type)
-        STATE.under.i0, (d = ["Repeat Dialogue"]);
+        STATE.under.i0, (d = ["会話を繰り返す"]);
       else if ("selectAward" === STATE.under.type) {
         d = JSON.parse(JSON.stringify(DESCRIPTIONS["award" + STATE.under.k0]));
         FIELD.isActiveAward[STATE.under.k0]
-          ? (d[0] = "Award")
-          : ((d[0] = "Award (locked)"),
+          ? (d[0] = "賞")
+          : ((d[0] = "賞 (ロック中)"),
             (6 !== STATE.under.k0 && 7 !== STATE.under.k0) ||
               FIELD.isActiveAward[STATE.under.k0] ||
               (d[1] = "  ??? "));
