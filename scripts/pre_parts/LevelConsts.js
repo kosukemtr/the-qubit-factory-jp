@@ -6,15 +6,15 @@ function LevelConsts(e) {
   var t = !1;
   if ("tut1" === e) {
     (t = !0),
-      (SCENARIO.title = "T.A: Wired"),
+      (SCENARIO.title = "T.A: 配線"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Send bits from A to D using blue wire."),
-      SCENARIO.info.push("• Send qubits from B to C using red wire."),
+      SCENARIO.info.push("・青色ワイヤーを使って A から D へビットを送ります。"),
+      SCENARIO.info.push("・赤色ワイヤーを使って B から C へ量子ビットを送ります。"),
       SCENARIO.info.push(
-        "• Wires are selected via the top-right menu and placed by left-click + drag.",
+        "・ワイヤーは右上のメニューから選択し、左クリックしながらドラッグして配置します。",
       ),
       SCENARIO.info.push(
-        "• Remove wires by right-click + drag or using the erasor tool (`E` key).",
+        "・右クリックしながらドラッグするか消しゴムツール(`E`キー)でワイヤーを削除します。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 1, 1, 2, 0, 0]),
@@ -39,21 +39,21 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return !0;
     }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 30),
       (SCENARIO.numCorrect = 30),
       (SCENARIO.maxTicks = 9999);
   } else if ("tut2" === e) {
     (t = !0),
-      (SCENARIO.title = "T.B: Gate Keeping"),
+      (SCENARIO.title = "T.B: ゲート管理"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Invert bits from A and send to D."),
+      SCENARIO.info.push("・A のビットを反転して D に送ります。"),
       SCENARIO.info.push(
-        "• Rotate qubits from B by -π/2 (or -90°) and send to C.",
+        "・B の量子ビットを -π/2（または -90°）回転させて C に送ります。",
       ),
       SCENARIO.info.push(
-        "• Suitable inversion and rotation gates have been pre-placed.",
+        "・適切な反転ゲートと回転ゲートがあらかじめ配置されています。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 1, 1, 2, 0, 0]),
@@ -81,18 +81,18 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return !0;
     }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 30),
       (SCENARIO.numCorrect = 30),
       (SCENARIO.maxTicks = 9999);
   } else if ("tut3" === e) {
     (t = !0),
-      (SCENARIO.title = "T.C: The Manipulator"),
+      (SCENARIO.title = "T.C: マニピュレーター"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Send bits from A to D WITHOUT inversion."),
-      SCENARIO.info.push("• Send qubits from B to C WITHOUT rotation."),
-      SCENARIO.info.push("• Left-click on gates to edit their properties."),
+      SCENARIO.info.push("・A から D へビットを反転せずに送ります。"),
+      SCENARIO.info.push("・B から C へ量子ビットを回転させずに送ります。"),
+      SCENARIO.info.push("・ゲートを左クリックするとその設定を変更できます。"),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 1, 1, 2, 0, 0]),
       (SCENARIO.hasEntanglers = !1),
@@ -123,7 +123,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return !0;
     }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 30),
       (SCENARIO.numCorrect = 30),
@@ -132,13 +132,13 @@ function LevelConsts(e) {
     (t = !0),
       (SCENARIO.title = "T.D: CTRL-Z"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Send bits from A to D WITHOUT inversion."),
-      SCENARIO.info.push("• Send qubits from B to C WITHOUT rotation."),
+      SCENARIO.info.push("・A から D へビットを反転せずに送ります。"),
+      SCENARIO.info.push("・B から C へ量子ビットを回転させずに送ります。"),
       SCENARIO.info.push(
-        "• Pre-existing gates cannot be edited on this level.",
+        "・このレベルでは既存のゲートを編集できません。",
       ),
       SCENARIO.info.push(
-        "• Use mouse scroll or L/R arrow keys to re-orient gates before placing.",
+        "・ゲートを配置する前に、マウススクロールまたは左右の矢印キーで向きを変更できます。",
       );
     var s = [
       55, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
@@ -188,21 +188,21 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return !0;
     }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 30),
       (SCENARIO.numCorrect = 30),
       (SCENARIO.maxTicks = 9999);
   } else if ("tut5" === e) {
     (t = !0),
-      (SCENARIO.title = "T.E: Wasted Potential"),
+      (SCENARIO.title = "T.E: 無駄なポテンシャル"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Incinerate all bits and qubits."),
+      SCENARIO.info.push("・すべてのビットと量子ビットを焼却します。"),
       SCENARIO.info.push(
-        "• Wires and gates can be removed by right-click + drag or via the eraser tool (`E` key).",
+        "・ワイヤーやゲートは右クリックしながらドラッグするか、消しゴムツール(`E`キー)で削除できます。",
       ),
       SCENARIO.info.push(
-        "• Gates with GREEN tabs can connect to both blue and red wires.",
+        "・緑色のタブの付いたゲートは青と赤のワイヤー両方に接続できます。",
       ),
       (SCENARIO.channelsDir = [-1, -1, 1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 1, 1, 2, 0, 0]),
@@ -229,20 +229,20 @@ function LevelConsts(e) {
       return Helper.countGates() < 2;
     }),
       (SCENARIO.starText =
-        "Star bonus: complete with a single incinerator and no other gates"),
+        "スター ボーナス: 焼却炉1台だけで他のゲートを使わずにクリア"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 30),
       (SCENARIO.numCorrect = 30),
       (SCENARIO.maxTicks = 9999);
   } else if ("tut6" === e) {
     (t = !0),
-      (SCENARIO.title = "T.F: Making Amends"),
+      (SCENARIO.title = "T.F: 償い"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• The manager has prepared a contraption for you to run! Access by pressing the purple `blueprint-Z` button on the bottom-left of the console.",
+        "・マネージャーが実行用の仕掛けを用意しました！コンソール左下の紫色の `blueprint-Z` ボタンを押して開きます。",
       ),
       SCENARIO.info.push(
-        "• The contraption has been built in the wrong spot and must be moved! Hold SHIFT then click+drag to select a region to duplicate (or hold CTRL/CMD while clicking to reposition items).",
+        "・装置は間違った場所に作られているので移動が必要です！SHIFT を押しながらクリック&ドラッグで領域を複製選択（または CTRL/CMD を押しながらクリックで移動）します。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 0, 2, 0, 0, 0]),
@@ -273,20 +273,20 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return !0;
     }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 30),
       (SCENARIO.numCorrect = 30),
       (SCENARIO.maxTicks = 9999);
   } else if ("class1" === e) {
     (t = !0),
-      (SCENARIO.title = "CI.A: Straight Shooter"),
+      (SCENARIO.title = "CI.A: ストレートシューター"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Set all bits from A to the 1-state, then send to C.",
+        "・A のビットをすべて 1 に設定してから C に送ります。",
       ),
       SCENARIO.info.push(
-        "• For more information about a gate press the ? icon once selected to open the corresponding handbook entry.",
+        "・ゲートを選択して ? アイコンを押すと対応するハンドブックを開きます。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 0, 2, 0, 0, 0]),
@@ -309,20 +309,20 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return TIMER.victoryTick <= 80;
     }),
-      (SCENARIO.starText = "Star bonus: complete in 80 or fewer ticks"),
+      (SCENARIO.starText = "スター ボーナス: 80ティック以内でクリア"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 30),
       (SCENARIO.numCorrect = 30),
       (SCENARIO.maxTicks = 9999);
   } else if ("class2" === e) {
     (t = !0),
-      (SCENARIO.title = "CI.B: Zippidty-split"),
+      (SCENARIO.title = "CI.B: 速攻スプリット"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Combine A and B into a single stream by alternating entries (starting with an entry from A).",
+        "・A と B を交互に（最初は A から）つなげて一つの流れにします。",
       ),
       SCENARIO.info.push(
-        "• Output the combined stream to C and an identical copy of the stream to D.",
+        "・結合したストリームを C に送り、同じものを D に送ります。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 2, 2, 0, 0]),
@@ -353,19 +353,19 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return TIMER.victoryTick <= 85;
     }),
-      (SCENARIO.starText = "Star bonus: complete in 85 or fewer ticks"),
+      (SCENARIO.starText = "スター ボーナス: 85ティック以内でクリア"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 60),
       (SCENARIO.numCorrect = 60),
       (SCENARIO.maxTicks = 9999);
   } else if ("class3" === e) {
     (t = !0),
-      (SCENARIO.title = "CI.C: The ol'Switch-a-roo"),
+      (SCENARIO.title = "CI.C: スイッチ作戦"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• For each `0` bit from A, send a bit from B to C."),
-      SCENARIO.info.push("• For each `1` bit from A, send a bit from B to D."),
+      SCENARIO.info.push("・A のビットが `0` のときは B のビットを C へ送ります。"),
+      SCENARIO.info.push("・A のビットが `1` のときは B のビットを D へ送ります。"),
       SCENARIO.info.push(
-        "• You may incinerate un-needed bits from A after use.",
+        "・不要になった A のビットは焼却してかまいません。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 2, 2, 0, 0]),
@@ -395,7 +395,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return TIMER.victoryTick <= 175;
     }),
-      (SCENARIO.starText = "Star bonus: complete in 175 or fewer ticks"),
+      (SCENARIO.starText = "スター ボーナス: 175ティック以内でクリア"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 50),
       (SCENARIO.numCorrect = 50),
@@ -405,10 +405,10 @@ function LevelConsts(e) {
       (SCENARIO.title = "CI.D: nSync"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Combine A and B into a single stream by alternating entries (starting with an entry from A) and output to C.",
+        "・A と B を交互（最初は A）につなげて一つの流れにし、C に出力します。",
       ),
       SCENARIO.info.push(
-        "• Note: channel B is here much slower to produce bits than channel A.",
+        "・B チャンネルは A よりもビット生成が遅い点に注意してください。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 2, 0, 0, 0]),
@@ -439,17 +439,17 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return TIMER.victoryTick <= 125;
     }),
-      (SCENARIO.starText = "Star bonus: complete in 125 or fewer ticks"),
+      (SCENARIO.starText = "スター ボーナス: 125ティック以内でクリア"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 50),
       (SCENARIO.numCorrect = 50),
       (SCENARIO.maxTicks = 9999);
   } else if ("class5" === e) {
     (t = !0),
-      (SCENARIO.title = "CI.E: The Waiting game"),
+      (SCENARIO.title = "CI.E: 待ちゲーム"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Send A to C (12 bits total), then afterwards send B to C.",
+        "・A を C に送った後（合計 12 ビット）、続けて B を C に送ります。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 2, 0, 0, 0]),
@@ -486,20 +486,20 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return 1 === Helper.countGates("delay");
     }),
-      (SCENARIO.starText = "Star bonus: use only a single delay gate."),
+      (SCENARIO.starText = "スター ボーナス: ディレイゲートを1つだけ使用"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 24),
       (SCENARIO.numCorrect = 24),
       (SCENARIO.maxTicks = 9999);
   } else if ("class6" === e) {
     (t = !0),
-      (SCENARIO.title = "CI.F: Genesis"),
+      (SCENARIO.title = "CI.F: ジェネシス"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Output to C and D bits matching the requested outputs shown.",
+        "・表示された要求に合わせて C と D へビットを出力します。",
       ),
       SCENARIO.info.push(
-        "• Hint: the `creation` gate can be configured to produce different output patterns.",
+        "・`creation` ゲートは出力パターンを設定できます。",
       ),
       (SCENARIO.channelsDir = [1, 1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [0, 0, 2, 2, 0, 0]),
@@ -522,20 +522,20 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return Helper.countGates(["cCreate"]) <= 1;
     }),
-      (SCENARIO.starText = "Star bonus: use only a single creation gate."),
+      (SCENARIO.starText = "スター ボーナス: 作成ゲートを1つだけ使用"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 60),
       (SCENARIO.numCorrect = 60),
       (SCENARIO.maxTicks = 9999);
   } else if ("class7" === e) {
     (t = !0),
-      (SCENARIO.title = "CI.G: The Count"),
+      (SCENARIO.title = "CI.G: ザ・カウント"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Send the first 8 bits from A to C, and then send the rest from A to D.",
+        "・A の最初の 8 ビットを C へ送り、それ以降は D へ送ります。",
       ),
       SCENARIO.info.push(
-        "• Hint: the `creation` gate can be configured to produce a finite number of outputs.",
+        "・`creation` ゲートは生成数を制限できます。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 0, 2, 2, 0, 0]),
@@ -562,18 +562,18 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return RBOARD[TIMER.tick].bitList.length <= 1;
     }),
-      (SCENARIO.starText = "Star bonus: finish with 1 or fewer bits in play."),
+      (SCENARIO.starText = "スター ボーナス: 盤面上のビットを1個以下でクリア"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 40),
       (SCENARIO.numCorrect = 40),
       (SCENARIO.maxTicks = 9999);
   } else if ("classPuzzle1" === e) {
     (t = !0),
-      (SCENARIO.title = "CII.A: Bandwidth"),
+      (SCENARIO.title = "CII.A: 帯域幅"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Send bits from A to C and bits from B to D."),
+      SCENARIO.info.push("・A のビットを C に、B のビットを D に送ります。"),
       SCENARIO.info.push(
-        "• Note: channel B is here much slower to produce bits than channel A.",
+        "・ここでは B チャンネルのビット生成が A よりもかなり遅い点に注意してください。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 2, 2, 0, 0]),
@@ -600,28 +600,28 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return TIMER.victoryTick <= 650;
     }),
-      (SCENARIO.starText = "Star bonus: success in fewer than 650 ticks"),
+      (SCENARIO.starText = "スター ボーナス: 650ティック未満で成功"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 200),
       (SCENARIO.numCorrect = 200),
       (SCENARIO.maxTicks = 9999);
   } else if ("classPuzzle2" === e) {
     (t = !0),
-      (SCENARIO.title = "CII.B: Half Adder"),
+      (SCENARIO.title = "CII.B: 半加算器"),
       (SCENARIO.archive =
         "https://en.wikipedia.org/wiki/Adder_(electronics)#Half_adder"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("For each bit-pair from (A,B):"),
-      SCENARIO.info.push("• Output their `XOR` to C:"),
+      SCENARIO.info.push("(A,B) のビットペアごとに:"),
+      SCENARIO.info.push("・その `XOR` を C に出力:"),
       SCENARIO.info.push(
         "   (0,0)--> 0  (0,1)--> 1        (1,0)--> 1  (1,1)--> 0",
       ),
-      SCENARIO.info.push("• Output their `AND` to D:"),
+      SCENARIO.info.push("・その `AND` を D に出力:"),
       SCENARIO.info.push(
         "   (0,0)--> 0  (0,1)--> 0        (1,0)--> 0  (1,1)--> 1",
       ),
       SCENARIO.info.push(
-        "Hint: use bit-controls with inversion and re-zero gates.",
+        "ヒント: 反転ゲートとリセットゲートを備えたビットコントロールを使用しましょう。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 0, 0, 0, 0]),
@@ -651,21 +651,21 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return Helper.countGates(["switch"]) <= 2;
     }),
-      (SCENARIO.starText = "Star bonus: use 2 or fewer control gates"),
+      (SCENARIO.starText = "スター ボーナス: 制御ゲートを2個以内で使用"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 200),
       (SCENARIO.numCorrect = 200),
       (SCENARIO.maxTicks = 9999);
   } else if ("classPuzzle3" === e) {
     (t = !0),
-      (SCENARIO.title = "CIII.B: AND Frugality"),
+      (SCENARIO.title = "CIII.B: AND 節約術"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Output to D the logical AND of A with B:"),
+      SCENARIO.info.push("・A と B の論理 AND を D に出力:"),
       SCENARIO.info.push(
         "   (0,0)--> 0  (0,1)--> 0        (1,0)--> 0  (1,1)--> 1",
       ),
       SCENARIO.info.push(
-        "• Due to a critical shortage, `re-zero` gates are currently unavailable.",
+        "・深刻な不足により、`re-zero` ゲートは現在利用できません。",
       ),
       (SCENARIO.channelsDir = [-1, -1, 1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 0, 0, 0, 0]),
@@ -694,21 +694,21 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return 0 === Helper.countGates(["delay"]);
     }),
-      (SCENARIO.starText = "Star bonus: don't use any delay gates"),
+      (SCENARIO.starText = "スター ボーナス: ディレイゲートを使わない"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 100),
       (SCENARIO.maxTicks = 9999);
   } else if ("classPuzzle3B" === e) {
     (t = !0),
-      (SCENARIO.title = "CIII.C: XOR Frugality"),
+      (SCENARIO.title = "CIII.C: XOR 節約術"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Output to D the logical XOR of A with B:"),
+      SCENARIO.info.push("・A と B の論理 XOR を D に出力:"),
       SCENARIO.info.push(
         "   (0,0)--> 0  (0,1)--> 1        (1,0)--> 1  (1,1)--> 0",
       ),
       SCENARIO.info.push(
-        "• Due to a critical shortage, `invert` gates are currently unavailable.",
+        "・深刻な不足により、`invert` ゲートは現在利用できません。",
       ),
       (SCENARIO.channelsDir = [-1, -1, 1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 0, 0, 0, 0]),
@@ -737,20 +737,20 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return 0 === Helper.countGates(["cCreate"]);
     }),
-      (SCENARIO.starText = "Star bonus: don't use any creation gates"),
+      (SCENARIO.starText = "スター ボーナス: 作成ゲートを使用しない"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 100),
       (SCENARIO.maxTicks = 9999);
   } else if ("classPuzzle4" === e) {
     (t = !0),
-      (SCENARIO.title = "CII.C: Memory"),
+      (SCENARIO.title = "CII.C: メモリ"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• For each bit from input stream A: output a `0` to C if it matches the previous bit in the stream, else output a `1` to C if they differ.",
+        "・入力ストリーム A の各ビットについて、前のビットと同じなら `0` を C に、異なれば `1` を C に出力します。",
       ),
       SCENARIO.info.push(
-        "• Assume that the memory is initialized in the `0` state.",
+        "・メモリは `0` 状態で初期化されていると仮定します。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 0, 2, 0, 0, 0]),
@@ -777,17 +777,17 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return TIMER.victoryTick <= 400;
     }),
-      (SCENARIO.starText = "Star bonus: success in fewer than 400 ticks"),
+      (SCENARIO.starText = "スター ボーナス: 400ティック未満で成功"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 50),
       (SCENARIO.numCorrect = 50),
       (SCENARIO.maxTicks = 9999);
   } else if ("classPuzzle5" === e) {
     (t = !0),
-      (SCENARIO.title = "CII.D: Ternary"),
+      (SCENARIO.title = "CII.D: 三進法"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Output every THIRD bit from A to D, and output the rest to C.",
+        "・A から3番目ごとのビットを D へ送り、残りを C へ送ります。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 0, 2, 2, 0, 0]),
@@ -820,19 +820,19 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return 0 === Helper.countGates("trash");
     }),
-      (SCENARIO.starText = "Star bonus: don't use any incinerators."),
+      (SCENARIO.starText = "スター ボーナス: 焼却炉を使わない"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 60),
       (SCENARIO.numCorrect = 60),
       (SCENARIO.maxTicks = 9999);
   } else if ("classPuzzle6" === e) {
     (t = !0),
-      (SCENARIO.title = "CII.E: Repetition"),
+      (SCENARIO.title = "CII.E: 繰り返し"),
       (SCENARIO.archive = "https://en.wikipedia.org/wiki/Repetition_code"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Send A to C."),
+      SCENARIO.info.push("・A を C に送ります。"),
       SCENARIO.info.push(
-        "• The channels across the board each have a 20% chance of flipping bits that pass through.",
+        "・盤面上の各チャンネルは通過するビットを 20% の確率で反転させます。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 0, 2, 0, 0, 0]),
@@ -861,18 +861,18 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return RBOARD[TIMER.tick].success >= 480;
     }),
-      (SCENARIO.starText = "Star bonus: get 480 or more correct."),
+      (SCENARIO.starText = "スター ボーナス: 480個以上正解"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 500),
       (SCENARIO.numCorrect = 440),
       (SCENARIO.maxTicks = 9999);
   } else if ("classPuzzle7" === e) {
     (t = !0),
-      (SCENARIO.title = "CII.F: Swap Meet"),
+      (SCENARIO.title = "CII.F: スワップミート"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Send bits from A to D and send bits from B to C."),
+      SCENARIO.info.push("・A のビットを D へ、B のビットを C へ送ります。"),
       SCENARIO.info.push(
-        "• Temporary safety regulations prevent direct wire crossings.",
+        "・安全規則によりワイヤーを直接交差させることはできません。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 2, 2, 0, 0]),
@@ -902,18 +902,18 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return Helper.countGates(["switch"]) <= 3;
     }),
-      (SCENARIO.starText = "Star bonus: use 3 or  fewer control gates"),
+      (SCENARIO.starText = "スター ボーナス: 制御ゲートを3個以下で使用"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 100),
       (SCENARIO.maxTicks = 9999);
   } else if ("classPuzzle8" === e)
     (t = !0),
-      (SCENARIO.title = "CIII.A: Strict Equality"),
+      (SCENARIO.title = "CIII.A: 厳密比較"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Inputs A and B both contain a sequence of 8 bits."),
+      SCENARIO.info.push("・A と B にはそれぞれ 8 ビットの列が入っています。"),
       SCENARIO.info.push(
-        "• Output a `1` if the sequences from A and B are identical, else output a `0`.",
+        "・A と B の列が一致していれば `1`、そうでなければ `0` を出力します。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 2, 0, 0, 0]),
@@ -937,7 +937,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return 0 === Helper.countGates(["delay"]);
       }),
-      (SCENARIO.starText = "Star bonus: don't use any delay gates"),
+      (SCENARIO.starText = "スター ボーナス: ディレイゲートを使わない"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 1),
       (SCENARIO.numCorrect = 1),
@@ -948,11 +948,11 @@ function LevelConsts(e) {
       (SCENARIO.correctReps = 0);
   else if ("classPuzzle9" === e)
     (t = !0),
-      (SCENARIO.title = "CIII.D: Haystack"),
+      (SCENARIO.title = "CIII.D: 干し草の山"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Input A contains a total of 10 bits."),
+      SCENARIO.info.push("・入力 A には合計 10 ビットが含まれています。"),
       SCENARIO.info.push(
-        "• If the input contains a sequence of 4 or more `1` in a row then output a `1`, else output a `0`.",
+        "・入力に `1` が4連続以上含まれていれば `1` を、そうでなければ `0` を出力します。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 0, 2, 0, 0, 0]),
@@ -972,7 +972,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return Helper.countGates(["switch"]) <= 5;
       }),
-      (SCENARIO.starText = "Star bonus: use 5 or  fewer control gates"),
+      (SCENARIO.starText = "スター ボーナス: 制御ゲートを5個以下で使用"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 1),
       (SCENARIO.numCorrect = 1),
@@ -983,13 +983,13 @@ function LevelConsts(e) {
       (SCENARIO.correctReps = 0);
   else if ("vaziraniClassic" === e)
     (t = !0),
-      (SCENARIO.title = "CII.G: Quality Control"),
+      (SCENARIO.title = "CII.G: 品質管理"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Devices take as input three control bits (top channels) and a target bit (bottom).",
+        "・装置は上部の 3 つの制御ビットと下部のターゲットビットを入力として受け取ります。",
       ),
       SCENARIO.info.push(
-        "• From bottom-to-top control channels: output a `1` if the channel implements a controlled inversion on the target bit. Output a `0` if the channel does not effect the target bit.",
+        "・下から上に向かう各制御チャンネルで、ターゲットビットを制御反転する場合は `1`、作用しない場合は `0` を出力します。",
       ),
       (SCENARIO.channelsDir = [1, 1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [0, 0, 2, 0, 0, 0]),
@@ -1014,7 +1014,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return !0;
       }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 3),
       (SCENARIO.numCorrect = 3),
@@ -1025,13 +1025,13 @@ function LevelConsts(e) {
       (SCENARIO.correctReps = 0);
   else if ("quant1" === e) {
     (t = !0),
-      (SCENARIO.title = "QI.A: Inversion"),
+      (SCENARIO.title = "QI.A: 反転"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "▲ Access the journal notes   | via the yellow `J` button  | for additional level clues | and advice.",
+        "▲ 黄色の `J` ボタンからジャーナルノートを開いて追加のヒントを確認できます。",
       ),
       SCENARIO.info.push(
-        "• Send A to C and send B to D after inverting the tranformations enacted on them.",
+        "・A を C へ、B を D へ送る前に施された変換を反転させてください。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
@@ -1062,18 +1062,18 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return Helper.countGates() <= 8;
     }),
-      (SCENARIO.starText = "Star bonus: use only two gates."),
+      (SCENARIO.starText = "スター ボーナス: ゲートを2つだけ使用"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 100),
       (SCENARIO.maxTicks = 9999);
   } else if ("quant2" === e) {
     (t = !0),
-      (SCENARIO.title = "QI.B: Wires Crossed"),
+      (SCENARIO.title = "QI.B: ワイヤークロス"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Send bits from A to C."),
+      SCENARIO.info.push("・A のビットを C へ送ります。"),
       SCENARIO.info.push(
-        "• Send qubits (guaranteed to be either state ◀ or ▶) from B to D.",
+        "・B の量子ビット（必ず ◀ または ▶ の状態）を D へ送ります。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [2, 1, 2, 1, 0, 0]),
@@ -1101,22 +1101,22 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return TIMER.victoryTick <= 130;
     }),
-      (SCENARIO.starText = "Star bonus: success in fewer than 130 ticks"),
+      (SCENARIO.starText = "スター ボーナス: 130ティック未満で成功"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 100),
       (SCENARIO.maxTicks = 9999);
   } else if ("quant3A" === e)
     (t = !0),
-      (SCENARIO.title = "QI.C: Dice Roll"),
+      (SCENARIO.title = "QI.C: サイコロ"),
       (SCENARIO.archive =
         "https://en.wikipedia.org/wiki/Quantum_logic_gate#Measurement"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("Adjust the measurement gates such that:"),
-      SCENARIO.info.push("• 69% (±3%) of outputs to C are in the `1` state."),
-      SCENARIO.info.push("• 75% (±3%) of outputs to D are in the `1` state."),
+      SCENARIO.info.push("測定ゲートを調整して次を満たしてください:"),
+      SCENARIO.info.push("・C への出力の 69%(±3%) が `1` になるようにします。"),
+      SCENARIO.info.push("・D への出力の 75%(±3%) が `1` になるようにします。"),
       SCENARIO.info.push(
-        "Hint: use the state analyzer (click on a qubit while constructing or while factory is paused) to examine measurement outcome probs.",
+        "ヒント: ステートアナライザー（建設中または工場停止中に量子ビットをクリック）で測定確率を確認しましょう。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [1, 1, 2, 2, 0, 0]),
@@ -1144,7 +1144,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return !0;
       }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 2e3),
       (SCENARIO.numCorrect = 2e3),
@@ -1154,13 +1154,13 @@ function LevelConsts(e) {
       (SCENARIO.outputD = [72, 78]);
   else if ("quant3" === e) {
     (t = !0),
-      (SCENARIO.title = "QI.D: Lossy"),
+      (SCENARIO.title = "QI.D: ロスあり"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Send A to C. Qubits in A start in either state ▲ or ▶.",
+        "・A を C に送ります。A の量子ビットは最初 ▲ か ▶ の状態です。",
       ),
       SCENARIO.info.push(
-        "• Correct transfer of all qubits is not possible; just do as well as you can!",
+        "・すべての量子ビットを完全に送ることはできません。できるだけうまくやりましょう。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, 1, 1]),
@@ -1188,20 +1188,20 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return 0 === Helper.countGates(["rotate", "qFlip"]);
     }),
-      (SCENARIO.starText = "Star bonus: don't use any rotate or flip gates."),
+      (SCENARIO.starText = "スター ボーナス: rotate や flip ゲートを使わない"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 300),
       (SCENARIO.numCorrect = 240),
       (SCENARIO.maxTicks = 9999);
   } else if ("quant4" === e) {
     (t = !0),
-      (SCENARIO.title = "QI.E: Straight Shooter II"),
+      (SCENARIO.title = "QI.E: 直進シューターII"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Set all qubits from A to state ▲ and then output to C.",
+        "・A の量子ビットをすべて ▲ 状態にしてから C へ送ります。",
       ),
       SCENARIO.info.push(
-        "• Hint: recall that a measurement will output qubits either aligned or anti-aligned with the measurement axis.",
+        "・ヒント: 測定すると量子ビットは測定軸と同方向か逆方向で出力されます。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [1, 0, 1, 0, 0, 0]),
@@ -1224,20 +1224,20 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return TIMER.victoryTick <= 250;
     }),
-      (SCENARIO.starText = "Star bonus: success in 250 or fewer ticks"),
+      (SCENARIO.starText = "スター ボーナス: 250ティック以内で成功"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 50),
       (SCENARIO.numCorrect = 50),
       (SCENARIO.maxTicks = 9999);
   } else if ("quant5" === e) {
     (t = !0),
-      (SCENARIO.title = "QI.F: Quantum Control"),
+      (SCENARIO.title = "QI.F: 量子制御"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Output to C qubits with rotation that is the sum of the rotations from A and B (starting from 12'o'clock).",
+        "・A と B の回転角の合計になるよう回転した量子ビットを C に出力します(12時方向から開始)。",
       ),
       SCENARIO.info.push(
-        "• Input A only contains qubits in state ▲ or ▼, while B only contains state ▲ or ▶.",
+        "・入力 A は ▲ または ▼ のみ、B は ▲ または ▶ のみ含みます。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [1, 1, 1, 0, 0, 0]),
@@ -1266,21 +1266,21 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return !0;
     }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 100),
       (SCENARIO.maxTicks = 9999);
   } else if ("quant6" === e) {
     (t = !0),
-      (SCENARIO.title = "QI.G: Quantum Control II"),
+      (SCENARIO.title = "QI.G: 量子制御 II"),
       (SCENARIO.archive = "https://en.wikipedia.org/wiki/Controlled_NOT_gate"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Output to C qubits with rotation that is the sum of the rotations from A and B (starting from 12'o'clock).",
+        "・A と B の回転角の合計となるよう回転した量子ビットを C に出力します(12時方向から開始)。",
       ),
       SCENARIO.info.push(
-        "• Input A only contains qubits in state ▲ or ▼, while B only contains state ▲ or ▶.",
+        "・入力 A は ▲ または ▼ のみ、B は ▲ または ▶ のみ含みます。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [1, 1, 1, 0, 0, 0]),
@@ -1309,23 +1309,23 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return !0;
     }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 100),
       (SCENARIO.maxTicks = 9999);
   } else if ("quant6B" === e) {
     (t = !0),
-      (SCENARIO.title = "QI.H: Superposition"),
+      (SCENARIO.title = "QI.H: 重ね合わせ"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Qubits from A begin in the (▲,▼) basis, while those from B begin in the (◀,▶) basis.",
+        "・A の量子ビットは (▲,▼) 基底で、B の量子ビットは (◀,▶) 基底で開始します。",
       ),
       SCENARIO.info.push(
-        "• Transform inputs from A to match with the expected outputs at C, and inputs from B to match with the expected outputs at D.",
+        "・A を C の期待出力に、B を D の期待出力に合わせるよう変換します。",
       ),
       SCENARIO.info.push(
-        "• Hint: clicking on a qubit allows you to change its basis.",
+        "・ヒント: 量子ビットをクリックすると基底を変更できます。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
@@ -1353,7 +1353,7 @@ function LevelConsts(e) {
         Helper.countGates("qFlip") <= 3 && Helper.countGates("rotate") <= 1
       );
     }),
-      (SCENARIO.starText = "Star bonus: use only one 'flip' and one 'rotate'."),
+      (SCENARIO.starText = "スター ボーナス: 'flip'1個と'rotate'1個のみ使用"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 200),
       (SCENARIO.numCorrect = 200),
@@ -1365,11 +1365,13 @@ function LevelConsts(e) {
         "https://en.wikipedia.org/wiki/Quantum_logic_gate#The_effect_of_measurement_on_entangled_states"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Inputs from A and B each contain 50 qubits, which are then entangled in pairs.",
+        "・A と B にはそれぞれ 50 個の量子ビットがあり、ペアでエンタングルされます。",
       ),
-      SCENARIO.info.push("• Output to C and D each 50 qubits in the ▲ state."),
       SCENARIO.info.push(
-        "• Only a single measurement gate (pre-placed) is given.",
+        "・C と D にはそれぞれ ▲ 状態の量子ビットを 50 個ずつ出力します。",
+      ),
+      SCENARIO.info.push(
+        "・測定ゲートは事前に配置された 1 つだけです。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
@@ -1397,7 +1399,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return TIMER.victoryTick <= 250;
     }),
-      (SCENARIO.starText = "Star bonus: success in 250 or fewer ticks"),
+      (SCENARIO.starText = "スター ボーナス: 250ティック以内で成功"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 100),
@@ -1407,10 +1409,10 @@ function LevelConsts(e) {
       (SCENARIO.title = "QIII.A: Try,Try,Try Again"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Flip the (◀ and ▶) qubits from A and output to C.",
+        "・A からの (◀,▶) 量子ビットを反転して C に送ります。",
       ),
       SCENARIO.info.push(
-        "• Methods for creating new qubits as well as qubit rotation / flip gates have been disabled.",
+        "・新しい量子ビットの生成や回転／反転ゲートの使用は無効化されています。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, 1, 1]),
@@ -1435,7 +1437,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function (e) {
       return 100 === e;
     }),
-      (SCENARIO.starText = "Star bonus: achieve perfect success rate."),
+      (SCENARIO.starText = "スター ボーナス: 成功率100%達成"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 70),
@@ -1447,10 +1449,10 @@ function LevelConsts(e) {
         "https://en.wikipedia.org/wiki/Quantum_logic_gate#Unitary_inversion_of_gates"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Undo the (hidden) unitary transforms on the qubits from A and B, then output to C and D respectively.",
+        "・A と B の量子ビットにかけられた（隠された）ユニタリ変換を打ち消し、C と D にそれぞれ出力します。",
       ),
       SCENARIO.info.push(
-        "• Hint: try to find a controlled flip or rotate that the reduces the created qubits back to their original state ▲.",
+        "・制御フリップや回転を使って生成された量子ビットを ▲ 状態へ戻せないか試してみましょう。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
@@ -1482,7 +1484,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function (e) {
       return !0;
     }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 200),
       (SCENARIO.numCorrect = 200),
@@ -1492,10 +1494,10 @@ function LevelConsts(e) {
       (SCENARIO.title = "QII.G: Magic Mirror"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Send to C qubits in their ORIGINAL state as first output from A.",
+        "・A の最初の出力と同じ状態のまま、量子ビットを C に送り返します。",
       ),
       SCENARIO.info.push(
-        "Hint: the action of a (free or controlled) `rotate` or `flip` gate can always be undone by another gate of the same type.",
+        "ヒント: 自由または制御付きの `rotate` や `flip` ゲートの作用は、同種のゲートでもう一度作用させれば取り消せます。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, -1, 1]),
       (SCENARIO.channelsCol = [1, 1, 1, 0, 1, 0]),
@@ -1527,7 +1529,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function (e) {
       return !0;
     }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 50),
       (SCENARIO.numCorrect = 50),
@@ -1537,13 +1539,13 @@ function LevelConsts(e) {
       (SCENARIO.title = "QII.H: Even Odds"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Qubits from α and β begin in either EVEN (a▲▲+b▼▼) or ODD (a▲▲-b▼▼) superpositions, with `a` and `b` as positive numbers.",
+        "・α と β の量子ビットは EVEN (a▲▲+b▼▼) または ODD (a▲▲-b▼▼) の重ね合わせで始まります（a,b は正の数）。",
       ),
       SCENARIO.info.push(
-        "• Output to C either `0` or `1` bits for each EVEN or ODD superposition respectively.",
+        "・それぞれの重ね合わせに対して、EVEN なら `0`、ODD なら `1` を C に出力します。",
       ),
       SCENARIO.info.push(
-        "• Hint: try viewing the qubits in the (◀,▶) basis.",
+        "・ヒント: (◀,▶) 基底で量子ビットを見てみましょう。",
       ),
       (SCENARIO.channelsDir = [1, 1, -1, 1, -1, -1]),
       (SCENARIO.channelsCol = [0, 0, 2, 0, 1, 1]),
@@ -1570,7 +1572,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return Helper.countGates("measure") <= 1;
     }),
-      (SCENARIO.starText = "Star bonus: use only a single measure gate."),
+      (SCENARIO.starText = "スター ボーナス: 測定ゲートを1つだけ使用"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 200),
       (SCENARIO.numCorrect = 165),
@@ -1580,10 +1582,10 @@ function LevelConsts(e) {
       (SCENARIO.title = "QIII.B: Swap Meet II"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Send qubits from A to D and send qubits from B to C.",
+        "・A からの量子ビットを D へ、B からの量子ビットを C へ送ります。",
       ),
       SCENARIO.info.push(
-        "• Temporary safety regulations prevent direct wire crossings.",
+        "・安全規則によりワイヤーを直接交差させることはできません。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [1, 1, 1, 1, 0, 0]),
@@ -1614,7 +1616,7 @@ function LevelConsts(e) {
       return Helper.checkFlipAlign();
     }),
       (SCENARIO.starText =
-        "Star bonus: don't use flip gates with vertical or horizontal alignment."),
+        "スター ボーナス: 垂直/水平向きのフリップゲートを使わない"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 100),
@@ -1626,10 +1628,10 @@ function LevelConsts(e) {
       (SCENARIO.archive =
         "https://en.wikipedia.org/wiki/Quantum_network#Quantum_repeaters"),
       SCENARIO.info.push(
-        "• A Bell pair is an even superposition of ▲▲ and ▼▼ states.",
+        "・ベルペアとは ▲▲ と ▼▼ の等しい重ね合わせです。",
       ),
       SCENARIO.info.push(
-        "• Generate Bell pairs and output half of each to C and D.",
+        "・ベルペアを生成し、半分ずつを C と D に出力します。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [1, 1, -1, -1, 1, 1]),
@@ -1654,7 +1656,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return !0;
       }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 50),
       (SCENARIO.numCorrect = 50),
@@ -1663,8 +1665,12 @@ function LevelConsts(e) {
     (t = !0),
       (SCENARIO.title = "H.D: Back-to-front"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• For each `0` from B: output a ▼ qubit to C."),
-      SCENARIO.info.push("• For each `1` from B: output a ▶ qubit to C."),
+      SCENARIO.info.push(
+        "・B が `0` を出すたび、C に ▼ の量子ビットを出力します。",
+      ),
+      SCENARIO.info.push(
+        "・B が `1` を出すたび、C に ▶ の量子ビットを出力します。",
+      ),
       (SCENARIO.archive = "https://en.wikipedia.org/wiki/Phase_kickback"),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
@@ -1696,7 +1702,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return Helper.countGates("qFlip") <= 2;
     }),
-      (SCENARIO.starText = "Star bonus: use two or fewer flip gates"),
+      (SCENARIO.starText = "スター ボーナス: フリップゲートを2個以内で使用"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 50),
       (SCENARIO.numCorrect = 50),
@@ -1707,9 +1713,9 @@ function LevelConsts(e) {
       (SCENARIO.archive =
         "https://en.wikipedia.org/wiki/Quantum_error_correction#Bit_flip_code"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Send qubits from A to C."),
+      SCENARIO.info.push("・A の量子ビットを C へ送ります。"),
       SCENARIO.info.push(
-        "• The channels across the board each have a 25% chance of rotating qubits (with rotation of either 90°, 180° or 270°).",
+        "・各チャンネルでは量子ビットが 25% の確率で（90°、180°、270°のいずれかに）回転します。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, 1, 1]),
@@ -1739,7 +1745,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function (e) {
       return RBOARD[TIMER.tick].success >= 96;
     }),
-      (SCENARIO.starText = "Star bonus: 96 or more correct outputs."),
+      (SCENARIO.starText = "スター ボーナス: 正解出力96回以上"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 85),
@@ -1748,12 +1754,12 @@ function LevelConsts(e) {
     (t = !0),
       (SCENARIO.title = "H.C+: Correction II"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Send qubits from A to C."),
+      SCENARIO.info.push("・A の量子ビットを C へ送ります。"),
       SCENARIO.info.push(
-        "• The channels across the board rotate any qubit that passes through by a random angle.",
+        "・盤面上のチャンネルは通過した量子ビットをランダムな角度で回転させます。",
       ),
       SCENARIO.info.push(
-        "• Qubits from α and β begin in (perfect) bell pairs.",
+        "・α と β の量子ビットは完璧なベルペアの状態から始まります。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, -1, -1]),
       (SCENARIO.channelsCol = [1, 0, 0, 0, 1, 1]),
@@ -1782,7 +1788,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function (e) {
       return RBOARD[TIMER.tick].success >= 100;
     }),
-      (SCENARIO.starText = "Star bonus: perfect success rate."),
+      (SCENARIO.starText = "スター ボーナス: 完璧な成功率"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 80),
@@ -1792,13 +1798,13 @@ function LevelConsts(e) {
       (SCENARIO.title = "QII.C: Drive-by XOR"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Send A to C and send B to D. Send the logical-XOR of (A,B) to β:",
+        "・A を C へ、B を D へ送り、(A,B) の排他的 OR を β へ送ります:",
       ),
       SCENARIO.info.push(
         "   (▲,▲)--> ▲  (▲,▼)--> ▼        (▼,▲)--> ▼  (▼,▼)--> ▲",
       ),
       SCENARIO.info.push(
-        "• Channel α contains ancilla qubits (initialised in the ▲ state) for your use.",
+        "・チャンネル α には ▲ 状態で初期化された補助量子ビットがあります。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, -1, -1]),
       (SCENARIO.channelsCol = [1, 1, 1, 1, 1, 0]),
@@ -1827,7 +1833,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return Helper.countGates("qControl") < 3;
     }),
-      (SCENARIO.starText = "Star bonus: use no more than two control gates."),
+      (SCENARIO.starText = "スター ボーナス: 制御ゲートを2個以下で使用"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 300),
       (SCENARIO.numCorrect = 300),
@@ -1837,13 +1843,13 @@ function LevelConsts(e) {
       (SCENARIO.title = "QII.D: Drive-by AND"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Send A to C and send B to D. Send the logical-AND of (A,B) to β:",
+        "・A を C へ、B を D へ送り、(A,B) の論理 AND を β へ送ります:",
       ),
       SCENARIO.info.push(
         "   (▲,▲)--> ▲  (▲,▼)--> ▲        (▼,▲)--> ▲  (▼,▼)--> ▼",
       ),
       SCENARIO.info.push(
-        "• Channel α contains ancilla qubits (initialised in the ▲ state) for your use.",
+        "・チャンネル α には ▲ 状態で初期化された補助量子ビットがあります。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, -1, -1]),
@@ -1873,7 +1879,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return 0 === Helper.countGates("qFlip");
     }),
-      (SCENARIO.starText = "Star bonus: use no qubit flip gates."),
+      (SCENARIO.starText = "スター ボーナス: 量子ビット反転ゲートを使わない"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 300),
       (SCENARIO.numCorrect = 300),
@@ -1884,10 +1890,10 @@ function LevelConsts(e) {
       (SCENARIO.archive = "https://en.wikipedia.org/wiki/Quantum_tomography"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Inputs A and B contain a copy of the same set of qubits.",
+        "・入力 A と B には同じ量子ビット列が入っています。",
       ),
       SCENARIO.info.push(
-        "• Output to C a `0` for every ▲-qubit from A/B and a `1` for every ▶-qubit.",
+        "・A/B の各量子ビットが ▲ なら `0`、▶ なら `1` を C に出力します。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [1, 1, 0, 0, 0, 0]),
@@ -1914,7 +1920,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return Helper.countGates("measure") <= 1;
     }),
-      (SCENARIO.starText = "Star bonus: use only a single measure gate."),
+      (SCENARIO.starText = "スター ボーナス: 測定ゲートを1つだけ使用"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 300),
       (SCENARIO.numCorrect = 270),
@@ -1924,10 +1930,10 @@ function LevelConsts(e) {
       (SCENARIO.title = "QIII.E: Cascade"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Input A consists of a sequence of groups, with each group containing 4 identical qubits.",
+        "・入力 A は同じ量子ビット4個からなるグループの列です。",
       ),
       SCENARIO.info.push(
-        "• Output to C a `0` for each group of ▲-qubits and a `1` for each group of ▶-qubits.",
+        "・各グループが ▲ の場合は `0`、▶ の場合は `1` を C に出力します。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [1, 0, 2, 0, 0, 0]),
@@ -1954,7 +1960,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return RBOARD[TIMER.tick].success >= 390;
     }),
-      (SCENARIO.starText = "Star bonus: get 390 or more correct."),
+      (SCENARIO.starText = "スター ボーナス: 390回以上正解"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 400),
       (SCENARIO.numCorrect = 370),
@@ -1964,13 +1970,13 @@ function LevelConsts(e) {
       (SCENARIO.title = "H.A: Superdense?"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "Input β contains 400 random bits. For each bit `i` from β:",
+        "β には 400 個のランダムビットが入っています。各ビット `i` について:",
       ),
       SCENARIO.info.push(
-        "• if i=0, then send a bit from A to C and discard a bit from B.",
+        "・i=0 のときは A から1ビットを C へ送り、B のビットを捨てます。",
       ),
       SCENARIO.info.push(
-        "• if i=1, then send a bit from B to C and discard a bit from A.",
+        "・i=1 のときは B から1ビットを C へ送り、A のビットを捨てます。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, -1]),
       (SCENARIO.channelsCol = [2, 2, 2, 0, 0, 2]),
@@ -2002,7 +2008,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function (e) {
       return e >= 340;
     }),
-      (SCENARIO.starText = "Star bonus: get 340 or more correct."),
+      (SCENARIO.starText = "スター ボーナス: 340回以上正解"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 400),
       (SCENARIO.numCorrect = 325),
@@ -2014,12 +2020,14 @@ function LevelConsts(e) {
       (SCENARIO.archive =
         "https://en.wikipedia.org/wiki/Entanglement_distillation"),
       SCENARIO.info.push(
-        "• A Bell pair is an even superposition of ▲▲ and ▼▼ states.",
+        "・ベルペアとは ▲▲ と ▼▼ の等しい重ね合わせです。",
       ),
       SCENARIO.info.push(
-        "• Tranform the 3-qubit entangled states into a Bell pair on 2 of the qubits.",
+        "・3 量子ビットのエンタングル状態を 2 量子ビットのベルペアに変換します。",
       ),
-      SCENARIO.info.push("• Output half of each Bell pair to C and to D."),
+      SCENARIO.info.push(
+        "・各ベルペアの片方を C に、もう片方を D に出力します。",
+      ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [1, 1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [0, 0, 0, 0, 0, 0]),
@@ -2043,7 +2051,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return !0;
       }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       (SCENARIO.overlayType = "standard"),
       (SCENARIO.maxTrials = 50),
       (SCENARIO.numCorrect = 50),
@@ -2054,16 +2062,16 @@ function LevelConsts(e) {
       (SCENARIO.info = []),
       (SCENARIO.archive = "https://en.wikipedia.org/wiki/Superdense_coding"),
       SCENARIO.info.push(
-        "• Send an identical copy of A into C (100 bits total).",
+        "・A の完全なコピーを C に送ります（合計100ビット）。",
       ),
       SCENARIO.info.push(
-        "• Send an identical copy of B into D (100 bits total).",
+        "・B の完全なコピーを D に送ります（合計100ビット）。",
       ),
       SCENARIO.info.push(
-        "• Only 100 qubits total can be sent across the partition.",
+        "・境界を越えて送れる量子ビットは合計100個までです。",
       ),
       SCENARIO.info.push(
-        "• Qubits from α and β begin in (perfect) bell pairs.",
+        "・α と β の量子ビットは完全なベルペアから始まります。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, -1, -1, -1, -1, -1]),
@@ -2094,7 +2102,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return TIMER.victoryTick <= 1e3;
     }),
-      (SCENARIO.starText = "Star bonus: success in fewer than 1000 ticks"),
+      (SCENARIO.starText = "スター ボーナス: 1000ティック未満で成功"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 200),
       (SCENARIO.numCorrect = 200),
@@ -2105,12 +2113,12 @@ function LevelConsts(e) {
       (SCENARIO.info = []),
       (SCENARIO.archive =
         "https://en.wikipedia.org/wiki/Quantum_teleportation"),
-      SCENARIO.info.push("• Output an identical copy of A into C."),
+      SCENARIO.info.push("・A の完全なコピーを C に出力します。"),
       SCENARIO.info.push(
-        "• Only classical bits can be sent across the partition.",
+        "・境界を越えて送れるのは古典ビットのみです。",
       ),
       SCENARIO.info.push(
-        "• Qubits from α and β begin in (perfect) bell pairs.",
+        "・α と β の量子ビットは完全なベルペアとして開始します。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, -1, -1]),
@@ -2138,7 +2146,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return TIMER.victoryTick <= 500;
     }),
-      (SCENARIO.starText = "Star bonus: success in fewer than 500 ticks"),
+      (SCENARIO.starText = "スター ボーナス: 500ティック未満で成功"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 100),
@@ -2147,12 +2155,12 @@ function LevelConsts(e) {
     (t = !0),
       (SCENARIO.title = "H.B+: Beam me up II"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Output an identical copy of A into C."),
+      SCENARIO.info.push("・A の完全なコピーを C に出力します。"),
       SCENARIO.info.push(
-        "• Only classical bits can be sent across the partition.",
+        "・境界を越えて送れるのは古典ビットのみです。",
       ),
       SCENARIO.info.push(
-        "• Qubits in α and β begin in (weakly) entangled pairs.",
+        "・α と β の量子ビットは（弱い）エンタングル状態のペアから始まります。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, -1, -1]),
@@ -2180,7 +2188,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return 20 == RBOARD[TIMER.tick].success;
     }),
-      (SCENARIO.starText = "Star bonus: achieve perfect success rate"),
+      (SCENARIO.starText = "スター ボーナス: 成功率100%達成"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 20),
       (SCENARIO.numCorrect = 15),
@@ -2192,10 +2200,10 @@ function LevelConsts(e) {
         "https://en.wikipedia.org/wiki/Bernstein%E2%80%93Vazirani_algorithm"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• From bottom-to-top on control channels: output a `1` if the channel implements a controlled flip on the target qubit. Output a `0` if the channel does not effect the target qubit.",
+        "・下から上へ並ぶ制御チャンネルで、ターゲットへの制御フリップがある場合は `1`、ない場合は `0` を出力します。",
       ),
       SCENARIO.info.push(
-        "• Each device can only be tested with a single input.",
+        "・各装置は 1 つの入力でのみテストできます。",
       ),
       (SCENARIO.channelsDir = [1, 1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [0, 0, 2, 0, 0, 0]),
@@ -2220,7 +2228,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return !0;
       }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 3),
       (SCENARIO.numCorrect = 3),
@@ -2234,13 +2242,13 @@ function LevelConsts(e) {
       (SCENARIO.title = "H.E: Correlation"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Inputs from A/B are either entangled states (▲▲+▼▼) or they are in an unentangled state.",
+        "・A/B からの入力はエンタングル状態 (▲▲+▼▼) または非エンタングル状態のどちらかです。",
       ),
       SCENARIO.info.push(
-        "• Output a `0` for an entangled state or a `1` for an unentangled state.",
+        "・エンタングル状態には `0`、非エンタングル状態には `1` を出力します。",
       ),
       SCENARIO.info.push(
-        "• You are give 10 identical copies of each input state.",
+        "・各入力状態は同じものが 10 個ずつ与えられます。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [1, 1, 2, 0, 0, 0]),
@@ -2265,7 +2273,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return SCENARIO.correctReps >= 30;
       }),
-      (SCENARIO.starText = "Star bonus: 30 or more correct."),
+      (SCENARIO.starText = "スター ボーナス: 30回以上正解"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 1),
       (SCENARIO.numCorrect = 1),
@@ -2279,13 +2287,13 @@ function LevelConsts(e) {
       (SCENARIO.title = "H.E+: Correlation II"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Inputs from A/B are either entangled states, (▲▲+▼▼) or (▲▼-▼▲), or they are in an (unknown) product state.",
+        "・A/B の入力はエンタングル状態 (▲▲+▼▼ または ▲▼-▼▲) か、未知の積状態です。",
       ),
       SCENARIO.info.push(
-        "• Output a `0` for an entangled state or a `1` for a product state.",
+        "・エンタングル状態なら `0`、積状態なら `1` を出力します。",
       ),
       SCENARIO.info.push(
-        "• You are give 11 identical copies of each input state.",
+        "・各入力状態は同じものが 11 個与えられます。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [1, 1, 2, 0, 0, 0]),
@@ -2310,7 +2318,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return SCENARIO.correctReps >= 30;
       }),
-      (SCENARIO.starText = "Star bonus: 30 or more correct."),
+      (SCENARIO.starText = "スター ボーナス: 30回以上正解"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 1),
       (SCENARIO.numCorrect = 1),
@@ -2324,13 +2332,13 @@ function LevelConsts(e) {
       (SCENARIO.title = "QIII.G: Statistics"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Inputs from A/B are either in an unknown maximally entangled state or they are in product state (of ▲▲, ▶▶, ▼▼ or ◀◀ qubits).",
+        "・A/B の入力は未知の最大エンタングル状態か、▲▲、▶▶、▼▼、◀◀ のいずれかの積状態です。",
       ),
       SCENARIO.info.push(
-        "• Output a `0` for an entangled state or a `1` for a product state.",
+        "・エンタングル状態なら `0`、積状態なら `1` を出力します。",
       ),
       SCENARIO.info.push(
-        "• You are give 12 identical copies of each input state.",
+        "・各入力状態は同じものが 12 個与えられます。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
@@ -2356,7 +2364,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return SCENARIO.correctReps >= 46;
       }),
-      (SCENARIO.starText = "Star bonus: 46 or more correct."),
+      (SCENARIO.starText = "スター ボーナス: 46回以上正解"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 1),
       (SCENARIO.numCorrect = 1),
@@ -2370,10 +2378,10 @@ function LevelConsts(e) {
       (SCENARIO.title = "QII.E: Lock and Key"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• The device measures a pair of qubits on either the horizontal or vertical axis (randomly chosen), then returns `0` if both measurements produce the same result.",
+        "・装置は水平または垂直軸（ランダム）で 2 量子ビットを測定し、結果が同じなら `0` を返します。",
       ),
       SCENARIO.info.push(
-        "• Construct a two-qubit input for the device such that the output is always a `0`.",
+        "・常に `0` が返るような 2 量子ビット入力を作りましょう。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [1, 1, -1, 1, 1, 1]),
@@ -2399,7 +2407,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function (e) {
       return 0 === Helper.countGates(["rotate"]);
     }),
-      (SCENARIO.starText = "Star bonus: use no rotate gates."),
+      (SCENARIO.starText = "スター ボーナス: rotate ゲートを使わない"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 100),
       (SCENARIO.numCorrect = 100),
@@ -2410,12 +2418,12 @@ function LevelConsts(e) {
       (SCENARIO.info = []),
       (SCENARIO.archive =
         "https://en.wikipedia.org/wiki/Greenberger%E2%80%93Horne%E2%80%93Zeilinger_state"),
-      SCENARIO.info.push("You are initially given (8 copies of) either:"),
-      SCENARIO.info.push("• a GHZ state, (▲▲▲▲+▼▼▼▼)."),
-      SCENARIO.info.push("• a product of two bell-pair states."),
-      SCENARIO.info.push("• a product state of four qubits."),
+      SCENARIO.info.push("・初めに次のいずれか（8セット）を渡されます:"),
+      SCENARIO.info.push("　・GHZ 状態 (▲▲▲▲+▼▼▼▼)"),
+      SCENARIO.info.push("　・2 つのベルペアの積状態"),
+      SCENARIO.info.push("　・4 量子ビットの積状態"),
       SCENARIO.info.push(
-        "Output a `0` for a GHZ state else output a `1` for all other states.",
+        "・状態が GHZ なら `0`、それ以外なら `1` を出力します。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [1, 1, 2, 0, 0, 0]),
@@ -2439,7 +2447,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return SCENARIO.correctReps >= 30;
       }),
-      (SCENARIO.starText = "Star bonus: achieve perfect success rate."),
+      (SCENARIO.starText = "スター ボーナス: 成功率100%達成"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 1),
       (SCENARIO.numCorrect = 1),
@@ -2452,13 +2460,13 @@ function LevelConsts(e) {
     (t = !0),
       (SCENARIO.title = "H.F+: GHZ II"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("You are initially given (8 copies of) either:"),
-      SCENARIO.info.push("• a GHZ state, (▲▲▲▲+▼▼▼▼)."),
+      SCENARIO.info.push("・初めに次のいずれか（8セット）を渡されます:"),
+      SCENARIO.info.push("　・GHZ 状態 (▲▲▲▲+▼▼▼▼)"),
       SCENARIO.info.push(
-        "• a product of two bell-pair states or a product state of four qubits.",
+        "　・2 つのベルペアの積状態または 4 量子ビットの積状態",
       ),
       SCENARIO.info.push(
-        "Output a `0` for a GHZ state else output a `1` for all other states.",
+        "・状態が GHZ なら `0`、それ以外なら `1` を出力します。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [1, 1, 2, 0, 0, 0]),
@@ -2482,7 +2490,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return SCENARIO.correctReps >= 45;
       }),
-      (SCENARIO.starText = "Star bonus: get at least 45 correct!"),
+      (SCENARIO.starText = "スター ボーナス: 45回以上正解！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 1),
       (SCENARIO.numCorrect = 1),
@@ -2497,10 +2505,10 @@ function LevelConsts(e) {
       (SCENARIO.info = []),
       (SCENARIO.archive = "https://en.wikipedia.org/wiki/No-cloning_theorem"),
       SCENARIO.info.push(
-        "• Input A consists of a sequence of groups, with each group containing 4 identical qubits in ▲, ▶, ▼ or ◀ state.",
+        "・入力 A は ▲、▶、▼、◀ のいずれか同じ状態の量子ビット4個からなるグループの列です。",
       ),
       SCENARIO.info.push(
-        "• Output to each C and D an identical copy of the inputs from A.",
+        "・A の入力をそのまま C と D に複製して出力します。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, -1, 1, 1]),
       (SCENARIO.channelsCol = [1, 0, 1, 1, 0, 0]),
@@ -2532,7 +2540,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function (e) {
       return e >= 900;
     }),
-      (SCENARIO.starText = "Star bonus: get 900 or more correct."),
+      (SCENARIO.starText = "スター ボーナス: 900回以上正解"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 1e3),
       (SCENARIO.numCorrect = 750),
@@ -2542,13 +2550,13 @@ function LevelConsts(e) {
       (SCENARIO.title = "Refinery"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Channels α and β contain 500 weakly entangled qubit pairs.",
+        "・α と β のチャンネルには 500 組の弱くエンタングルした量子ビットが入っています。",
       ),
       SCENARIO.info.push(
-        "• Output to A/C strongly entangled qubit pairs (Ent > 0.85 in the qubit analyzer).",
+        "・A/C にはエンタングル度が 0.85 を超える強いベルペアを出力してください。",
       ),
       SCENARIO.info.push(
-        "• The scenario ends when 2 or fewer qubits remain on the board.",
+        "・盤面上の量子ビットが 2 個以下になるとシナリオ終了です。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, -1, -11]),
       (SCENARIO.channelsCol = [0, 0, 0, 0, 1, 1]),
@@ -2571,7 +2579,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function (e) {
         return e >= 50;
       }),
-      (SCENARIO.starText = "Star bonus: 50 or more entangled pairs."),
+      (SCENARIO.starText = "スター ボーナス: エンタングルペア50組以上"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 9999),
       (SCENARIO.numCorrect = 30),
@@ -2581,10 +2589,10 @@ function LevelConsts(e) {
       (SCENARIO.title = "Addition++"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Inputs A and B each represent an integer, ranged 0-15, encoded as a 4-bit binary string (from least to most significant bit). ",
+        "・入力 A と B はそれぞれ 0〜15 の整数を表し、下位ビットから上位ビットへ並んだ 4 ビットの2進表現になっています。",
       ),
       SCENARIO.info.push(
-        "• Output to C the product of the integers from A and B, encoded as an 8-bit binary string (from least to most significant bit).",
+        "・A と B の積を 8 ビットの2進数（下位ビットから）として C に出力します。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 2, 0, 0, 0]),
@@ -2618,7 +2626,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return FIELD.cleanTiles >= (FIELD.cols - 2) * (FIELD.rows - 2) * 0.4;
     }),
-      (SCENARIO.starText = "Star bonus: use <60% of floor space (current:"),
+      (SCENARIO.starText = "スター ボーナス: 床面積を60%未満使用 (現在:"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 8),
       (SCENARIO.numCorrect = 8),
@@ -2633,10 +2641,10 @@ function LevelConsts(e) {
       (SCENARIO.title = "CIII.E: Unary <<< Binary"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Input A contains a string of N bits in state `1` (with 4 < N < 16) followed by a `0` bit.",
+        "・入力 A には N 個(4<N<16)の `1` が並び、その後に `0` が続いています。",
       ),
       SCENARIO.info.push(
-        "• Output to C the integer N encoded as a 4-bit binary string (from least to most significant bit).",
+        "・C には N を 4 ビットの2進数（下位ビットから）で出力します。",
       ),
       (SCENARIO.channelsDir = [-1, 1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 0, 2, 0, 0, 0]),
@@ -2659,7 +2667,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return FIELD.cleanTiles >= (FIELD.cols - 2) * (FIELD.rows - 2) * 0.6;
       }),
-      (SCENARIO.starText = "Star bonus: use <40% of floor space (current:"),
+      (SCENARIO.starText = "スター ボーナス: 床面積を40%未満使用 (現在:"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 4),
       (SCENARIO.numCorrect = 4),
@@ -2674,10 +2682,10 @@ function LevelConsts(e) {
       (SCENARIO.title = "CIII.F: Calculon"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Inputs A and B each contain a 64-bit string representing an integer in binary (from least to most significant bit).",
+        "・入力 A と B にはそれぞれ 64 ビットの2進数が入り、下位ビットから上位ビットへ並んでいます。",
       ),
       SCENARIO.info.push(
-        "• Output to C the 64-bit string corresponding to the sum of the input integers (from least to most significant bit).",
+        "・2 つの整数の和を 64 ビットの2進数（下位ビットから）として C に出力します。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 2, 0, 0, 0]),
@@ -2712,7 +2720,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return FIELD.cleanTiles >= (FIELD.cols - 2) * (FIELD.rows - 2) * 0.6;
     }),
-      (SCENARIO.starText = "Star bonus: use <40% of floor space (current:"),
+      (SCENARIO.starText = "スター ボーナス: 床面積を40%未満使用 (現在:"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 64),
       (SCENARIO.numCorrect = 64),
@@ -2723,13 +2731,13 @@ function LevelConsts(e) {
       (SCENARIO.title = "Magnum Opus"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Input A contains a string of at least 15 bits, while input B contains a string of exactly 9 bits.",
+        "・入力 A は 15 ビット以上の列、入力 B はちょうど 9 ビットの列を含みます。",
       ),
       SCENARIO.info.push(
-        "• Output to C a `1` if ANY substring from A exactly matches B, else ouput a `0`.",
+        "・A の部分列が B と完全一致する場合は `1` を、そうでなければ `0` を C に出力します。",
       ),
       SCENARIO.info.push(
-        "• Four sequential `1` bits (uniquely) marks the termination of the string from A.",
+        "・`1` が4連続で現れた位置が A の列の終端を示します。",
       ),
       (SCENARIO.channelsDir = [-1, -1, -1, 1, 1, 1]),
       (SCENARIO.channelsCol = [2, 2, 2, 0, 0, 0]),
@@ -2752,7 +2760,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return !0;
       }),
-      (SCENARIO.starText = "Star bonus: freebie! You deserve it..."),
+      (SCENARIO.starText = "スター ボーナス: おまけ！ご褒美です…"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 1),
       (SCENARIO.numCorrect = 1),
@@ -2768,13 +2776,13 @@ function LevelConsts(e) {
         "https://en.wikipedia.org/wiki/CHSH_inequality#CHSH_game"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Adjust the measurement gates to win >84% of rounds.",
+        "・測定ゲートを調整して 84% 以上の勝率を目指します。",
       ),
       SCENARIO.info.push(
-        "• Each round, Alice and Bob each RECEIVE a random bit from the center, then must SEND another bit back to the center.",
+        "・毎ラウンド、アリスとボブは中央からランダムなビットを受け取り、別のビットを送り返します。",
       ),
       SCENARIO.info.push(
-        "• To win the round: sent bits must DIFFER if the received bits were both '1' state, else sent bits must MATCH.",
+        "・受け取ったビットが共に '1' のときは異なるビットを、それ以外では同じビットを送ると勝利です。",
       ),
       (SCENARIO.journal = !0),
       (SCENARIO.channelsDir = [1, 1, 1, 1, -1, -1]),
@@ -2805,7 +2813,7 @@ function LevelConsts(e) {
       (SCENARIO.starCond = function () {
         return !0;
       }),
-      (SCENARIO.starText = "Star bonus: freebie!"),
+      (SCENARIO.starText = "スター ボーナス: おまけ！"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 1800),
       (SCENARIO.numCorrect = 1800),
@@ -2819,9 +2827,9 @@ function LevelConsts(e) {
       (SCENARIO.disableOverlay = !0),
       (SCENARIO.title = "Free-form"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Template used for level design."),
+      SCENARIO.info.push("・レベル設計用のテンプレートです。"),
       SCENARIO.info.push(
-        "• Overlay is semi-transparent in order to faciliate placement of hidden elements.",
+        "・隠し要素の配置をしやすいようオーバーレイは半透明になっています。",
       ),
       (SCENARIO.channelsDir = [0, 0, 0, 0, 0, 0]),
       (SCENARIO.channelsCol = [0, 0, 0, 0, 0, 0]),
@@ -2850,7 +2858,7 @@ function LevelConsts(e) {
     (SCENARIO.starCond = function () {
       return RBOARD[TIMER.tick].success >= 390;
     }),
-      (SCENARIO.starText = "Star bonus: get 390 or more correct."),
+      (SCENARIO.starText = "スター ボーナス: 390回以上正解"),
       SCENARIO.overlayType,
       (SCENARIO.maxTrials = 1e3),
       (SCENARIO.numCorrect = 1e3),
@@ -2869,12 +2877,14 @@ function LevelConsts(e) {
       (SCENARIO.title = "Free-form"),
       (SCENARIO.info = []),
       SCENARIO.info.push(
-        "• Each round, Alice and Bob each RECEIVE a random bit from the center, then SEND another bit back to the center.",
+        "・各ラウンドでアリスとボブは中央からランダムなビットを受け取り、別のビットを中央へ返送します。",
       ),
       SCENARIO.info.push(
-        "• To win the round: sent bits must DIFFER if the received bits were both '1' state, else sent bits must MATCH.",
+        "・受け取ったビットが両方とも '1' の場合は異なるビットを、それ以外は同じビットを送ると勝利です。",
       ),
-      SCENARIO.info.push("• Adjust the measurements to maximize the win rate."),
+      SCENARIO.info.push(
+        "・勝率を最大化するよう測定ゲートを調整してください。",
+      ),
       (SCENARIO.channelsDir = [0, 0, 0, 0, 0, 0]),
       (SCENARIO.channelsCol = [1, 1, 1, 1, 1, 1]),
       (SCENARIO.hasEntanglers = !0),
@@ -2914,7 +2924,7 @@ function LevelConsts(e) {
       (SCENARIO.disableOverlay = !1),
       (SCENARIO.title = "Free-form"),
       (SCENARIO.info = []),
-      SCENARIO.info.push("• Empty factory for testing and experimentation."),
+      SCENARIO.info.push("・テストや実験用に空の工場を提供します。"),
       (SCENARIO.channelsDir = [1, 1, 1, 1, 1, 1]),
       (SCENARIO.channelsCol = [0, 0, 0, 0, 0, 0]),
       (SCENARIO.hasEntanglers = !1),
