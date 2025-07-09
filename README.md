@@ -35,3 +35,19 @@ Translation work is needed in the following scripts/ files:
 These files encompass menu labels, tutorial text, level descriptions, dialogue, tooltips, and other on-screen messages. Translating the strings within them will localize the core user experience for Japanese players.
 
 Formatting guideline: Formatting strings should be written like: "ここThe Qubit Factoryでは、 $$b40r:最高品質 $$b40r:の $$b40r:昔ながらの $$b40r:ロボット製造キュービットだけ を生産していることを誇りにしています。あなたの優れた才能とスキルで、顧客に質の高いサービスを提供し、当社ブランドの価値を高めてくれると確信しています。" where the space indicates the termination of the formatted strings. 
+
+## For debugging:
+Run on Chrome console:
+```javascript
+// In the level-select screen
+FIELD.forceOpen = true;         // allow every stage
+for (let i = 1; i < 10; i++) {
+    FIELD.forceOpenRing[i] = true;  // unlock each ring of levels
+}
+SELECTOR.unlockCheck();
+SELECTOR.initialize();
+SELECTOR.drawBase(CANV.selectBase);
+SELECTOR.draw(CANV.select, CANV.selectText);
+SELECTOR.drawText(CANV.selectText);
+```
+to unlock all levels and rings in the level-select screen.
