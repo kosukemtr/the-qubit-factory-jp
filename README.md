@@ -16,6 +16,8 @@ _The Qubit Factory_ is set within a fictional reality about robots doing robotty
 _The Qubit Factory_ is licensed under Apache 2.0.
 
 ## TODO:
+scripts.min.js is the original file, which we de-minified to scripts.js, which is then separated into individual files in the scripts/ directory.
+
 Translation work is needed in the following scripts/ files:
 
 - Achievements.js
