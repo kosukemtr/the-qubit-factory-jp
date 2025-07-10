@@ -137,9 +137,9 @@ class Overlay {
       (e.shadowOffsetY = 2),
       (e.shadowColor = "black"),
       "levelSelect" === ROBOT.oldMode
-        ? (e.fillText("アドミニストロン", b + M / 2, O + v / 4),
+        ? (e.fillText("管理者", b + M / 2, O + v / 4),
           e.fillText("40000", b + M / 2, O + (3 * v) / 4))
-        : (e.fillText("オートマネージャー", b + M / 2, O + v / 4),
+        : (e.fillText("マネージャー", b + M / 2, O + v / 4),
           e.fillText("5000", b + M / 2, O + (3 * v) / 4)),
       e.restore();
   }
