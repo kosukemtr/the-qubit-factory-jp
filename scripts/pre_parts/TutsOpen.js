@@ -4,11 +4,11 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " ビット（オレンジのディスク）は$$b:青色 $$b:ワイヤー上を移動します。",
+          " ビット（オレンジのディスク）は$$b:青色 $$b:ワイヤー 上を移動します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " キュービット（緑のディスク）は$$r:赤色 $$r:ワイヤー上を移動します。",
+          " キュービット（緑のディスク）は$$r:赤色 $$r:ワイヤー 上を移動します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -118,20 +118,20 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " ワイヤーはメニューで選択後、$$d:左クリック $$d:+ $$d:ドラッグして配置します。",
+          " ワイヤーはメニューで選択後、$$d:左クリック $$d:+ $$d:ドラッグ して配置します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " 同じ色のワイヤーは、ゲートや既存のワイヤー上で$$d:ドラッグクリックすることでも作成できます。",
+          " 同じ色のワイヤーは、ゲートや既存のワイヤー上で$$d:ドラッグクリック することでも作成できます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " ゲートやワイヤーを削除するには$$d:右クリック $$d:+ $$d:ドラッグするか、$$d:eraser $$d:tool を使います。",
+          " ゲートやワイヤーを削除するには$$d:右クリック $$d:+ $$d:ドラッグ するか、$$d:eraser $$d:tool を使います。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " ゲートの向きは配置前に$$d:マウススクロール または $$d:矢印 $$d:keys を使って調整できます。",
+          " ゲートの向きは配置前に$$d:マウススクロール または $$d:矢印 $$d:keys  を使って調整できます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -463,7 +463,7 @@ function TutsOpen() {
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$b:反転 $$b:ゲートはビットの状態を反転させます。",
+          " $$b:反転 $$b:ゲート はビットの状態を反転させます。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
@@ -474,7 +474,7 @@ function TutsOpen() {
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$b:再ゼロ $$b:ゲートはビットを0状態に設定します。",
+          " $$b:再ゼロ $$b:ゲート はビットを0状態に設定します。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
@@ -563,7 +563,7 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$b:コンバイナーは最大3本のワイヤーを1本の出力にまとめます。",
+          " $$b:コンバイナー は最大3本のワイヤーを1本の出力にまとめます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -571,12 +571,12 @@ function TutsOpen() {
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$b:ビット用と$$r:キュービット用にそれぞれ別のコンバイナーがあります。",
+          " $$b:ビット用 と$$r:キュービット用 にそれぞれ別のコンバイナーがあります。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$b:スプリッターは入力されたビットを複数の出力に複製します。",
+          " $$b:スプリッター は入力されたビットを複数の出力に複製します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -680,7 +680,7 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " 生成ゲートは新しい$$b:ビットや$$r:キュービットを作り出します。",
+          " 生成ゲートは新しい$$b:ビット や$$r:キュービット を作り出します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -694,7 +694,7 @@ function TutsOpen() {
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$g:焼却炉はビットやキュービットを消滅させます。",
+          " $$g:焼却炉 はビットやキュービットを消滅させます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -796,15 +796,15 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$b:コントロールは投入されたビットに応じて、$$d:ターゲットリング内に置かれたゲートの状態を能動的に変化させます。",
+          " $$b:コントロール は投入されたビットに応じて、$$d:ターゲットリング 内に置かれたゲートの状態を能動的に変化させます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " 建設中は黄色い$$d:スイッチアイコンで0プライムと1プライムの$$b:コントロールを切り替え、$$d:ターゲット$$d:ゲートを状態ごとに設定できます。",
+          " 建設中は黄色い$$d:スイッチアイコン で0プライムと1プライムの$$b:コントロール を切り替え、$$d:ターゲット $$d:ゲートを状態ごとに設定できます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " 左の例では、$$b:`0`$$b:制御ビットを受け取るとターゲットゲートは左へ、$$b:`1`$$b:制御ビットを受け取ると上へビットを送ります。",
+          " 左の例では、$$b:`0` $$b:制御ビットを受け取るとターゲットゲートは左へ、$$b:`1` $$b:制御ビットを受け取ると上へビットを送ります。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -881,20 +881,20 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$g:遅延$$g:ゲートはビットやキュービットを一定ティック数（0〜80ティック設定可能）その場に留めます。",
+          " $$g:遅延$$g:ゲート はビットやキュービットを一定ティック数（0〜80ティック設定可能）その場に留めます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$g:同期$$g:ゲートは常にペアで配置され、両方が同時に占有されたときのみ通過を許可し、それ以外ではビットやキュービットを足止めします。",
+          " $$g:同期$$g:ゲート は常にペアで配置され、両方が同時に占有されたときのみ通過を許可し、それ以外ではビットやキュービットを足止めします。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$g:ビットからキュービットへの(BtQ)ゲートは、入力ビットをキュービットへ変換します。",
+          " $$g:ビットからキュービットへの(BtQ)ゲート は、入力ビットをキュービットへ変換します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " 入力ビットが$$d:'0'状態なら出力キュービットはゲート矢印と$$d:同方向に、$$d:'1'状態なら$$d:逆方向になります。",
+          " 入力ビットが$$d:'0' 状態なら出力キュービットはゲート矢印と$$d:同方向 に、$$d:'1' 状態なら$$d:逆方向 になります。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -994,7 +994,7 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " （非エンタングル状態の）$$r:キュービットは緑の円盤の縁を指す矢印で表されます。▲と▼の状態は `0` と `1` ビットに相当します。",
+          " （非エンタングル状態の）$$r:キュービット は緑の円盤の縁を指す矢印で表されます。▲と▼の状態は `0` と `1` ビットに相当します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -1003,7 +1003,7 @@ function TutsOpen() {
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " キュービットの縁の色は波動関数の符号を表し、$$g:緑色が正、$$p:紫色が負です。符号は重ね合わせを扱うときに重要になります。",
+          " キュービットの縁の色は波動関数の符号を表し、$$g:緑色 が正、$$p:紫色 が負です。符号は重ね合わせを扱うときに重要になります。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -1086,7 +1086,7 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$r:フリップ$$r:ゲートは選んだ軸でキュービットを反射させます。",
+          " $$r:フリップ$$r:ゲート は選んだ軸でキュービットを反射させます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -1099,7 +1099,7 @@ function TutsOpen() {
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$r:ローテーション$$r:ゲートはキュービットを半回転まで（-π〜πの範囲）回転させます。",
+          " $$r:ローテーション$$r:ゲート はキュービットを半回転まで（-π〜πの範囲）回転させます。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(" "),
@@ -1211,7 +1211,7 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$r:測定$$r:ゲートは、測定軸に沿うか反対向きのキュービットを出力します。",
+          " $$r:測定$$r:ゲート は、測定軸に沿うか反対向きのキュービットを出力します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -1224,7 +1224,7 @@ function TutsOpen() {
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " 測定結果に対応する古典ビット（整列なら `0`、反整列なら `1`）は、$$b:青タブが互換ワイヤやゲートに接続されていれば出力されます。",
+          " 測定結果に対応する古典ビット（整列なら `0`、反整列なら `1`）は、$$b:青タブ が互換ワイヤやゲートに接続されていれば出力されます。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1310,7 +1310,7 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$r:キュービット$$r:コントロールゲートは、制御キュービットの状態に応じて$$d:ターゲット$$d:リング内の（フリップまたはローテート）ゲートの動作を変更します。",
+          " $$r:キュービット$$r:コントロールゲート は、制御キュービットの状態に応じて$$d:ターゲット$$d:リング内 の（フリップまたはローテート）ゲートの動作を変更します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -1323,7 +1323,7 @@ function TutsOpen() {
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-            " 制御キュービットがゲートと整列も反整列もしていない場合、$$d:エンタングル$$d:状態が生成されることがあります（キュービットの重ね合わせ/エンタングル状態参照）。",
+            " 制御キュービットがゲートと整列も反整列もしていない場合、$$d:エンタングル$$d:状態 が生成されることがあります（キュービットの重ね合わせ/エンタングル状態参照）。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1460,7 +1460,7 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " ある軸に沿った単一の$$r:キュービットは、別の軸に沿ったキュービットの重み付き和（重ね合わせ）としても表せます。この軸の選択を$$d:基底と呼びます。",
+          " ある軸に沿った単一の$$r:キュービット は、別の軸に沿ったキュービットの重み付き和（重ね合わせ）としても表せます。この軸の選択を$$d:基底 と呼びます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -1468,11 +1468,11 @@ function TutsOpen() {
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " ゲームでは重ね合わせはキュービットが状態を\`点滅\`することで表示されます。各成分の$$d:大きさは境界の破線の長さで、$$d:符号は色（緑=正、紫=負）で示されます。",
+          " ゲームでは重ね合わせはキュービットが状態を\`点滅\`することで表示されます。各成分の$$d:大きさ は境界の破線の長さで、$$d:符号 は色（緑=正、紫=負）で示されます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " 状態の$$d:全体符号は重要ではありませんが、成分間の$$d:相対符号は重要です。",
+          " 状態の$$d:全体符号 は重要ではありませんが、成分間の$$d:相対符号 は重要です。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1496,7 +1496,7 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$d:エンタングル$$d:状態は、非エンタングルなキュービットから$$r:量子$$r:制御ゲートを用いることでのみ生成できます。複数の量子制御ゲートを組み合わせれば、多数のキュービットのエンタングル状態を形成できます。",
+          " $$d:エンタングル$$d:状態 は、非エンタングルなキュービットから$$r:量子$$r:制御ゲート を用いることでのみ生成できます。複数の量子制御ゲートを組み合わせれば、多数のキュービットのエンタングル状態を形成できます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -1504,7 +1504,7 @@ function TutsOpen() {
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " 測定されたキュービットからはエンタングルが解除されますが、$$d:他の$$d:エンタングルされたキュービットも測定結果に応じて変化します（波動関数の崩壊参照）。そのため、エンタングル状態の測定では非エンタングルでは見られない$$d:相関が現れます。",
+          " 測定されたキュービットからはエンタングルが解除されますが、$$d:他の$$d:エンタングルされた キュービットも測定結果に応じて変化します（波動関数の崩壊参照）。そのため、エンタングル状態の測定では非エンタングルでは見られない$$d:相関 が現れます。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1618,7 +1618,7 @@ function TutsOpen() {
       (TUTORIAL.title = "ハンドブック15: 状態アナライザー"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
-        "工場を一時停止中にキュービットをクリックすると表示される$$d:状態$$d:アナライザーでは、キュービットやエンタングル状態の詳細を確認できます:",
+        "工場を一時停止中にキュービットをクリックすると表示される$$d:状態 $$d:アナライザー では、キュービットやエンタングル状態の詳細を確認できます:",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
@@ -1626,11 +1626,11 @@ function TutsOpen() {
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " 各キュービットの$$d:エンタングルエントロピー（0〜1で表されるエンタングル度合い）。",
+          " 各キュービットの$$d:エンタングルエントロピー （0〜1で表されるエンタングル度合い）。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " 指定した基底で1つのキュービットを測定したときの$$d:期待結果。",
+          " 指定した基底で1つのキュービットを測定したときの$$d:期待結果 。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1656,7 +1656,7 @@ function TutsOpen() {
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " エンタングル状態のキュービットを測定すると残りのキュービットは（最初のキュービットの測定結果に依存する）新しい状態へ収縮します。各キュービット下の$$d:オレンジ色のボタンをクリックして状態アナライザーを使えば、新しい状態を予測できます。",
+          " エンタングル状態のキュービットを測定すると残りのキュービットは（最初のキュービットの測定結果に依存する）新しい状態へ収縮します。各キュービット下の$$d:オレンジ色のボタン をクリックして状態アナライザーを使えば、新しい状態を予測できます。",
       ),
       TUTORIAL.info.push("左の例では次の通りです:"),
       TUTORIAL.info.push(
