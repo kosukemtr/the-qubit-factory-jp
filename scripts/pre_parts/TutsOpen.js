@@ -1,28 +1,28 @@
 function TutsOpen() {
   if (0 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 1: Bits, wires and outputs"),
+    (TUTORIAL.title = "ハンドブック1: ビット、ワイヤー、出力"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Bits (orange disks) travel along $$b:blue $$b:wires.",
+          " ビット（オレンジのディスク）は$$b:青色 $$b:ワイヤー上を移動します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Qubits (green disks) travel along $$r:red $$r:wires.",
+          " キュービット（緑のディスク）は$$r:赤色 $$r:ワイヤー上を移動します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Only a single bit or qubit can occupy a tile at any time.",
+          " 一度に1つのビットまたはキュービットしかタイルを占有できません。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " In most levels, the goal is to output a stream of bits or qubits that matches the desired outputs.",
+          " 多くのレベルでは、望まれる出力に一致するビットまたはキュービットの流れを出力することが目標です。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Typically you will be given instructions on how the desired output can be achieved.",
+          " 通常、望ましい出力を得る方法について指示が与えられます。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -114,32 +114,32 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (1 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 2: Circuit Construction"),
+    (TUTORIAL.title = "ハンドブック2: 回路の構築"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Wires are placed by $$d:left-click $$d:+ $$d:dragging once selected from the menu.",
+          " ワイヤーはメニューで選択後、$$d:左クリック $$d:+ $$d:ドラッグして配置します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Wires (of matching color) can also be created by $$d:drag-clicking on a gate or existing wire.",
+          " 同じ色のワイヤーは、ゲートや既存のワイヤー上で$$d:ドラッグクリックすることでも作成できます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$d:Right-click $$d:+ $$d:drag or use the $$d:eraser $$d:tool to destroy gates / wires.",
+          " ゲートやワイヤーを削除するには$$d:右クリック $$d:+ $$d:ドラッグするか、$$d:eraser $$d:tool を使います。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " The orientation of a gate can be adjusted using $$d:mouse-scroll or $$d:arrow $$d:keys BEFORE placement.",
+          " ゲートの向きは配置前に$$d:マウススクロール または $$d:矢印 $$d:keys を使って調整できます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " The properties/settings of a gate are adjusted by selecting the gate $$d:(left- $$d:click) AFTER placement.",
+          " ゲートの設定は、配置後にゲートを選択して $$d:(左$$d:クリック) で調整します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$d:Hold $$d:shift $$d:+ $$d:left-click on an existing gate to copy.",
+          " 既存のゲートを$$d:shift $$d:+ $$d:left-click し続けるとコピーできます。",
       ),
       (TUTORIAL.type = "fixed"),
       (TUTORIAL.nFrames = 7),
@@ -346,31 +346,31 @@ function TutsOpen() {
     }
     UBOARD[6] = UBOARD[5].copy();
   } else if (2 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 3: Gates"),
+    (TUTORIAL.title = "ハンドブック3: ゲート"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Gates act to alter bits / qubits that move over them.",
+          " ゲートは上を通過するビットやキュービットを変化させます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Gates with $$b:blue coloration (generally) act on bits.",
+          " $$b:青色 のゲートは（基本的に）ビットに作用します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Gates with $$r:red coloration (generally) act on qubits.",
+          " $$r:赤色 のゲートは（基本的に）キュービットに作用します。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Gates with $$b:blue or $$r:red tabs must be connected to wires of the same color.",
+          " $$b:青または $$r:赤 のタブを持つゲートは同じ色のワイヤーに接続する必要があります。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Gates with $$g:green tabs can be connected to wires of either color.",
+          " $$g:緑色 のタブを持つゲートはどちらの色のワイヤーにも接続できます。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -458,28 +458,28 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (3 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 4: Inversion and Re-zero Gates"),
+    (TUTORIAL.title = "ハンドブック4: 反転ゲートと再ゼロゲート"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$b:Inversion $$b:gates act on bits to flip their state.",
+          " $$b:反転 $$b:ゲートはビットの状態を反転させます。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Inversion gates can be toggled to act as identity (i.e. to leave bits unchanged).",
+          " 反転ゲートはトグルで無作用（ビットを変更しない）にすることもできます。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$b:Re-zero $$b:gates act on bits to set them in the 0-state.",
+          " $$b:再ゼロ $$b:ゲートはビットを0状態に設定します。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Re-zero gates can also be toggled to act as identity.",
+          " 再ゼロゲートも無作用に切り替えることができます。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -559,32 +559,32 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (4 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 5: Combiner and Splitter Gates"),
+    (TUTORIAL.title = "ハンドブック5: コンバイナーとスプリッターゲート"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$b:Combiners merge up to three wires into a single output wire.",
+          " $$b:コンバイナーは最大3本のワイヤーを1本の出力にまとめます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " If multiple bits/quibts are waiting to enter the same combiner then priority if given clockwise from the output direction.",
+          " 複数のビット/キュービットが同じコンバイナーを待つ場合、出力方向から時計回りの順で優先されます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Seperate versions of combiners are available for $$b:bits and for $$r:qubits.",
+          " $$b:ビット用と$$r:キュービット用にそれぞれ別のコンバイナーがあります。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$b:Splitters act to duplicate an input bit across multiple outputs.",
+          " $$b:スプリッターは入力されたビットを複数の出力に複製します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Duplicate bits are only created when splitter outputs are connected to compatible wires or gates.",
+          " スプリッターの出力が対応するワイヤーやゲートに接続されている場合のみ複製ビットが生成されます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Splitters are not available for qubits (quantum theory forbids it!).",
+          " スプリッターはキュービットには使用できません（量子論が禁じています！）",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -676,29 +676,29 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (5 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 6: Creation and Incineration"),
+    (TUTORIAL.title = "ハンドブック6: 生成と焼却"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Creation gates act to create new $$b:bits or $$r:qubits.",
+          " 生成ゲートは新しい$$b:ビットや$$r:キュービットを作り出します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Gates can be configured to produce in $$d:fixed, $$d:alternating or $$d:random states.",
+          " ゲートは$$d:固定、$$d:交互、$$d:ランダムの各状態で生成するよう設定できます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Gates can be configured to produce indefinitely or to produce a finite number of outputs.",
+          " 生成回数を無制限にも有限にも設定できます。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$g:Incinerators act to destroy bits and qubits.",
+          " $$g:焼却炉はビットやキュービットを消滅させます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Incinerators can be toggled to display their destroy count.",
+          " 焼却炉は破壊した数を表示するよう切り替えられます。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -792,23 +792,23 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (6 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 7: (Bit) Control Gates"),
+    (TUTORIAL.title = "ハンドブック7: （ビット）コントロールゲート"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$b:Controls can actively alter the state of gates placed within their $$d:target ring depending on the bits input into the control.",
+          " $$b:コントロールは投入されたビットに応じて、$$d:ターゲットリング内に置かれたゲートの状態を能動的に変化させます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " During construction the yellow $$d:switch icon can be used to toggle between 0-primed or 1-primed $$b:control states, and the $$d:target $$d:gate can be configured separately for each state.",
+          " 建設中は黄色い$$d:スイッチアイコンで0プライムと1プライムの$$b:コントロールを切り替え、$$d:ターゲット$$d:ゲートを状態ごとに設定できます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " In the example to the left, the target gate directs bits to left after receiving a $$b:`0` $$b:control-bit   and to the top after receiving a     $$b:`1` $$b:control-bit.",
+          " 左の例では、$$b:`0`$$b:制御ビットを受け取るとターゲットゲートは左へ、$$b:`1`$$b:制御ビットを受け取ると上へビットを送ります。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Each time that the target gate is triggered the control returns to the unprimed state and must be re-primed before the target gate will reaccept bit/qubit entry.",
+          " ターゲットゲートが作動するたびにコントロールは未プライム状態に戻ります。再びビットやキュービットを受け入れるには、もう一度プライムする必要があります。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -877,24 +877,24 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (7 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 8: Delay, Sync and BtQ Gates"),
+    (TUTORIAL.title = "ハンドブック8: 遅延ゲート、同期ゲート、BtQゲート"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$g:Delay $$g:gates act to hold bits or qubits in place for a number of ticks (configurable between 0-80 ticks).",
+          " $$g:遅延$$g:ゲートはビットやキュービットを一定ティック数（0〜80ティック設定可能）その場に留めます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$g:Sync $$g:gates are always placed in pairs. They will only allow passage when both halves of the pair are simultaneously occupied, otherwise bits / qubits will be held in place.",
+          " $$g:同期$$g:ゲートは常にペアで配置され、両方が同時に占有されたときのみ通過を許可し、それ以外ではビットやキュービットを足止めします。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$g:Bit-to-qubit (BtQ) gates transform an incoming bit into an outgoing qubit.",
+          " $$g:ビットからキュービットへの(BtQ)ゲートは、入力ビットをキュービットへ変換します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " If the input bit is $$d:'0' state then the outgoing qubit will be $$d:aligned with the gate arrow, else if the input bit is $$d:'1' state the outgoing qubit will be $$d:anti-aligned.",
+          " 入力ビットが$$d:'0'状態なら出力キュービットはゲート矢印と$$d:同方向に、$$d:'1'状態なら$$d:逆方向になります。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -990,24 +990,24 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (8 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 9: Intro to Qubits"),
+    (TUTORIAL.title = "ハンドブック9: キュービット入門"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " An (unentangled) $$r:qubit is depicted as an arrow pointing to edge of a green disk. The ▲ and ▼ states are analogous to `0` and `1` bits.",
+          " （非エンタングル状態の）$$r:キュービットは緑の円盤の縁を指す矢印で表されます。▲と▼の状態は `0` と `1` ビットに相当します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " In general qubits can be at any angle Θ, although the Qubit Factory often only makes use of qubits at discrete angular increments of π/8.",
+          " キュービットは一般に任意の角度Θを取り得ますが、Qubit Factoryでは主にπ/8刻みの離散角度を使用します。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " The outline color of a qubit denotes the sign of its wavefunction, with $$g:green $$g:for $$g:+ve and $$p:purple $$p:for $$p:-ve. Signs only become important when dealing with superpositions.",
+          " キュービットの縁の色は波動関数の符号を表し、$$g:緑色が正、$$p:紫色が負です。符号は重ね合わせを扱うときに重要になります。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Rotation of a qubit through 2π (or 360°) changes its sign. Although weird, this is expected behavior!",
+          " キュービットを2π（360°）回転させると符号が反転します。奇妙に思えますが、これが正しい挙動です！",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1082,30 +1082,30 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (9 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 10: Flip and Rotation Gates"),
+    (TUTORIAL.title = "ハンドブック10: フリップゲートと回転ゲート"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$r:Flip $$r:gates act to reflect qubits about a chosen axis.",
+          " $$r:フリップ$$r:ゲートは選んだ軸でキュービットを反射させます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Flip gates can be toggled to act instead as identity (i.e. qubits are unchanged).",
+          " フリップゲートはトグルで無作用（キュービットを変更しない）にできます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " The sign of the output changes depending on if the qubit is aligned or anti-aligned with the flip axis.",
+          " 出力の符号はキュービットがフリップ軸と同方向か逆方向かによって変わります。",
       ),
+      TUTORIAL.info.push(" "),
+      TUTORIAL.info.push(
+        String.fromCharCode(8226) +
+          " $$r:ローテーション$$r:ゲートはキュービットを半回転まで（-π〜πの範囲）回転させます。",
+      ),
+      TUTORIAL.info.push(" "),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$r:Rotation $$r:gates act to rotate qubits up to a half-turn in either direction (i.e. within range -π to π).",
-      ),
-      TUTORIAL.info.push(" "),
-      TUTORIAL.info.push(" "),
-      TUTORIAL.info.push(
-        String.fromCharCode(8226) +
-          " Rotation gates act as identity if the rotation angle is set to zero.",
+          " 回転角が0の場合、ローテーションゲートは無作用となります。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1207,24 +1207,24 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (10 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 11: Measurements"),
+    (TUTORIAL.title = "ハンドブック11: 測定"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$r:Measurements produce output qubits either aligned or anti-aligned with the measurment axis.",
+          " $$r:測定$$r:ゲートは、測定軸に沿うか反対向きのキュービットを出力します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " The probability for each outcome depends on the angle Θ between the head of the measurement and the head of the qubit (align prob = cos²(Θ/2), anti-align prob = sin²(Θ/2)).",
+          " 結果の確率は測定の向きとキュービットの向きの角度Θによって決まり、整列確率は cos²(Θ/2)、反整列確率は sin²(Θ/2) です。",
       ),
       TUTORIAL.info.push(" "),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Input qubits that are already aligned / anti-aligned with the measurement remain unchanged.",
+          " 既に整列または反整列しているキュービットを測定しても状態は変わりません。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Classical bits corresponding to the measurement outcome (`0` for aligned, `1` for anti-aligned) are output if the $$b:blue tabs are connected to compatible wires or gates.",
+          " 測定結果に対応する古典ビット（整列なら `0`、反整列なら `1`）は、$$b:青タブが互換ワイヤやゲートに接続されていれば出力されます。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1306,24 +1306,24 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (11 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 12: Qubit Control Gates"),
+    (TUTORIAL.title = "ハンドブック12: キュービット制御ゲート"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$r:Qubit $$r:control $$r:gates affect the action of the (flip or rotate) gate placed within their $$d:target $$d:ring based on the state of the control qubit.",
+          " $$r:キュービット$$r:コントロールゲートは、制御キュービットの状態に応じて$$d:ターゲット$$d:リング内の（フリップまたはローテート）ゲートの動作を変更します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " If the control qubit and gate are aligned then the target gate acts as the identity (i.e. no action), else if they are anti-aligned the target gate acts normally.",
+            " 制御キュービットとゲートが整列していればターゲットゲートは無作用となり、逆向きなら通常通り動作します。",
       ),
       TUTORIAL.info.push(""),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Gates will hold a control/target qubit in place until both are occupied simultaneously.",
+            " ゲートは制御側とターゲット側のキュービットが同時に入るまで両方をその場に留めます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " If the control qubit is neither aligned nor anti-aligned with the control gate then an $$d:entangled $$d:state can be produced (see qubit superpositions / entangled states).",
+            " 制御キュービットがゲートと整列も反整列もしていない場合、$$d:エンタングル$$d:状態が生成されることがあります（キュービットの重ね合わせ/エンタングル状態参照）。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1456,23 +1456,23 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (12 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 13: Qubit Superpositions"),
+    (TUTORIAL.title = "ハンドブック13: キュービットの重ね合わせ"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " A single $$r:qubit aligned along an axis can be equivalently represented as a weighted sum (or superposition) of qubits aligned along a different axis. The choice of axis is called the $$d:basis.",
+          " ある軸に沿った単一の$$r:キュービットは、別の軸に沿ったキュービットの重み付き和（重ね合わせ）としても表せます。この軸の選択を$$d:基底と呼びます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " As an analogy, this is similar to how single color can be represented as a mixture of two other colors.",
+          " 例えるなら、単一の色が二つの色の混合で表せるのと同様です。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " In game, a superposition is shown by a qubit `blinking` through states. The $$d:magnitude of each component is denoted by the dash-length of its border, while the $$d:sign is denoted by color (green +ve / purple -ve).",
+          " ゲームでは重ね合わせはキュービットが状態を\`点滅\`することで表示されます。各成分の$$d:大きさは境界の破線の長さで、$$d:符号は色（緑=正、紫=負）で示されます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Although the $$d:global sign of a state is insignificant, the $$d:relative sign between components is significant.",
+          " 状態の$$d:全体符号は重要ではありませんが、成分間の$$d:相対符号は重要です。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1492,19 +1492,19 @@ function TutsOpen() {
     }
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else if (13 === TUTORIAL.current) {
-    (TUTORIAL.title = "Handbook 14: Entangled States"),
+    (TUTORIAL.title = "ハンドブック14: エンタングル状態"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " $$d:Entangled $$d:states can only be produced from unentangled qubits through use of $$r:quantum $$r:control gates. Entangled states of many qubits can be formed through use of multiple quantum control gates.",
+          " $$d:エンタングル$$d:状態は、非エンタングルなキュービットから$$r:量子$$r:制御ゲートを用いることでのみ生成できます。複数の量子制御ゲートを組み合わせれば、多数のキュービットのエンタングル状態を形成できます。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Entanglement is indicated via a translucent blob surrounding qubits. Qubits that are entangled together possess the same colored blob!",
+          " エンタングルしているキュービットは半透明の雲で囲まれ、互いにエンタングルしているキュービットは同じ色の雲を共有します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " Entanglement is removed from any qubit that is measured; however the $$d:OTHER qubits that were entangled also change in response to the measurement result (see Wavefunction Collapse). It follows that measurements of entangled states can exhibit $$d:correlations not possible in non-entangled qubits.",
+          " 測定されたキュービットからはエンタングルが解除されますが、$$d:他の$$d:エンタングルされたキュービットも測定結果に応じて変化します（波動関数の崩壊参照）。そのため、エンタングル状態の測定では非エンタングルでは見られない$$d:相関が現れます。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1615,22 +1615,22 @@ function TutsOpen() {
   } else if (14 === TUTORIAL.current) {
     SVG.tutorialB.activate(),
       (SVG.tutorialB.svg.style.zIndex = "31"),
-      (TUTORIAL.title = "Handbook 15: State Analyzer"),
+      (TUTORIAL.title = "ハンドブック15: 状態アナライザー"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
-        "The $$d:state $$d:analyzer, which appears when clicking on a qubit while the factory is paused, provides details about a qubit or entangled state including:",
+        "工場を一時停止中にキュービットをクリックすると表示される$$d:状態$$d:アナライザーでは、キュービットやエンタングル状態の詳細を確認できます:",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " the $$d:amplitudes in each of the basis states (together with the ability to alter each qubit basis).",
+          " 各基底状態における振幅（それぞれのキュービット基底を変更する機能付き）。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " the $$d:entanglement $$d:entropy of each qubit; this is a measure of its entanglement on a scale of 0-1.",
+          " 各キュービットの$$d:エンタングルエントロピー（0〜1で表されるエンタングル度合い）。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " the $$d:expected $$d:results of a single qubit measurement in a specified basis.",
+          " 指定した基底で1つのキュービットを測定したときの$$d:期待結果。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1652,32 +1652,32 @@ function TutsOpen() {
   } else if (15 === TUTORIAL.current) {
     SVG.tutorialB.activate(),
       (SVG.tutorialB.svg.style.zIndex = "31"),
-      (TUTORIAL.title = "Handbook 16: Wavefunction Collapse"),
+      (TUTORIAL.title = "ハンドブック16: 波動関数の崩壊"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " When a qubit from an entangled state is measured the remaining qubits collapse into a new state (that depends on the measurement outcome of the first qubit). The new state can be predicted using the state analyzer (by clicking on the $$d:orange $$d:buttons below each qubit).",
+          " エンタングル状態のキュービットを測定すると残りのキュービットは（最初のキュービットの測定結果に依存する）新しい状態へ収縮します。各キュービット下の$$d:オレンジ色のボタンをクリックして状態アナライザーを使えば、新しい状態を予測できます。",
       ),
-      TUTORIAL.info.push("In the examples on the left:"),
+      TUTORIAL.info.push("左の例では次の通りです:"),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " If qubit-1 is found in state " +
+          " キュービット1が状態 " +
           String.fromCharCode(9650) +
-          " after measurement then qubit-2 will collapse into an even superposition, (" +
+          " に測定された場合、キュービット2は (" +
           String.fromCharCode(9654) +
           " + " +
           String.fromCharCode(9664) +
-          ").",
+          ") の等分重ね合わせに収縮します。",
       ),
       TUTORIAL.info.push(
         String.fromCharCode(8226) +
-          " If qubit-1 is found in state " +
+          " キュービット1が状態 " +
           String.fromCharCode(9660) +
-          " after measurement then qubit-2 will collapse into an odd superposition, (" +
+          " に測定された場合、キュービット2は (" +
           String.fromCharCode(9654) +
           " - " +
           String.fromCharCode(9664) +
-          ").",
+          ") の奇数重ね合わせに収縮します。",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
@@ -1698,39 +1698,39 @@ function TutsOpen() {
     UBOARD[1] = UBOARD[0].copy().updateOneStep();
   } else
     16 === TUTORIAL.current &&
-      ((TUTORIAL.title = "Handbook 0: Controls Reference"),
+      ((TUTORIAL.title = "ハンドブック0: 操作リファレンス"),
       (TUTORIAL.info = []),
       TUTORIAL.info.push(
-        "Game Controls (during construction phase):                   ---------------------------------------------------------------",
+        "ゲーム操作（建設フェーズ中）:                   ---------------------------------------------------------------",
       ),
-      TUTORIAL.info.push(" Select, place, interact with objects: $$d:LMB. "),
+      TUTORIAL.info.push(" オブジェクトの選択・配置・操作: $$d:LMB. "),
       TUTORIAL.info.push(
-        " Erase objects: $$d:RMB $$d:(or $$d:`E` $$d:key $$d:then $$d:LMB). ",
-      ),
-      TUTORIAL.info.push(
-        " Rotate gate (while placing): $$d:Mouse-scroll $$d:(or $$d:◀/► $$d:keys). ",
+        " オブジェクトの削除: $$d:RMB $$d:(または $$d:`E` $$d:キー後に $$d:LMB). ",
       ),
       TUTORIAL.info.push(
-        " Toggle control-gate states: $$d:Double-click $$d:(or $$d:ALT/OPT-click).",
+        " ゲートの回転（配置中）: $$d:マウススクロール $$d:(または $$d:◀/► $$d:キー). ",
       ),
       TUTORIAL.info.push(
-        " Copy gate(s): $$d:SHIFT+LMB $$d:(+drag $$d:to $$d:select $$d:larger $$d:region). ",
+        " 制御ゲートの状態切替: $$d:ダブルクリック $$d:(または $$d:ALT/OPT-クリック).",
       ),
       TUTORIAL.info.push(
-        " Cut gate(s): $$d:CTRL/CMD+LMB $$d:(+drag $$d:to $$d:select $$d:larger $$d:region). ",
+        " ゲートをコピー: $$d:SHIFT+LMB $$d:(+ドラッグで広い範囲を選択). ",
       ),
       TUTORIAL.info.push(
-        " Undo/redo last action: $$d:`Z` $$d:/ $$d:`X` $$d:keys. ",
+        " ゲートを切り取り: $$d:CTRL/CMD+LMB $$d:(+ドラッグで広い範囲を選択). ",
       ),
       TUTORIAL.info.push(
-        " Select last/next available gate from menu: $$d:`Q` $$d:/ $$d:`W` $$d:keys. ",
+        " 最後の操作を取り消す/やり直す: $$d:`Z` $$d:/ $$d:`X` $$d:キー. ",
       ),
       TUTORIAL.info.push(
-        " Gate hotkeys (rows 1,2,3): $$d:[1-6], $$d:SHIFT+[1-6], $$d:CTRL+[1-6].",
+        " メニューから前/次の利用可能なゲートを選択: $$d:`Q` $$d:/ $$d:`W` $$d:キー. ",
       ),
-      TUTORIAL.info.push(" Copy factory layout to clipboard: $$d:CTRL+C. "),
       TUTORIAL.info.push(
-        " Paste factory from clipboard: $$d:CTRL+V $$d:(N/A $$d:for $$d:Firefox). ",
+        " ゲートのショートカット（1〜3列）: $$d:[1-6], $$d:SHIFT+[1-6], $$d:CTRL+[1-6].",
+      ),
+      TUTORIAL.info.push(" 工場レイアウトをクリップボードにコピー: $$d:CTRL+C. "),
+      TUTORIAL.info.push(
+        " クリップボードから工場を貼り付け: $$d:CTRL+V $$d:(Firefoxは非対応). ",
       ),
       (TUTORIAL.type = "free"),
       (TUTORIAL.timePerTick = 800),
