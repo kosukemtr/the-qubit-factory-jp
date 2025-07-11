@@ -835,8 +835,7 @@ class Helper {
     );
   }
   static parseTextColored(e, t, i) {
-    var a = t.split(" "),
-      r = [],
+    var r = [],
       s = [],
       o = [],
       n = [],
@@ -852,14 +851,16 @@ class Helper {
       m = "";
 
     var p = [];
-    for (var f = 0; f < a.length; f++) {
-      var g = a[f],
-        w = "w";
-      if ("$" === g[0] && "$" === g[1]) {
-        (w = g[2]), (g = g.slice(4));
+    for (var f = 0; f < t.length; ) {
+      if ("$" === t[f] && "$" === t[f + 1] && ":" === t[f + 3]) {
+        var w = t[f + 2];
+        f += 4;
+        for (; f < t.length && " " !== t[f] && !("$" === t[f] && "$" === t[f + 1]); )
+          p.push({ ch: t[f++], color: w });
+      } else {
+        p.push({ ch: t[f], color: "w" });
+        f += 1;
       }
-      for (var x of Array.from(g)) p.push({ ch: x, color: w });
-      if (f < a.length - 1) p.push({ ch: " ", color: "w" });
     }
 
     for (var y = 0; y < p.length; y++) {
