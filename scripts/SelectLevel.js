@@ -249,7 +249,7 @@ class SelectLevel {
       i = Math.round(FIELD.selBoxW - 1.3 * FIELD.tileWidth);
     t.save(),
       (t.textAlign = "center"),
-      (t.font = (1.4 * FIELD.tileWidth) / 3 + "px Courier New"),
+      (t.font = (1.4 * FIELD.tileWidth) / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
       (t.fillStyle = "antiquewhite"),
       t.fillText("進捗", i / 2, 9 * FIELD.tileWidth),
       t.restore();
@@ -287,7 +287,7 @@ class SelectLevel {
       (t.save(),
       (t.textAlign = "center"),
       (t.fillStyle = "antiquewhite"),
-      (t.font = (1.2 * FIELD.tileWidth) / 3 + "px Courier New"),
+      (t.font = (1.2 * FIELD.tileWidth) / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
       FIELD.hiddenComplete > 0)
     ) {
       t.textAlign = "left";
@@ -338,7 +338,7 @@ class SelectLevel {
         11 * FIELD.tileWidth,
       );
     if (
-      ((t.font = (1.2 * FIELD.tileWidth) / 3 + "px Courier New"),
+      ((t.font = (1.2 * FIELD.tileWidth) / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
       t.fillText(
         "ランク: " + r[Math.floor(s / 10)],
         i / 2,
@@ -389,7 +389,7 @@ class SelectLevel {
         (t.shadowOffsetY = 2);
       a = 0;
       (t.textAlign = "center"),
-        (t.font = (1.4 * FIELD.tileWidth) / 3 + "px Courier New");
+        (t.font = (1.4 * FIELD.tileWidth) / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'");
       var c = Helper.parseText(t, d[0], FIELD.selBoxW - 1.3 * FIELD.tileWidth);
       t.fillText(c[0], (FIELD.selBoxW - 1.3 * FIELD.tileWidth) / 2, a),
         (a += SCENARIO.yPad);
@@ -409,7 +409,7 @@ class SelectLevel {
         t.restore(),
         (a += SCENARIO.yPad2),
         (t.textAlign = "left"),
-        (t.font = (1.2 * FIELD.tileWidth) / 3 + "px Courier New");
+        (t.font = (1.2 * FIELD.tileWidth) / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'");
       for (var I = 1; I < d.length; I++) {
         c = Helper.parseText(t, d[I], FIELD.selBoxW - 1.3 * FIELD.tileWidth);
         for (var E = 0; E < c.length; E++)
@@ -435,11 +435,11 @@ class SelectLevel {
         else S = 0;
         i = FIELD.selBoxW - 1.3 * FIELD.tileWidth;
         (t.textAlign = "center"),
-          (t.font = (1.4 * FIELD.tileWidth) / 3 + "px Courier New"),
+          (t.font = (1.4 * FIELD.tileWidth) / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
           t.fillText(d[0], i / 2, 6 * FIELD.tileWidth - S),
           (t.lineWidth = FIELD.tileWidth / 32),
           (t.textAlign = "center"),
-          (t.font = (1.2 * FIELD.tileWidth) / 3 + "px Courier New"),
+          (t.font = (1.2 * FIELD.tileWidth) / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
           t.fillText(d[1], i / 2, 6.7 * FIELD.tileWidth - S),
           "Hybrid" === u._name
             ? (t.fillText(d[2], i / 2, 7.2 * FIELD.tileWidth - S),
@@ -590,7 +590,7 @@ class SelectLevel {
           (t.fillStyle = "antiquewhite"),
           (t.textBaseline = "middle"),
           (t.textAlign = "center"),
-          (t.font = (1.2 * i) / 3 + "px Courier New"),
+          (t.font = (1.2 * i) / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
           t.fillText(n.name, h + u / 2, d + c / 2),
           t.restore();
       }

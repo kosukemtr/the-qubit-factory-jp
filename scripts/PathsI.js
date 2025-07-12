@@ -147,7 +147,7 @@ class PathsI {
     var s = 30,
       o = "normal";
     return (
-      a.addText(String(t.counter), { x: 17, y: 17 }, "black", s, "Verdana", o),
+      a.addText(String(t.counter), { x: 17, y: 17 }, "black", s, "Verdana, 'Noto Sans JP'", o),
       a
     );
   }

@@ -358,7 +358,7 @@ class Loop {
           ((CANV.debug.ctx.fillStyle = "white"),
           CANV.debug.fill(),
           (CANV.debug.ctx.fillStyle = "black"),
-          (CANV.debug.ctx.font = "14px Verdana"),
+          (CANV.debug.ctx.font = "14px Verdana, 'Noto Sans JP'"),
           CANV.debug.ctx.fillText(String(STATE.mode), 10, 20),
           CANV.debug.ctx.fillText(String(STATE.state), 10, 40),
           CANV.debug.ctx.fillText(
@@ -594,7 +594,7 @@ class Loop {
           T.stroke(L),
           (T.textBaseline = "top"),
           (T.textAlign = "left"),
-          (T.font = (0.7 * FIELD.tileWidth) / 6 + "px Verdana"),
+          (T.font = (0.7 * FIELD.tileWidth) / 6 + "px Verdana, 'Noto Sans JP'"),
           (T.shadowBlur = 2),
           (T.shadowOffsetX = 2),
           (T.shadowOffsetY = 2),
@@ -636,13 +636,13 @@ class Loop {
           (T.shadowOffsetY = 2),
           (T.shadowColor = "black"),
           (T.fillStyle = "antiquewhite"),
-          (T.font = (1 * FIELD.tileWidth) / 6 + "px Verdana"),
+          (T.font = (1 * FIELD.tileWidth) / 6 + "px Verdana, 'Noto Sans JP'"),
           T.fillText(
             "Try QCoder:",
             0.8 * FIELD.tileWidth,
             (0.2 * FIELD.tileHeight) / 2,
           ),
-          (T.font = (0.7 * FIELD.tileWidth) / 6 + "px Verdana"),
+          (T.font = (0.7 * FIELD.tileWidth) / 6 + "px Verdana, 'Noto Sans JP'"),
           T.fillText(
             "量子競技プログラミング",
             0.8 * FIELD.tileWidth,
@@ -660,7 +660,7 @@ class Loop {
         (CANV.debug.ctx.fillStyle = "white"),
         CANV.debug.fill(),
         (CANV.debug.ctx.fillStyle = "black"),
-        (CANV.debug.ctx.font = "14px Verdana"),
+        (CANV.debug.ctx.font = "14px Verdana, 'Noto Sans JP'"),
         CANV.debug.ctx.fillText(String(STATE.mode), 10, 20),
         CANV.debug.ctx.fillText(String(STATE.state), 10, 40),
         CANV.debug.ctx.fillText(
@@ -735,7 +735,7 @@ class Loop {
       i = 0 * FIELD.tileHeight;
     CANV.selectButtons.ctx.save(),
       (CANV.selectButtons.ctx.font =
-        (1.2 * FIELD.tileWidth) / 4 + "px Verdana"),
+        (1.2 * FIELD.tileWidth) / 4 + "px Verdana, 'Noto Sans JP'"),
       (CANV.selectButtons.ctx.fillStyle = "black"),
       (CANV.selectButtons.ctx.textAlign = "left"),
       (CANV.selectButtons.ctx.textBaseline = "middle"),
@@ -808,7 +808,7 @@ class Loop {
       (CANV.debug.ctx.fillStyle = "white"),
         CANV.debug.fill(),
         (CANV.debug.ctx.fillStyle = "black"),
-        (CANV.debug.ctx.font = "14px Verdana"),
+        (CANV.debug.ctx.font = "14px Verdana, 'Noto Sans JP'"),
         CANV.debug.ctx.fillText(String(STATE.mode), 10, 20),
         CANV.debug.ctx.fillText(String(STATE.state), 10, 40),
         CANV.debug.ctx.fillText(

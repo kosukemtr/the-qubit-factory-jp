@@ -360,25 +360,25 @@ class Robot {
       (e.shadowOffsetX = 2),
       (e.shadowOffsetY = 2),
       (e.shadowColor = "black"),
-      (e.font = (1.2 / 3) * FIELD.tileWidth + "px Courier New"),
+      (e.font = (1.2 / 3) * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
       e.fillText("（スペース）", ROBOT.width / 2, 1.1 * FIELD.tileWidth);
     var n = "次へ";
     if (
       ("finished" === ROBOT.oldMode && ROBOT.isDone && (n = "戻る"),
       (e.font =
         (1.1 + 0.1 * RTIMER.pulse) * (1.2 / 3) * FIELD.tileWidth +
-        "px Courier New"),
+        "px 'Courier New', 'Noto Sans Mono CJK JP'"),
       e.fillText(n, ROBOT.width / 2, 0.65 * FIELD.tileWidth),
       "finished" === ROBOT.oldMode && SCENARIO.archive)
     ) {
-      (e.font = (1.2 / 3) * FIELD.tileWidth + "px Courier New"),
+      (e.font = (1.2 / 3) * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
         e.fillText(
           "（外部リンク）",
           ROBOT.width - 4.5 * FIELD.tileWidth,
           1.1 * FIELD.tileWidth,
         );
       n = "歴史アーカイブ";
-      (e.font = (1.2 / 3) * FIELD.tileWidth + "px Courier New"),
+      (e.font = (1.2 / 3) * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
         e.fillText(
           n,
           ROBOT.width - 4.5 * FIELD.tileWidth,

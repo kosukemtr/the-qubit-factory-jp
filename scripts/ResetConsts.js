@@ -329,7 +329,7 @@ class ResetConsts {
       (STATE.selected = { type: "none", i0: -1, j0: -1, k0: -1 }),
       (STATE.grab = { type: "none", i0: -1, j0: -1, k0: -1 }),
       (CANV.robotText.ctx.font =
-        (1.2 / 3) * FIELD.tileWidth + "px Courier New"),
+        (1.2 / 3) * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
       (CANV.robotText.ctx.textBaseline = "top"),
       (CANV.robotText.ctx.textAlign = "left"),
       (CANV.robotText.ctx.shadowBlur = 2),

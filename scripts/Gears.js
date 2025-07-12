@@ -6,7 +6,7 @@ class Gears {
       (e.fillStyle = "antiquewhite"),
       (e.textBaseline = "middle"),
       (e.textAlign = "center"),
-      (e.font = 0.4 * FIELD.tileWidth + "px Courier New"),
+      (e.font = 0.4 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
       OPTS.autoResize
         ? e.fillText("•", 3.23 * t, (1.5 * t) / 4)
         : e.fillText("•", 4.67 * t, (1.5 * t) / 4),
@@ -27,7 +27,7 @@ class Gears {
       e.moveTo(1.8 * t, (3 * t) / 3 + (3 * t) / 2),
       e.lineTo(4.2 * t, (3 * t) / 3 + (3 * t) / 2),
       e.stroke(),
-      (e.font = "normal " + 0.2 * FIELD.tileWidth + "px Courier New"),
+      (e.font = "normal " + 0.2 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
       (e.fillStyle = "antiquewhite"),
       (e.textAlign = "right"),
       (e.textBaseline = "middle"),
@@ -42,7 +42,7 @@ class Gears {
     if (OPTS.sfxOn) a = 1.8 + (4.2 - 1.8) * OPTS.sfx;
     (e.textBaseline = "middle"),
       (e.textAlign = "center"),
-      (e.font = "normal " + 0.8 * FIELD.tileWidth + "px Courier New"),
+      (e.font = "normal " + 0.8 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
       e.fillText("•", i * t, (2.1 * t) / 3 + (3 * t) / 2),
       e.fillText("•", a * t, (3.1 * t) / 3 + (3 * t) / 2),
       e.restore(),
@@ -71,7 +71,7 @@ class Gears {
       e.save(),
       (e.textBaseline = "top"),
       (e.fillStyle = "antiquewhite"),
-      (e.font = 0.2 * FIELD.tileWidth + "px Courier New");
+      (e.font = 0.2 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'");
     var h = [
         0,
         t / 3,
@@ -92,7 +92,7 @@ class Gears {
         "Reset Saved Data",
         "Done",
       ];
-    e.font = "normal " + 0.2 * FIELD.tileWidth + "px Courier New";
+    e.font = "normal " + 0.2 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'";
     for (var u = 0; u < d.length; u++)
       (e.fillStyle =
         1 === u || 6 === u || 7 === u ? "antiquewhite" : "cornflowerblue"),
@@ -100,7 +100,7 @@ class Gears {
           ? ((e.textAlign = "center"), e.fillText(d[u], 2.5 * t, h[u] + t / 4))
           : ((e.textAlign = "left"), e.fillText(d[u], t / 4, h[u] + t / 4));
     (e.fillStyle = "antiquewhite"),
-      (e.font = "normal " + 0.2 * FIELD.tileWidth + "px Courier New");
+      (e.font = "normal " + 0.2 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'");
     d = [
       "auto [ ]  manual [ ]",
       "",
@@ -133,8 +133,8 @@ class Gears {
       for (d = 0; d < 3; d++) {
         if ("titlebutton" === STATE.under.type && STATE.under.i0 === d) {
           u = 0.3 + 0.05 * Math.cos(4 * TIMER.blinkRatio * Math.PI);
-          e.font = u * FIELD.tileWidth + "px Courier New";
-        } else e.font = 0.3 * FIELD.tileWidth + "px Courier New";
+          e.font = u * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'";
+        } else e.font = 0.3 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'";
         e.fillText(h[d], a / 2, n + d * o - 0.1 * FIELD.tileWidth);
       }
     } else {
@@ -147,12 +147,12 @@ class Gears {
       for (var d = 0; d < 3; d++) {
         if ("titlebutton" === STATE.under.type && STATE.under.i0 === d) {
           var u = 0.3 + 0.03 * Math.cos(4 * TIMER.blinkRatio * Math.PI);
-          e.font = u * FIELD.tileWidth + "px Courier New";
-        } else e.font = 0.3 * FIELD.tileWidth + "px Courier New";
+          e.font = u * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'";
+        } else e.font = 0.3 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'";
         e.fillText(h[d], a / 2, n + d * o + l[d]);
       }
       (e.fillStyle = "#ff4551"),
-        (e.font = Math.round(0.18 * FIELD.tileWidth) + "px Courier New"),
+        (e.font = Math.round(0.18 * FIELD.tileWidth) + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
         e.fillText("employee#" + PERSIST0.generic.nameTag, a / 2, n + 0.13 * t);
     }
   }

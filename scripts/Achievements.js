@@ -32,7 +32,7 @@ class Achievements {
       "selectAward" === STATE.under.type &&
         i[STATE.under.k0] &&
         (s.save(),
-        (s.font = (2 * FIELD.tileWidth) / 4 + "px Courier New"),
+        (s.font = (2 * FIELD.tileWidth) / 4 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
         (s.fillStyle = "antiquewhite"),
         (s.shadowBlur = 2),
         (s.shadowOffsetX = 2),
@@ -62,7 +62,7 @@ class Achievements {
         ),
         s.restore()),
       r.save(),
-      (r.font = (1.2 * FIELD.tileWidth) / 4 + "px Verdana"),
+      (r.font = (1.2 * FIELD.tileWidth) / 4 + "px Verdana, 'Noto Sans JP'"),
       (r.fillStyle = "black"),
       (r.textAlign = "left"),
       (r.textBaseline = "middle"),

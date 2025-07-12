@@ -104,7 +104,7 @@ class Canvs {
   setGlobal() {
     "tooltip" === this.name
       ? ((this.ctx.fillStyle = "antiquewhite"),
-        (this.ctx.font = (1.2 / 3) * FIELD.tileWidth + "px Courier New"),
+        (this.ctx.font = (1.2 / 3) * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
         (this.ctx.textBaseline = "middle"),
         (this.ctx.shadowBlur = 2),
         (this.ctx.shadowOffsetX = 2),
@@ -112,7 +112,7 @@ class Canvs {
         (this.ctx.shadowColor = "black"))
       : "FPS" === this.name
         ? ((this.ctx.fillStyle = "white"),
-          (this.ctx.font = "16px verdana"),
+          (this.ctx.font = "16px Verdana, 'Noto Sans JP'"),
           (this.ctx.textBaseline = "top"),
           (this.ctx.textAlign = "left"))
         : "base" === this.name &&

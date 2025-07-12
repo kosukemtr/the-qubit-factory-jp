@@ -195,13 +195,13 @@ class Finished {
               (a.save(),
               (a.textBaseline = "top"),
               (a.textAlign = "center"),
-              (a.font = (2 * FIELD.tileWidth) / 4 + "px Courier New"),
+              (a.font = (2 * FIELD.tileWidth) / 4 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
               (a.fillStyle = "antiquewhite"),
               (a.shadowBlur = 2),
               (a.shadowOffsetX = 2),
               (a.shadowOffsetY = 2),
               (a.shadowColor = "black"),
-              (a.font = (1 * FIELD.tileWidth) / 2 + "px Courier New"),
+              (a.font = (1 * FIELD.tileWidth) / 2 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
               1 === SCENARIO.victory
                 ? (a.fillText("Factory", e.w0 / 2, FIELD.tileWidth / 6 + o),
                   a.fillText(
@@ -210,7 +210,7 @@ class Finished {
                     (4.5 * FIELD.tileWidth) / 6 + o,
                   ),
                   s &&
-                    ((a.font = (1 * FIELD.tileWidth) / 3 + "px Courier New"),
+                    ((a.font = (1 * FIELD.tileWidth) / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
                     (a.textBaseline = "middle"),
                     a.fillText(
                       "Level select",
@@ -369,7 +369,7 @@ class Finished {
           (a.shadowOffsetX = 2),
           (a.shadowOffsetY = 2),
           (a.shadowColor = "black"),
-          (a.font = (1 * FIELD.tileWidth) / 2 + "px Courier New"),
+          (a.font = (1 * FIELD.tileWidth) / 2 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
           1 === SCENARIO.victory
             ? ((a.fillStyle = "antiquewhite"),
               a.fillText("Factory", e.w0 / 2, o + FIELD.tileWidth / 6 + C),
@@ -379,7 +379,7 @@ class Finished {
                 o + (4.5 * FIELD.tileWidth) / 6 + C,
               ),
               s &&
-                ((a.font = (1 * FIELD.tileWidth) / 3 + "px Courier New"),
+                ((a.font = (1 * FIELD.tileWidth) / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
                 (a.fillStyle = "antiquewhite"),
                 (a.textBaseline = "middle"),
                 a.fillText(

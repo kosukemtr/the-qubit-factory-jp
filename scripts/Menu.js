@@ -251,7 +251,7 @@ class Menu {
       a = t.ctx,
       r = (FIELD.tileWidth + FIELD.menu.pad) * FIELD.menu.cols + FIELD.menu.pad;
     (a.fillStyle = "antiquewhite"),
-      (a.font = (1.2 / 3) * FIELD.tileWidth + "px Courier New"),
+      (a.font = (1.2 / 3) * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
       (a.textBaseline = "middle"),
       (a.shadowBlur = 2),
       (a.shadowOffsetX = 2),

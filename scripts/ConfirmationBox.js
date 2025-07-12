@@ -141,7 +141,7 @@ class ConfirmationBox {
       (a.textBaseline = "top"),
       (a.textAlign = "center"),
       (a.fillStyle = "antiquewhite"),
-      (a.font = (1.2 * r) / 3 + "px Courier New"),
+      (a.font = (1.2 * r) / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
       (a.shadowBlur = 2),
       (a.shadowOffsetX = 2),
       (a.shadowOffsetY = 2),

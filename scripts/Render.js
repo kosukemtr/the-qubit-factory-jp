@@ -336,7 +336,7 @@ class Render {
       t.save(),
         (t.textBaseline = "middle"),
         (t.textAlign = "center"),
-        (t.font = FIELD.tileWidth / 3 + "px Verdana"),
+        (t.font = FIELD.tileWidth / 3 + "px Verdana, 'Noto Sans JP'"),
         (t.fillStyle = "black"),
         t.fillText(SCENARIO.text0.text, T, R),
         t.restore();
@@ -347,7 +347,7 @@ class Render {
       t.save(),
         (t.textBaseline = "middle"),
         (t.textAlign = "center"),
-        (t.font = FIELD.tileWidth / 3 + "px Verdana"),
+        (t.font = FIELD.tileWidth / 3 + "px Verdana, 'Noto Sans JP'"),
         (t.fillStyle = "black"),
         t.fillText(SCENARIO.text1.text, T, R),
         t.restore();
@@ -358,7 +358,7 @@ class Render {
       t.save(),
         (t.textBaseline = "middle"),
         (t.textAlign = "center"),
-        (t.font = FIELD.tileWidth / 3 + "px Verdana"),
+        (t.font = FIELD.tileWidth / 3 + "px Verdana, 'Noto Sans JP'"),
         (t.fillStyle = "black"),
         t.fillText(SCENARIO.text2.text, T, R),
         t.restore();

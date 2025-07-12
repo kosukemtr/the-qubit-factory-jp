@@ -17,7 +17,7 @@ class Paths {
     o = new Path2D("M 21 10 L 26 6 L 26 14 Z");
     return (
       s.addPathRaw(o, "#003636", r, 0.5, 0, "round", "none", "none"),
-      s.addText(String(t), { x: 16, y: 10 }, r, 12, "Verdana", "normal", 0),
+      s.addText(String(t), { x: 16, y: 10 }, r, 12, "Verdana, 'Noto Sans JP'", "normal", 0),
       s
     );
   }
@@ -44,7 +44,7 @@ class Paths {
         { x: 16, y: 10 },
         "black",
         12,
-        "Verdana",
+        "Verdana, 'Noto Sans JP'",
         "normal",
         0,
       ),
@@ -69,7 +69,7 @@ class Paths {
       );
     return (
       a.addPathRaw(r, i, "black", 1.5, 0, "round", "black", "none"),
-      a.addText("J", { x: 16, y: 16 }, "black", 36, "Courier New", "normal", 0),
+      a.addText("J", { x: 16, y: 16 }, "black", 36, "'Courier New', 'Noto Sans Mono CJK JP'", "normal", 0),
       a
     );
   }
@@ -84,7 +84,7 @@ class Paths {
       );
     return (
       a.addPathRaw(r, i, "black", 1.5, 0, "round", "black", "none"),
-      a.addText("A", { x: 16, y: 16 }, "black", 36, "Courier New", "normal", 0),
+      a.addText("A", { x: 16, y: 16 }, "black", 36, "'Courier New', 'Noto Sans Mono CJK JP'", "normal", 0),
       a
     );
   }
@@ -100,7 +100,7 @@ class Paths {
     return (
       r.addPathRaw(s, a, "none", 1.5, 0, "round", "black"),
       r.addPathRaw(s, "none", "black", 2, 0, "round"),
-      r.addText(t, { x: 16, y: 16 }, "black", 32, "Courier New", "normal", 0),
+      r.addText(t, { x: 16, y: 16 }, "black", 32, "'Courier New', 'Noto Sans Mono CJK JP'", "normal", 0),
       r
     );
   }
@@ -121,7 +121,7 @@ class Paths {
         { x: 16, y: 16 },
         "black",
         36,
-        "Courier New",
+        "'Courier New', 'Noto Sans Mono CJK JP'",
         "normal",
         0,
       ),
@@ -1138,7 +1138,7 @@ class Paths {
         { x: 16, y: 16 },
         "black",
         12,
-        "Verdana",
+        "Verdana, 'Noto Sans JP'",
         "normal",
         i,
       ),

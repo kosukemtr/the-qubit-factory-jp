@@ -280,7 +280,7 @@ class Analysis {
         d.save(),
         (d.textBaseline = "bottom"),
         (d.textAlign = "left"),
-        (d.font = FIELD.tileWidth / 3 + "px Courier New"),
+        (d.font = FIELD.tileWidth / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
         (d.fillStyle = "black"),
         d.fillText(
           "振幅",
@@ -293,7 +293,7 @@ class Analysis {
         d.setLineDash([]),
         (d.textBaseline = "bottom"),
         (d.textAlign = "center"),
-        (d.font = FIELD.tileWidth / 3 + "px Verdana"),
+        (d.font = FIELD.tileWidth / 3 + "px Verdana, 'Noto Sans JP'"),
         (d.fillStyle = "black");
       (F = Math.round(I + 1.5 * S + 0.75 * T + FIELD.tileHeight) + 0.5),
         (P = Math.round(c + u + m * FIELD.tileWidth) + 0.5);
@@ -373,7 +373,7 @@ class Analysis {
         }
         (d.textBaseline = "middle"),
           (d.textAlign = "left"),
-          (d.font = FIELD.tileWidth / 3 + "px Courier New"),
+          (d.font = FIELD.tileWidth / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
           (d.fillStyle = "black"),
             d.fillText(
               "量子もつれ",
@@ -436,7 +436,7 @@ class Analysis {
         d.save(),
           (d.textBaseline = "middle"),
           (d.textAlign = "left"),
-          (d.font = FIELD.tileWidth / 3 + "px Courier New"),
+          (d.font = FIELD.tileWidth / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
           (d.fillStyle = "black"),
             d.fillText(
               "測定確率",
@@ -449,13 +449,13 @@ class Analysis {
           d.setLineDash([]),
           (d.textBaseline = "middle"),
           (d.textAlign = "left"),
-          (d.font = FIELD.tileWidth / 3 + "px Verdana"),
+          (d.font = FIELD.tileWidth / 3 + "px Verdana, 'Noto Sans JP'"),
           (d.fillStyle = "black");
         P = Math.round(c + u + m * FIELD.tileWidth);
         var K = d.measureText("(0) ↦ ").width;
         d.fillText("(0) ↦", P - FIELD.tileWidth / 12, F + 0 * S),
           d.fillText("(1) ↦", P - FIELD.tileWidth / 12, F + 1 * S),
-          (d.font = (4 * FIELD.tileWidth) / 12 + "px Verdana"),
+          (d.font = (4 * FIELD.tileWidth) / 12 + "px Verdana, 'Noto Sans JP'"),
           d.fillText(
             "p=" + String(Analysis.normFloat(h)),
             P - FIELD.tileWidth / 12 + K,
@@ -548,7 +548,7 @@ class Analysis {
         d.save(),
         (d.textBaseline = "bottom"),
         (d.textAlign = "left"),
-        (d.font = FIELD.tileWidth / 3 + "px Courier New"),
+        (d.font = FIELD.tileWidth / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
         (d.fillStyle = "black"),
         d.fillText(
           "振幅",
@@ -561,7 +561,7 @@ class Analysis {
         d.setLineDash([]),
         (d.textBaseline = "bottom"),
         (d.textAlign = "center"),
-        (d.font = FIELD.tileWidth / 3 + "px Verdana"),
+        (d.font = FIELD.tileWidth / 3 + "px Verdana, 'Noto Sans JP'"),
         (d.fillStyle = "black");
       (F = Math.round(FIELD.tileHeight + I + 1.5 * S + 0.75 * T) + 0.5),
         (P = Math.round(c + u + FIELD.tileWidth));
@@ -627,7 +627,7 @@ class Analysis {
       ),
         (d.textBaseline = "middle"),
         (d.textAlign = "left"),
-        (d.font = FIELD.tileWidth / 3 + "px Courier New"),
+        (d.font = FIELD.tileWidth / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
         (d.fillStyle = "black"),
         d.fillText(
           "量子もつれ",
@@ -669,7 +669,7 @@ class Analysis {
         d.setLineDash([]),
         (d.textBaseline = "middle"),
         (d.textAlign = "left"),
-        (d.font = FIELD.tileWidth / 3 + "px Courier New"),
+        (d.font = FIELD.tileWidth / 3 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
         (d.fillStyle = "black"),
         d.fillText(
           "測定確率",
@@ -677,7 +677,7 @@ class Analysis {
           Math.round(F - 1 * S),
         );
       P = Math.round(c + u + FIELD.tileWidth);
-      d.font = (4 * FIELD.tileWidth) / 12 + "px Verdana";
+      d.font = (4 * FIELD.tileWidth) / 12 + "px Verdana, 'Noto Sans JP'";
       K = d.measureText("(0) ↦ ").width;
       d.fillText("(0) ↦", P - FIELD.tileWidth / 12, F + 0 * S),
         d.fillText("(1) ↦", P - FIELD.tileWidth / 12, F + 1 * S),
