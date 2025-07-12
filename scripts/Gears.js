@@ -6,18 +6,44 @@ class Gears {
       (e.fillStyle = "antiquewhite"),
       (e.textBaseline = "middle"),
       (e.textAlign = "center"),
-      (e.font = 0.4 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
-      OPTS.autoResize
-        ? e.fillText("•", 3.23 * t, (1.5 * t) / 4)
-        : e.fillText("•", 4.67 * t, (1.5 * t) / 4),
-      OPTS.fancyGraphics && OPTS.fancyFilters
-        ? e.fillText("•", 2.87 * t, (1.5 * t) / 4 + t / 3 + t / 2)
-        : OPTS.fancyGraphics
-          ? e.fillText("•", 3.83 * t, (1.5 * t) / 4 + t / 3 + t / 2)
-          : e.fillText("•", 4.67 * t, (1.5 * t) / 4 + t / 3 + t / 2),
-      FIELD.disableBriefs
-        ? e.fillText("•", 4.67 * t, (1.5 * t) / 4 + t / 3 + t)
-        : e.fillText("•", 3.23 * t, (1.5 * t) / 4 + t / 3 + t),
+      // === Bullet markers for check‑box rows (dynamic positions) ===
+      // Base X where the checkbox row labels start
+      // This matches the X used for the checkbox labels below
+      (function() {
+        const baseLabelX = 2.2 * t + t / 4;
+        // Use the label font to measure text widths
+        e.font = "normal " + 0.2 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'";
+
+        // Use a smaller offset (20% of space width) so the dot doesn't overlap with the closing bracket.
+        const spaceW = e.measureText(" ").width;
+        const bulletOffset = - spaceW * 0.2; // fine‑tuned empirically
+
+        // --- Compute bullet X positions (dot sits slightly left of bracket center) ---
+        let autoBulletX   = baseLabelX + e.measureText("自動 [ ").width + bulletOffset;
+        let manualBulletX = baseLabelX + e.measureText("自動 [ ]  手動 [ ").width + bulletOffset;
+        let hiBulletX  = baseLabelX + e.measureText("高[ ").width + bulletOffset;
+        let midBulletX = baseLabelX + e.measureText("高[ ]  中[ ").width + bulletOffset;
+        let lowBulletX = baseLabelX + e.measureText("高[ ]  中[ ] 低[ ").width + bulletOffset;
+        let onBulletX  = baseLabelX + e.measureText("オン   [ ").width + bulletOffset;
+        let offBulletX = baseLabelX + e.measureText("オン   [ ]  オフ    [ ").width + bulletOffset;
+
+        // Switch to large font for the bullet itself
+        e.font = 0.4 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'";
+        // Auto‑resize row
+        OPTS.autoResize
+          ? e.fillText("•", autoBulletX, (1.5 * t) / 4)
+          : e.fillText("•", manualBulletX, (1.5 * t) / 4);
+        // Graphics quality row (hi / med / low)
+        OPTS.fancyGraphics && OPTS.fancyFilters
+          ? e.fillText("•", hiBulletX, (1.5 * t) / 4 + t / 3 + t / 2)
+          : OPTS.fancyGraphics
+            ? e.fillText("•", midBulletX, (1.5 * t) / 4 + t / 3 + t / 2)
+            : e.fillText("•", lowBulletX, (1.5 * t) / 4 + t / 3 + t / 2);
+        // Level‑briefing row (on / off)
+        FIELD.disableBriefs
+          ? e.fillText("•", offBulletX, (1.5 * t) / 4 + t / 3 + t)
+          : e.fillText("•", onBulletX, (1.5 * t) / 4 + t / 3 + t);
+      })(),
       e.restore(),
       e.save(),
       (e.lineWidth = FIELD.tileWidth / 24),
@@ -50,9 +76,10 @@ class Gears {
     var r = !1;
     if ("optionbut" === STATE.under.type && 0 === STATE.under.i0) r = !0;
     (e.lineWidth = t / 48), (e.strokeStyle = "antiquewhite");
-    var s = [1.4 * t, 1.4 * t, 3.6 * t, 3.6 * t],
-      o = [(8.5 * t) / 3, (9.5 * t) / 3, (9.5 * t) / 3, (8.5 * t) / 3],
-      n = [t / 8, t / 8, t / 8, t / 8],
+    // Shift hitbox 0.1*t left to better match visual position
+    var s = [1.2 * t, 1.2 * t, 3.6 * t, 3.6 * t],
+      o = [(8.4 * t) / 3, (9.6 * t) / 3, (9.6 * t) / 3, (8.4 * t) / 3],
+      n = [t / 6, t / 6, t / 6, t / 6],
       l = new Path2D(Helper.makeRoundedPath(s, o, n, 1, 0, 0));
     r && ((e.fillStyle = "#555"), e.fill(l)),
       e.stroke(l),
@@ -61,9 +88,9 @@ class Gears {
     r = !1;
     if ("optionbut" === STATE.under.type && 1 === STATE.under.i0) r = !0;
     (e.lineWidth = t / 48), (e.strokeStyle = "antiquewhite");
-    (s = [1.4 * t, 1.4 * t, 3.6 * t, 3.6 * t]),
-      (o = [(10 * t) / 3, (11 * t) / 3, (11 * t) / 3, (10 * t) / 3]),
-      (n = [t / 8, t / 8, t / 8, t / 8]),
+    (s = [1.2 * t, 1.2 * t, 3.6 * t, 3.6 * t]),
+      (o = [(9.9 * t) / 3, (11.1 * t) / 3, (11.1 * t) / 3, (9.9 * t) / 3]),
+      (n = [t / 6, t / 6, t / 6, t / 6]),
       (l = new Path2D(Helper.makeRoundedPath(s, o, n, 1, 0, 0)));
     r && ((e.fillStyle = "#555"), e.fill(l)),
       e.stroke(l),
@@ -83,14 +110,14 @@ class Gears {
         (2 * t) / 3 + (5 * t) / 2,
       ],
       d = [
-        "Window Resizing:",
-        "[manual resizing via `<` and `>` keys]",
-        "Graphics:",
-        "Level Briefings:",
-        "Music:",
-        "Effects:",
-        "Reset Saved Data",
-        "Done",
+        "ウィンドウサイズ変更：",
+        "[`<` と `>` キーで手動リサイズ]",
+        "グラフィック：",
+        "レベル説明：",
+        "音楽：",
+        "効果音：",
+        "セーブデータをリセット",
+        "完了",
       ];
     e.font = "normal " + 0.2 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'";
     for (var u = 0; u < d.length; u++)
@@ -102,14 +129,16 @@ class Gears {
     (e.fillStyle = "antiquewhite"),
       (e.font = "normal " + 0.2 * FIELD.tileWidth + "px 'Courier New', 'Noto Sans Mono CJK JP'");
     d = [
-      "auto [ ]  manual [ ]",
+      "自動 [ ]  手動 [ ]",
       "",
-      "hi[ ]  med[ ] low[ ]",
-      "on   [ ]  off    [ ]",
+      "高[ ]  中[ ] 低[ ]",
+      "オン   [ ]  オフ    [ ]",
     ];
     e.textAlign = "left";
+    // Position checkbox labels to the right of the menu text
+    const checkboxLabelX = 2.2 * t + t / 4;
     for (u = 0; u < d.length; u++)
-      e.fillText(d[u], 2.2 * t + t / 4, h[u] + t / 4);
+      e.fillText(d[u], checkboxLabelX, h[u] + t / 4);
     e.restore();
   }
   static drawOptions(e) {
@@ -125,7 +154,7 @@ class Gears {
       o = 0.4 * FIELD.tileWidth,
       n = r - s;
     if (FIELD.isCleanSlate) {
-      h = ["start", "options", "about"];
+      h = ["開始", "オプション", "情報"];
       e.setTransform(1, 0, 0, 1, 0, 0),
         (e.textBaseline = "middle"),
         (e.textAlign = "center"),
@@ -139,7 +168,7 @@ class Gears {
       }
     } else {
       var l = [-0.15 * t, 0.1 * t, 0.1 * t],
-        h = ["continue", "options", "about"];
+        h = ["続行", "オプション", "情報"];
       e.setTransform(1, 0, 0, 1, 0, 0),
         (e.textBaseline = "middle"),
         (e.textAlign = "center"),
@@ -153,7 +182,7 @@ class Gears {
       }
       (e.fillStyle = "#ff4551"),
         (e.font = Math.round(0.18 * FIELD.tileWidth) + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
-        e.fillText("employee#" + PERSIST0.generic.nameTag, a / 2, n + 0.13 * t);
+        e.fillText("社員#" + PERSIST0.generic.nameTag, a / 2, n + 0.13 * t);
     }
   }
   static drawPath(e, t, i, a, r, s, o = 32, n = 32) {
