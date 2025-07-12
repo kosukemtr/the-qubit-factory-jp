@@ -835,8 +835,7 @@ class Helper {
     );
   }
   static parseTextColored(e, t, i) {
-    var a = t.split(" "),
-      r = [],
+    var r = [],
       s = [],
       o = [],
       n = [],
@@ -851,15 +850,21 @@ class Helper {
       S = "",
       m = "";
 
+    function blank(ch) {
+      return ch.charCodeAt(0) > 255 ? "\u3000" : " ";
+    }
+
     var p = [];
-    for (var f = 0; f < a.length; f++) {
-      var g = a[f],
-        w = "w";
-      if ("$" === g[0] && "$" === g[1]) {
-        (w = g[2]), (g = g.slice(4));
+    for (var f = 0; f < t.length; ) {
+      if ("$" === t[f] && "$" === t[f + 1] && ":" === t[f + 3]) {
+        var w = t[f + 2];
+        f += 4;
+        for (; f < t.length && " " !== t[f] && !("$" === t[f] && "$" === t[f + 1]); )
+          p.push({ ch: t[f++], color: w });
+      } else {
+        p.push({ ch: t[f], color: "w" });
+        f += 1;
       }
-      for (var x of Array.from(g)) p.push({ ch: x, color: w });
-      if (f < a.length - 1) p.push({ ch: " ", color: "w" });
     }
 
     for (var y = 0; y < p.length; y++) {
@@ -867,12 +872,12 @@ class Helper {
       var L = e.measureText(m + C.ch).width;
       if (L < i) {
         m += C.ch;
-        d += "w" === C.color ? C.ch : " ";
-        u += "r" === C.color ? C.ch : " ";
-        c += "g" === C.color ? C.ch : " ";
-        I += "b" === C.color ? C.ch : " ";
-        E += "d" === C.color ? C.ch : " ";
-        S += "p" === C.color ? C.ch : " ";
+        d += "w" === C.color ? C.ch : blank(C.ch);
+        u += "r" === C.color ? C.ch : blank(C.ch);
+        c += "g" === C.color ? C.ch : blank(C.ch);
+        I += "b" === C.color ? C.ch : blank(C.ch);
+        E += "d" === C.color ? C.ch : blank(C.ch);
+        S += "p" === C.color ? C.ch : blank(C.ch);
       } else {
         r.push(d);
         s.push(u);
@@ -881,12 +886,12 @@ class Helper {
         l.push(E);
         h.push(S);
         m = C.ch;
-        d = "w" === C.color ? C.ch : " ";
-        u = "r" === C.color ? C.ch : " ";
-        c = "g" === C.color ? C.ch : " ";
-        I = "b" === C.color ? C.ch : " ";
-        E = "d" === C.color ? C.ch : " ";
-        S = "p" === C.color ? C.ch : " ";
+        d = "w" === C.color ? C.ch : blank(C.ch);
+        u = "r" === C.color ? C.ch : blank(C.ch);
+        c = "g" === C.color ? C.ch : blank(C.ch);
+        I = "b" === C.color ? C.ch : blank(C.ch);
+        E = "d" === C.color ? C.ch : blank(C.ch);
+        S = "p" === C.color ? C.ch : blank(C.ch);
       }
     }
 
