@@ -850,6 +850,10 @@ class Helper {
       S = "",
       m = "";
 
+    function blank(ch) {
+      return ch.charCodeAt(0) > 255 ? "\u3000" : " ";
+    }
+
     var p = [];
     for (var f = 0; f < t.length; ) {
       if ("$" === t[f] && "$" === t[f + 1] && ":" === t[f + 3]) {
@@ -868,12 +872,12 @@ class Helper {
       var L = e.measureText(m + C.ch).width;
       if (L < i) {
         m += C.ch;
-        d += "w" === C.color ? C.ch : " ";
-        u += "r" === C.color ? C.ch : " ";
-        c += "g" === C.color ? C.ch : " ";
-        I += "b" === C.color ? C.ch : " ";
-        E += "d" === C.color ? C.ch : " ";
-        S += "p" === C.color ? C.ch : " ";
+        d += "w" === C.color ? C.ch : blank(C.ch);
+        u += "r" === C.color ? C.ch : blank(C.ch);
+        c += "g" === C.color ? C.ch : blank(C.ch);
+        I += "b" === C.color ? C.ch : blank(C.ch);
+        E += "d" === C.color ? C.ch : blank(C.ch);
+        S += "p" === C.color ? C.ch : blank(C.ch);
       } else {
         r.push(d);
         s.push(u);
@@ -882,12 +886,12 @@ class Helper {
         l.push(E);
         h.push(S);
         m = C.ch;
-        d = "w" === C.color ? C.ch : " ";
-        u = "r" === C.color ? C.ch : " ";
-        c = "g" === C.color ? C.ch : " ";
-        I = "b" === C.color ? C.ch : " ";
-        E = "d" === C.color ? C.ch : " ";
-        S = "p" === C.color ? C.ch : " ";
+        d = "w" === C.color ? C.ch : blank(C.ch);
+        u = "r" === C.color ? C.ch : blank(C.ch);
+        c = "g" === C.color ? C.ch : blank(C.ch);
+        I = "b" === C.color ? C.ch : blank(C.ch);
+        E = "d" === C.color ? C.ch : blank(C.ch);
+        S = "p" === C.color ? C.ch : blank(C.ch);
       }
     }
 
