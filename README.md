@@ -9,13 +9,16 @@ A puzzle/construction game about manipulating **qubits** (quantum bits) to solve
 * Learn more on the wiki: [github.com/awslabs/the-qubit-factory/wiki](https://github.com/awslabs/the-qubit-factory/wiki)
 * Youtube channel: [www.youtube.com/@TheQubitFactory](https://www.youtube.com/@TheQubitFactory)
 
+## About this version
+このリポジトリは AWS Labs 提供の [The Qubit Factory のソースコード](https://github.com/awslabs/the-qubit-factory) をもとに、deminify 及び日本語化を行ったものです。The 
+
 ## Disclaimer: 
 _The Qubit Factory_ is set within a fictional reality about robots doing robotty things in a robot factory. The character dialog contained within, written wholly by developer Glen Evenbly, is intended to be humorous and satirical. The opinions, views and practices of characters from within _The Qubit Factory_ do not reflect those of the developers or the developers' employer. 
 
 ## License:
 _The Qubit Factory_ is licensed under Apache 2.0.
 
-## TODO:
+## Codex instructions:
 scripts.min.js is the original file, which we de-minified to scripts.js, which is then separated into individual files in the scripts/ directory.
 
 Translation work is needed in the following scripts/ files:
