@@ -1,3 +1,12 @@
+/*
+ * The Qubit Factory — unofficial Japanese adaptation by kosukemtr.
+ * Modified from https://github.com/awslabs/the-qubit-factory:
+ * the original scripts.min.js was reformatted and split into source files;
+ * this adaptation also includes Japanese localization and related adjustments.
+ * Original work: Glen Evenbly (AWS Center for Quantum Computing).
+ * Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Licensed under Apache-2.0; see LICENSE and NOTICE in the repository root.
+ */
 class Overlay {
   static createRobotScreen(e) {
     var t = ROBOT.screenW + 2 * ROBOT.margin,
@@ -649,7 +658,7 @@ class Overlay {
         (e.textBaseline = "top"),
         (e.font = (1 * FIELD.tileWidth) / 6 + "px 'Courier New', 'Noto Sans Mono CJK JP'"),
         e.fillText(
-          "Music: Eric Matyas",
+          "Music by Eric Matyas",
           0.65 * FIELD.tileWidth,
           (0.28 * FIELD.tileHeight) / 2,
         ),
